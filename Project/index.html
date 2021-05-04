@@ -1,34 +1,126 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, viewport-fit=cover">
     <meta name="format-detection" content="telephone=no">
-    <title>VLM TATTO</title>
-
-    <link rel="shortcut icon" href="./img/lgo_cabecera.png">
+    <title>VLM TATTOO</title>
+    <meta name="robots" content="noindex, nofollow">
+        <link rel="shortcut icon" href="https://the-gentleman.reservy.es/assets/favicon.ico">
+    <link rel="stylesheet" href="./Haz tu reserva con The Gentleman by Toni - Barbershop en Barcelona_files/style.css" type="text/css">
     <!--[if IE]>
       <script src="/forms/1/js/html5.js"></script>
     <![endif]-->
-    </head>
+    <style>
+     .loader{
+		box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+		width: 100%;
+		height: 100%;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		flex-direction: column;
+		flex-wrap: wrap;
+		transition:ease 0.7s;
+		-webkit-transition:ease 0.7s;
+	}
 
-    <body style="background-image: url(&quot;https://the-gentleman.reservy.es/assets/page_background.jpg&quot;);">
-        <div id="pageLoader" class="loader" style="display: none;"><div class="spinner"></div></div>
-        <div id="generalMessage"><img src="./img/logo.jpg"><div class="message"></div></div>
-        <nav style="padding-top: 130px;">
-         <a href="javascript:newReservation();" class="new_reservation current">Nueva Reserva</a>
-                <a href="https://the-gentleman.reservy.es/#donde-estamos" class="page1">Donde estamos</a>
-                    <a href="https://the-gentleman.reservy.es/#politica-de-privacidad" class="page2">Política de Privacidad</a>
-                    <a href="https://the-gentleman.reservy.es/#aviso-legal" class="page3">Aviso legal</a>
-              </nav>
-        <div id="navBackground"></div>
-        <header>
-         <img src="./img/header_logo.png" alt="The Gentleman by Toni">
-         <span id="navButton">
-          <span></span>
-          <span></span>
-          <span></span>
-         </span>
-        </header>
-    </body>
+     #pageLoader.loader{
+          position:fixed;
+		left:0px;
+		top: 0px;
+		z-index: 999999999;
+		background:#000000;
+     }
+
+     #page_holder .loader{
+          background:#ffffff;
+          position:relative;
+          z-index: 10;
+     }
+
+     .loader .spinner{
+		width: 40px;
+		height: 40px;
+		background-color:white;
+		margin: 100px auto;
+		-webkit-animation: loader 1.2s infinite ease-in-out;
+		animation: loader 1.2s infinite ease-in-out;
+	}
+     #pageLoader.loader .spinner{
+          background-color:#ffffff;
+     }
+     #page_holder .loader .spinner{
+          background-color:#212121;
+     }
+	@-webkit-keyframes loader {
+		0% { -webkit-transform: perspective(120px) }
+		50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+		100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+	}
+	@keyframes loader {
+		0% { 
+			transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+			-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+		} 50% { 
+			transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+			-webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+		} 100% { 
+			transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+			-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+		}
+	}
+
+     #generalMessage{
+		display:none;
+		background:#fff;
+		padding:30px;
+		font-family:Arial,Tahoma,sans-serif;
+		color:#000;
+		font-size:16px;
+          z-index:999999999;
+          position:fixed;
+          top:0;
+          left:0;
+          width:100%;
+          height:100vh;
+          flex-direction:column;
+          align-items:center;
+          justify-content:center;
+	}
+	#generalMessage img{
+		max-width:180px;
+	}
+	#generalMessage .message{
+		display:inline-block;
+		margin-top:30px;
+	}
+     .our-price-box.template{
+          display:none;
+     }
+     #employees.closed .our-price-text h2:before{
+          content:"BARBERO: ";
+     }
+     </style>
+</head>
+<body style="background-image: url(&quot;https://the-gentleman.reservy.es/assets/page_background.jpg&quot;);">
+<div id="pageLoader" class="loader" style="display: none;"><div class="spinner"></div></div>
+<div id="generalMessage"><img src="./Haz tu reserva con The Gentleman by Toni - Barbershop en Barcelona_files/info.svg"><div class="message"></div></div>
+<nav style="padding-top: 130px;">
+ <a href="javascript:newReservation();" class="new_reservation current">Nueva Reserva</a>
+        <a href="https://the-gentleman.reservy.es/#donde-estamos" class="page1">Donde estamos</a>
+            <a href="https://the-gentleman.reservy.es/#politica-de-privacidad" class="page2">Política de Privacidad</a>
+            <a href="https://the-gentleman.reservy.es/#aviso-legal" class="page3">Aviso legal</a>
+      </nav>
+<div id="navBackground"></div>
+<header>
+ <img src="./Haz tu reserva con The Gentleman by Toni - Barbershop en Barcelona_files/header_logo.png" alt="The Gentleman by Toni">
+ <span id="navButton">
+  <span></span>
+  <span></span>
+  <span></span>
+ </span>
+</header>
+
+
 </html>
