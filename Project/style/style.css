@@ -9,6 +9,10 @@ body, html {
   background-size: cover;
 }
 
+.my-auto{
+  margin-right: 1%;
+}
+
 /*RESET CSS*/
 .barra-sup {
     background: #000;
