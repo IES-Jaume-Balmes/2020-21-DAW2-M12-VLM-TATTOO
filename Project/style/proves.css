@@ -9,28 +9,10 @@ body, html {
   background-size: cover;
 }
 
-.card {
-  position: absolute;
-  top: 0%;
-  left: 75%;
-}
-
-.center-icon{
-  margin-left: 37%;
-
-}
-
-.login-sign{
-  margin-left: 80%;
-  color: #fff;
-
-}
-
 /*RESET CSS*/
 .barra-sup {
     background: #000;
     height: 100px;
-    position: fixed;
     /*Hasta q no pones el width, no sale la barra gris por culpa del position fixed y no tener ningun contenido dentro!*/
     width: 100%;
   }
