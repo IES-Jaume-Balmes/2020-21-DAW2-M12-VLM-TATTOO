@@ -8,10 +8,25 @@ body, html {
   background-position: center;
   background-size: cover;
 }
+.logo{
+  width: 140px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .my-auto{
-  margin-right: 1%;
+  margin-right: 3.5%;
 }
+.my-auto a {
+  text-decoration: none;
+  color: white;
+}
+.my-auto span{
+  border-right: #fff 2px solid;
+}
+
 
 /*RESET CSS*/
 .barra-sup {
@@ -19,6 +34,7 @@ body, html {
     height: 100px;
     /*Hasta q no pones el width, no sale la barra gris por culpa del position fixed y no tener ningun contenido dentro!*/
     width: 100%;
+    position: relative;
   }
   
   .barra-sup .hamburguer span {
@@ -105,4 +121,3 @@ body, html {
   }
 
 
-  
