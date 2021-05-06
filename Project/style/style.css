@@ -26,6 +26,9 @@ body, html {
 .my-auto span{
   border-right: #fff 2px solid;
 }
+.bg-dark{
+  background-color:#000!important;
+}
 
 
 /*RESET CSS*/
