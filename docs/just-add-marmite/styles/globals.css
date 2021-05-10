@@ -45,10 +45,7 @@ footer {
   color: #bbb;
   padding: 40px;
   text-align: center;
-  margin-top: auto;
-  position: absolute;
-  bottom: 0%;
-  width: 100%;
+  margin-top: auto
 }
 .page-content {
   max-width: 1200px;
