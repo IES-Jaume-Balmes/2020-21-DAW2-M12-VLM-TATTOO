@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-05-2021 a las 15:38:11
+-- Tiempo de generación: 11-05-2021 a las 17:02:18
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 8.0.3
 
@@ -47,31 +47,19 @@ INSERT INTO `cliente` (`id`, `nombre`, `apellidos`, `telefono`, `password`, `ema
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `imagen`
---
-
-CREATE TABLE `imagen` (
-  `id` int(11) NOT NULL,
-  `reservas_id` int(11) DEFAULT NULL,
-  `nombre_imagen` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
--- --------------------------------------------------------
-
---
 -- Estructura de tabla para la tabla `reserva`
 --
 
 CREATE TABLE `reserva` (
   `id` int(11) NOT NULL,
-  `nombre` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `tamano` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `talla` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `descripcion` varchar(1024) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `hora` time NOT NULL,
-  `fecha` date NOT NULL,
   `deposito` decimal(4,2) NOT NULL,
   `tatuador_id` int(11) DEFAULT NULL,
-  `cliente_id` int(11) DEFAULT NULL
+  `cliente_id` int(11) DEFAULT NULL,
+  `imagen` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `fecha_inicio` datetime NOT NULL,
+  `fecha_final` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
@@ -101,13 +89,6 @@ ALTER TABLE `cliente`
   ADD UNIQUE KEY `UNIQ_F41C9B25E7927C74` (`email`);
 
 --
--- Indices de la tabla `imagen`
---
-ALTER TABLE `imagen`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `IDX_8319D2B34976A656` (`reservas_id`);
-
---
 -- Indices de la tabla `reserva`
 --
 ALTER TABLE `reserva`
@@ -129,19 +110,13 @@ ALTER TABLE `tatuador`
 -- AUTO_INCREMENT de la tabla `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT de la tabla `imagen`
---
-ALTER TABLE `imagen`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `reserva`
 --
 ALTER TABLE `reserva`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de la tabla `tatuador`
@@ -152,12 +127,6 @@ ALTER TABLE `tatuador`
 --
 -- Restricciones para tablas volcadas
 --
-
---
--- Filtros para la tabla `imagen`
---
-ALTER TABLE `imagen`
-  ADD CONSTRAINT `FK_8319D2B34976A656` FOREIGN KEY (`reservas_id`) REFERENCES `reserva` (`id`);
 
 --
 -- Filtros para la tabla `reserva`
