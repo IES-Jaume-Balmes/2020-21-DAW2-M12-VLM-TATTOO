@@ -6,7 +6,7 @@
 ### Integrantes:
 Pol Gispert Blánquez
 
-Pol Herranz 
+Pol Herranz Marques
 
 David Janer Pons
 
