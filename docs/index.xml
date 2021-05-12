@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VLM TATTOO</title>
+    <link>https://ies-jaume-balmes.github.io/2020-21-DAW2-M12-VLM-TATTOO/</link>
+    <description>Recent content on VLM TATTOO</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 12 May 2021 16:37:48 +0200</lastBuildDate>
+    
+	<atom:link href="https://ies-jaume-balmes.github.io/2020-21-DAW2-M12-VLM-TATTOO/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Descripcion</title>
+      <link>https://ies-jaume-balmes.github.io/2020-21-DAW2-M12-VLM-TATTOO/posts/descripcion/</link>
+      <pubDate>Wed, 12 May 2021 16:37:48 +0200</pubDate>
+      
+      <guid>https://ies-jaume-balmes.github.io/2020-21-DAW2-M12-VLM-TATTOO/posts/descripcion/</guid>
+      <description>&lt;p&gt;Desenvoluparem una aplicació web per a VLM TATTOO que amb l&amp;rsquo;ajuda d’una base
+de dades podrem optimitzar el seu sistema de cites. Aixì doncs, els usuaris han de
+poder solicitar una cita que posteriorment serà confirmada per el tatuador. També ha
+de permetre al tatuador poder veure quines cites té aquella setmana.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Funcionamiento</title>
+      <link>https://ies-jaume-balmes.github.io/2020-21-DAW2-M12-VLM-TATTOO/posts/funcionamiento/</link>
+      <pubDate>Wed, 12 May 2021 16:37:48 +0200</pubDate>
+      
+      <guid>https://ies-jaume-balmes.github.io/2020-21-DAW2-M12-VLM-TATTOO/posts/funcionamiento/</guid>
+      <description>&lt;p&gt;Hi haurà 2 perfils d&amp;rsquo;usuari, el normal(client) i l&amp;rsquo;administrador(tatuador).
+Client:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Registre: Crear el seu propi usuari&lt;/li&gt;
+&lt;li&gt;Donar-se de baixa: Borrar el seu propi usuari&lt;/li&gt;
+&lt;li&gt;Login: Iniciar sessió&lt;/li&gt;
+&lt;li&gt;Logout: Tancar la sessió iniciada&lt;/li&gt;
+&lt;li&gt;Cites:&lt;/li&gt;
+&lt;li&gt;Crear una cita a les hores disponibles.&lt;/li&gt;
+&lt;li&gt;Proposar modificació de les seves pròpies reserves.&lt;/li&gt;
+&lt;li&gt;Proposar esborrat de la seva propia reserva.
+Tatuador:&lt;/li&gt;
+&lt;li&gt;Admin: CRUD (Create, Read, Update, Delete)&lt;/li&gt;
+&lt;li&gt;Llistar usuaris&lt;/li&gt;
+&lt;li&gt;Crear usuaris&lt;/li&gt;
+&lt;li&gt;Modificar usuaris&lt;/li&gt;
+&lt;li&gt;Borrar usuaris&lt;/li&gt;
+&lt;li&gt;Aprovar modificacions del client&lt;/li&gt;
+&lt;li&gt;Cites:&lt;/li&gt;
+&lt;li&gt;Crear&lt;/li&gt;
+&lt;li&gt;Modificar les cites.&lt;/li&gt;
+&lt;li&gt;Llistar les cites i les hores ocupades.&lt;/li&gt;
+&lt;li&gt;Esborrar una cita.&lt;/li&gt;
+&lt;li&gt;Aprovar modificacions de les cites dels clients.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Herrameintas</title>
+      <link>https://ies-jaume-balmes.github.io/2020-21-DAW2-M12-VLM-TATTOO/posts/herramientas_lenguajes_frameworks_utilizados/</link>
+      <pubDate>Wed, 12 May 2021 16:37:48 +0200</pubDate>
+      
+      <guid>https://ies-jaume-balmes.github.io/2020-21-DAW2-M12-VLM-TATTOO/posts/herramientas_lenguajes_frameworks_utilizados/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Symfony: Backend&lt;/li&gt;
+&lt;li&gt;MySQL: Base de dades&lt;/li&gt;
+&lt;li&gt;Frontend: HTML + CSS + JS
+Projecte&lt;/li&gt;
+&lt;li&gt;Documentació: Generador de pàgines estàtiques&lt;/li&gt;
+&lt;li&gt;Presentació: Webslides&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Objetivos generales</title>
+      <link>https://ies-jaume-balmes.github.io/2020-21-DAW2-M12-VLM-TATTOO/posts/objetivos_generales/</link>
+      <pubDate>Wed, 12 May 2021 16:37:48 +0200</pubDate>
+      
+      <guid>https://ies-jaume-balmes.github.io/2020-21-DAW2-M12-VLM-TATTOO/posts/objetivos_generales/</guid>
+      <description>&lt;p&gt;BACKEND&lt;/p&gt;
+&lt;p&gt;Hemos instalado el Symfony y dibujando las BBDD en el Wirefrime. A final de semana ya habiamos creado un login con las clase Cliente&lt;/p&gt;
+&lt;p&gt;FRONTEND
+Hemos dibujado de como nos gustaria que fuera la plantilla base de HTML y toda la estructura que conllevaran todas las paginas.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
