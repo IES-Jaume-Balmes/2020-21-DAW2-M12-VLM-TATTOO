@@ -371,3 +371,8 @@ d69bcd,::1,GET,http://localhost:8000/calendari,1620837247,,200
 a352ab,::1,GET,http://localhost:8000/,1620837391,,200
 7a223c,::1,GET,http://localhost:8000/style/bootstrap.min.css.map,1620837415,a47f9a,404
 a47f9a,::1,GET,http://localhost:8000/style/bootstrap.min.css.map,1620837415,,404
+3929a7,::1,GET,http://localhost:8000/calendari,1620837708,,200
+50c46c,::1,GET,http://localhost:8000/,1620838103,,200
+f21138,::1,GET,http://localhost:8000/login,1620840029,,200
+49d3ad,::1,GET,http://localhost:8000/cliente,1620840198,,200
+874765,::1,GET,http://localhost:8000/cliente,1620840225,,200

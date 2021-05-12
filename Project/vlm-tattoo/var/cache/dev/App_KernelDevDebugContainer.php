@@ -16,6 +16,6 @@ if (!\class_exists(App_KernelDevDebugContainer::class, false)) {
 
 return new \ContainerBTwyJaM\App_KernelDevDebugContainer([
     'container.build_hash' => 'BTwyJaM',
-    'container.build_id' => 'c2183024',
-    'container.build_time' => 1620834736,
+    'container.build_id' => 'c8e86d32',
+    'container.build_time' => 1620837707,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerBTwyJaM');
