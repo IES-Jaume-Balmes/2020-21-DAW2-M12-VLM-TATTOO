@@ -18,8 +18,11 @@ return [
     'calendari' => [[], ['_controller' => 'App\\Controller\\CalendariController::index'], [], [['text', '/calendari']], [], []],
     'cliente' => [[], ['_controller' => 'App\\Controller\\ClienteController::index'], [], [['text', '/cliente']], [], []],
     'dashboard' => [[], ['_controller' => 'App\\Controller\\DashboardController::index'], [], [['text', '/']], [], []],
+    'descripcion' => [[], ['_controller' => 'App\\Controller\\DescripcionController::index'], [], [['text', '/descripcion']], [], []],
     'portfolio' => [[], ['_controller' => 'App\\Controller\\PortfolioController::index'], [], [['text', '/portfolio']], [], []],
     'reserva' => [[], ['_controller' => 'App\\Controller\\ReservaController::index'], [], [['text', '/reserva']], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], []],
+    'tienda' => [[], ['_controller' => 'App\\Controller\\TiendaController::index'], [], [['text', '/tienda']], [], []],
+    'videos' => [[], ['_controller' => 'App\\Controller\\VideosController::index'], [], [['text', '/videos']], [], []],
 ];

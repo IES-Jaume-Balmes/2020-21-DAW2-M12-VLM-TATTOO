@@ -16,10 +16,13 @@ return [
         '/calendari' => [[['_route' => 'calendari', '_controller' => 'App\\Controller\\CalendariController::index'], null, null, null, false, false, null]],
         '/cliente' => [[['_route' => 'cliente', '_controller' => 'App\\Controller\\ClienteController::index'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'dashboard', '_controller' => 'App\\Controller\\DashboardController::index'], null, null, null, false, false, null]],
+        '/descripcion' => [[['_route' => 'descripcion', '_controller' => 'App\\Controller\\DescripcionController::index'], null, null, null, false, false, null]],
         '/portfolio' => [[['_route' => 'portfolio', '_controller' => 'App\\Controller\\PortfolioController::index'], null, null, null, false, false, null]],
         '/reserva' => [[['_route' => 'reserva', '_controller' => 'App\\Controller\\ReservaController::index'], null, null, null, false, false, null]],
         '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
+        '/tienda' => [[['_route' => 'tienda', '_controller' => 'App\\Controller\\TiendaController::index'], null, null, null, false, false, null]],
+        '/videos' => [[['_route' => 'videos', '_controller' => 'App\\Controller\\VideosController::index'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

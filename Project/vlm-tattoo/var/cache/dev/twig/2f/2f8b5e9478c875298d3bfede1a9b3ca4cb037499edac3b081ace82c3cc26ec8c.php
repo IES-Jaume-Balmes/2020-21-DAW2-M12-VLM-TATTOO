@@ -116,11 +116,8 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
 
         // line 17
         echo "
-    ";
-        // line 18
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\DumpExtension']->dump($this->env, $context, (isset($context["data"]) || array_key_exists("data", $context) ? $context["data"] : (function () { throw new RuntimeError('Variable "data" does not exist.', 18, $this->source); })()));
-        echo "
-    <div id=\"calendari\"></div>
+
+    <div id=\"calendari\" class=\"bg-white\"></div>
 
 ";
         
@@ -184,7 +181,7 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
 
     public function getDebugInfo()
     {
-        return array (  159 => 36,  145 => 24,  135 => 23,  121 => 18,  118 => 17,  108 => 16,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  156 => 36,  142 => 24,  132 => 23,  118 => 17,  108 => 16,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -206,8 +203,8 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
 
 {% block body %}
 
-    {{ dump(data) }}
-    <div id=\"calendari\"></div>
+
+    <div id=\"calendari\" class=\"bg-white\"></div>
 
 {% endblock %}
 
@@ -230,6 +227,6 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
     }
 </script>
 
-{% endblock %}", "calendari/index.html.twig", "C:\\Users\\polhm\\Desktop\\projecte_sym\\Projecte-V.2\\vlm-tattoo\\templates\\calendari\\index.html.twig");
+{% endblock %}", "calendari/index.html.twig", "D:\\xampp\\htdocs\\vlm-tattoo\\templates\\calendari\\index.html.twig");
     }
 }
