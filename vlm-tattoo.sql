@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-05-2021 a las 17:02:18
--- Versión del servidor: 10.4.14-MariaDB
+-- Tiempo de generación: 12-05-2021 a las 18:43:10
+-- Versión del servidor: 10.4.18-MariaDB
 -- Versión de PHP: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -62,6 +62,14 @@ CREATE TABLE `reserva` (
   `fecha_final` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Volcado de datos para la tabla `reserva`
+--
+
+INSERT INTO `reserva` (`id`, `talla`, `descripcion`, `deposito`, `tatuador_id`, `cliente_id`, `imagen`, `fecha_inicio`, `fecha_final`) VALUES
+(8, 'pequeño', 'tatuaje en el brazo', '10.00', 1, 6, 'img.jpg', '2021-05-12 10:00:00', '2021-05-12 12:00:00'),
+(9, 'grande', 'tatuaje en la espalda', '30.00', 1, 6, 'hola.jpg', '2021-05-11 20:22:18', '2021-05-11 21:22:18');
+
 -- --------------------------------------------------------
 
 --
@@ -76,6 +84,13 @@ CREATE TABLE `tatuador` (
   `dni` varchar(9) COLLATE utf8mb4_unicode_ci NOT NULL,
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Volcado de datos para la tabla `tatuador`
+--
+
+INSERT INTO `tatuador` (`id`, `nombre`, `apellidos`, `correo`, `dni`, `password`) VALUES
+(1, 'ignacio', 'vlm', 'ignaciovlm@gmail.com', '21739401A', 'ign123');
 
 --
 -- Índices para tablas volcadas
@@ -116,13 +131,13 @@ ALTER TABLE `cliente`
 -- AUTO_INCREMENT de la tabla `reserva`
 --
 ALTER TABLE `reserva`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `tatuador`
 --
 ALTER TABLE `tatuador`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Restricciones para tablas volcadas
