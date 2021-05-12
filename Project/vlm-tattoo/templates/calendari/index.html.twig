@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Calendari{% endblock %}
+
+{% block stylesheets %}
+<style>
+    #calendari{
+        width: 50%;
+        margin: auto;
+    }
+
+</style>
+
+{% endblock %}
+
+{% block body %}
+
+    {{ dump(data) }}
+    <div id="calendari"></div>
+
+{% endblock %}
+
+{% block javascripts %}
+<script>
+    window.onload = () => {
+       let calendariElt = document.querySelector("#calendari")
+        let calendari = new FullCalendar.Calendar(calendariElt,{
+            initialView: 'dayGridMonth',
+            locale:'esp',
+            timeZone: 'Europe/Barcelona',
+            headerToolbar: {
+                start: 'prev,next today',
+                center: 'title',
+                end: 'dayGridMonth,timeGridWeek'
+            },
+            events: {{ data|raw  }}
+        })
+        calendari.render()
+    }
+</script>
+
+{% endblock %}
