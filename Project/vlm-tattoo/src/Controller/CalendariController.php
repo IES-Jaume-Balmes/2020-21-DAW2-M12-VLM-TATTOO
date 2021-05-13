@@ -22,16 +22,25 @@ class CalendariController extends AbstractController
         $rdvs = [];
 
         foreach($events as $event){
-            $rdvs[] = [
+            $rdvs[] =  [
                 'id' => $event->getId(),
-                'tamano' => $event->getTalla(),
+                'talla' => $event->getTalla(),
+                'imatge' => $event->getImagen(),
+                'cliente_nombre' => $event->getCliente()->getNombre(),
+                'cliente_apellido' => $event->getCliente()->getApellidos(),
+                'cliente_telefono' => $event->getCliente()->getTelefono(),
+                'cliente_email' => $event->getCliente()->getEmail(),
                 'title' => $event->getDescripcion(),
                 'start' => $event->getFechaInicio()->format('Y-m-d H:i:s'),
                 'end' => $event->getFechaFinal()->format('Y-m-d H:i:s'),
-                'backgroundColor' => '#ffffff',
+                'backgroundColor' => '#429EC7',
+                'borderColor' => '#4270C7',
             ];
         }
+
         $data = json_encode($rdvs);
         return $this->render('calendari/index.html.twig', compact('data'));
+
     }
+
 }

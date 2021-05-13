@@ -90,7 +90,6 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
         echo "<style>
     #calendari{
         width: 50%;
-        margin: auto;
     }
 
 </style>
@@ -104,7 +103,7 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
 
     }
 
-    // line 16
+    // line 15
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -114,10 +113,27 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 17
+        // line 16
         echo "
-
-    <div id=\"calendari\" class=\"bg-white\"></div>
+    <div style=\"display: flex;justify-content: space-evenly\">
+        <div id=\"calendari\" class=\"bg-white\"></div>
+        <div class=\"card\" style=\"width: 18rem;\">
+            <img src=\"...\" class=\"card-img-top\" alt=\"...\">
+            <div class=\"card-body\">
+                <h5 class=\"card-title\" id=\"titol\"></h5>
+                <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class=\"list-group list-group-flush\">
+                <li class=\"list-group-item\" id=\"fecha_inicio\"></li>
+                <li class=\"list-group-item\" id=\"fecha_fin\"></li>
+            </ul>
+            <ul class=\"list-group list-group-flush\">
+                <li class=\"list-group-item\" id=\"cliente_nombre\"></li>
+                <li class=\"list-group-item\" id=\"cliente_email\"></li>
+                <li class=\"list-group-item\" id=\"cliente_telefono\"></li>
+            </ul>
+        </div>
+    </div>
 
 ";
         
@@ -128,7 +144,7 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
 
     }
 
-    // line 23
+    // line 39
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -138,23 +154,48 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 24
-        echo "<script>
+        // line 40
+        echo "
+<script>
     window.onload = () => {
        let calendariElt = document.querySelector(\"#calendari\")
         let calendari = new FullCalendar.Calendar(calendariElt,{
             initialView: 'dayGridMonth',
+            themeSystem: 'bootstrap',
             locale:'esp',
             timeZone: 'Europe/Barcelona',
             headerToolbar: {
-                start: 'prev,next today',
+                left: 'prev,next today',
                 center: 'title',
-                end: 'dayGridMonth,timeGridWeek'
+                right: 'dayGridMonth,timeGridWeek,list'
             },
+            buttonText: {
+                prev: '<',
+                next: '>',
+                today:'Hoy',
+                month:'Mes',
+                week:'Semana',
+                list:'Lista',
+            },
+            eventClick:function (info){
+                \$('#titol').html(info.event.title);
+                \$('#tamano').html(info.event._def.extendedProps.talla);
+                \$('#fecha_inicio').html(info.event.start);
+                \$('#fecha_fin').html(info.event.end);
+                \$('#cliente_nombre').html(info.event._def.extendedProps.cliente_apellido);
+                \$('#cliente_email').html(info.event._def.extendedProps.cliente_email);
+                \$('#cliente_telefono').html(info.event._def.extendedProps.cliente_telefono);
+
+                console.log(info.event._def.extendedProps.imatge);
+                console.log(info.event._def.extendedProps.cliente);
+
+            },
+
             events: ";
-        // line 36
-        echo (isset($context["data"]) || array_key_exists("data", $context) ? $context["data"] : (function () { throw new RuntimeError('Variable "data" does not exist.', 36, $this->source); })());
+        // line 76
+        echo (isset($context["data"]) || array_key_exists("data", $context) ? $context["data"] : (function () { throw new RuntimeError('Variable "data" does not exist.', 76, $this->source); })());
         echo "
+
         })
         calendari.render()
     }
@@ -181,7 +222,7 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
 
     public function getDebugInfo()
     {
-        return array (  156 => 36,  142 => 24,  132 => 23,  118 => 17,  108 => 16,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  196 => 76,  158 => 40,  148 => 39,  117 => 16,  107 => 15,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -194,7 +235,6 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
 <style>
     #calendari{
         width: 50%;
-        margin: auto;
     }
 
 </style>
@@ -203,30 +243,72 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
 
 {% block body %}
 
-
-    <div id=\"calendari\" class=\"bg-white\"></div>
+    <div style=\"display: flex;justify-content: space-evenly\">
+        <div id=\"calendari\" class=\"bg-white\"></div>
+        <div class=\"card\" style=\"width: 18rem;\">
+            <img src=\"...\" class=\"card-img-top\" alt=\"...\">
+            <div class=\"card-body\">
+                <h5 class=\"card-title\" id=\"titol\"></h5>
+                <p class=\"card-text\">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class=\"list-group list-group-flush\">
+                <li class=\"list-group-item\" id=\"fecha_inicio\"></li>
+                <li class=\"list-group-item\" id=\"fecha_fin\"></li>
+            </ul>
+            <ul class=\"list-group list-group-flush\">
+                <li class=\"list-group-item\" id=\"cliente_nombre\"></li>
+                <li class=\"list-group-item\" id=\"cliente_email\"></li>
+                <li class=\"list-group-item\" id=\"cliente_telefono\"></li>
+            </ul>
+        </div>
+    </div>
 
 {% endblock %}
 
 {% block javascripts %}
+
 <script>
     window.onload = () => {
        let calendariElt = document.querySelector(\"#calendari\")
         let calendari = new FullCalendar.Calendar(calendariElt,{
             initialView: 'dayGridMonth',
+            themeSystem: 'bootstrap',
             locale:'esp',
             timeZone: 'Europe/Barcelona',
             headerToolbar: {
-                start: 'prev,next today',
+                left: 'prev,next today',
                 center: 'title',
-                end: 'dayGridMonth,timeGridWeek'
+                right: 'dayGridMonth,timeGridWeek,list'
             },
+            buttonText: {
+                prev: '<',
+                next: '>',
+                today:'Hoy',
+                month:'Mes',
+                week:'Semana',
+                list:'Lista',
+            },
+            eventClick:function (info){
+                \$('#titol').html(info.event.title);
+                \$('#tamano').html(info.event._def.extendedProps.talla);
+                \$('#fecha_inicio').html(info.event.start);
+                \$('#fecha_fin').html(info.event.end);
+                \$('#cliente_nombre').html(info.event._def.extendedProps.cliente_apellido);
+                \$('#cliente_email').html(info.event._def.extendedProps.cliente_email);
+                \$('#cliente_telefono').html(info.event._def.extendedProps.cliente_telefono);
+
+                console.log(info.event._def.extendedProps.imatge);
+                console.log(info.event._def.extendedProps.cliente);
+
+            },
+
             events: {{ data|raw  }}
+
         })
         calendari.render()
     }
 </script>
 
-{% endblock %}", "calendari/index.html.twig", "D:\\xampp\\htdocs\\vlm-tattoo\\templates\\calendari\\index.html.twig");
+{% endblock %}", "calendari/index.html.twig", "C:\\Users\\polhm\\Desktop\\DAW2\\Projecte_Final\\2020-21-DAW2-M12-VLM-TATTOO\\Project\\vlm-tattoo\\templates\\calendari\\index.html.twig");
     }
 }

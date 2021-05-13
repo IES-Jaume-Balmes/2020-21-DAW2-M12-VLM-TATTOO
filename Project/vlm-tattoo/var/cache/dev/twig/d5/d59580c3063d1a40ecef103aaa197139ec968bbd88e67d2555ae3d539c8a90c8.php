@@ -172,6 +172,6 @@ class __TwigTemplate_af171c90ba6bac2874bf6d65c89b6b08260182cf12ed61f94b1da2caea0
     </div>
 </div>
 {% endblock %}
-", "reserva/index.html.twig", "D:\\xampp\\htdocs\\vlm-tattoo\\templates\\reserva\\index.html.twig");
+", "reserva/index.html.twig", "C:\\Users\\polhm\\Desktop\\DAW2\\Projecte_Final\\2020-21-DAW2-M12-VLM-TATTOO\\Project\\vlm-tattoo\\templates\\reserva\\index.html.twig");
     }
 }
