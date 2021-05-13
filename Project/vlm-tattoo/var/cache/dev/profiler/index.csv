@@ -494,3 +494,6 @@ c0d1cb,::1,GET,http://localhost:8000/success,1620930272,,200
 eabf96,::1,POST,http://localhost:8000/create-checkout-session,1620930281,,200
 06d20f,::1,POST,http://localhost:8000/create-checkout-session,1620930321,,200
 b07900,::1,GET,http://localhost:8000/success,1620930344,,200
+ed0a01,::1,GET,http://localhost:8000/,1620930826,,200
+7be9b9,::1,GET,http://localhost:8000/calendari,1620930836,,200
+e712d3,::1,GET,http://localhost:8000/calendari,1620930858,,200

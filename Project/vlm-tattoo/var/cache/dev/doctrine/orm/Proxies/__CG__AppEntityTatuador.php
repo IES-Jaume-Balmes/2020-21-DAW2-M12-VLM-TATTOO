@@ -66,10 +66,10 @@ class Tatuador extends \App\Entity\Tatuador implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'nombre', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'apellidos', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'correo', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'dni', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'password', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'reservas'];
+            return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'nombre', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'apellidos', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'email', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'dni', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'password', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'reservas', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'roles'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'nombre', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'apellidos', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'correo', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'dni', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'password', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'reservas'];
+        return ['__isInitialized__', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'id', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'nombre', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'apellidos', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'email', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'dni', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'password', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'reservas', '' . "\0" . 'App\\Entity\\Tatuador' . "\0" . 'roles'];
     }
 
     /**
@@ -194,95 +194,62 @@ class Tatuador extends \App\Entity\Tatuador implements \Doctrine\ORM\Proxy\Proxy
     /**
      * {@inheritDoc}
      */
-    public function getNombre(): ?string
+    public function getEmail(): ?string
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getNombre', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getEmail', []);
 
-        return parent::getNombre();
+        return parent::getEmail();
     }
 
     /**
      * {@inheritDoc}
      */
-    public function setNombre(string $nombre): \App\Entity\Tatuador
+    public function setEmail(string $email): \App\Entity\Tatuador
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setNombre', [$nombre]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setEmail', [$email]);
 
-        return parent::setNombre($nombre);
+        return parent::setEmail($email);
     }
 
     /**
      * {@inheritDoc}
      */
-    public function getApellidos(): ?string
+    public function getUsername(): string
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getApellidos', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getUsername', []);
 
-        return parent::getApellidos();
+        return parent::getUsername();
     }
 
     /**
      * {@inheritDoc}
      */
-    public function setApellidos(string $apellidos): \App\Entity\Tatuador
+    public function getRoles(): array
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setApellidos', [$apellidos]);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getRoles', []);
 
-        return parent::setApellidos($apellidos);
+        return parent::getRoles();
     }
 
     /**
      * {@inheritDoc}
      */
-    public function getCorreo(): ?string
+    public function setRoles(array $roles): \App\Entity\Tatuador
     {
 
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getCorreo', []);
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setRoles', [$roles]);
 
-        return parent::getCorreo();
+        return parent::setRoles($roles);
     }
 
     /**
      * {@inheritDoc}
      */
-    public function setCorreo(string $correo): \App\Entity\Tatuador
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setCorreo', [$correo]);
-
-        return parent::setCorreo($correo);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getDni(): ?string
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getDni', []);
-
-        return parent::getDni();
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function setDni(string $dni): \App\Entity\Tatuador
-    {
-
-        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setDni', [$dni]);
-
-        return parent::setDni($dni);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    public function getPassword(): ?string
+    public function getPassword(): string
     {
 
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'getPassword', []);
@@ -299,6 +266,116 @@ class Tatuador extends \App\Entity\Tatuador implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setPassword', [$password]);
 
         return parent::setPassword($password);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getNombre()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getNombre', []);
+
+        return parent::getNombre();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setNombre($nombre): void
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setNombre', [$nombre]);
+
+        parent::setNombre($nombre);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getApellidos()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getApellidos', []);
+
+        return parent::getApellidos();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setApellidos($apellidos): void
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setApellidos', [$apellidos]);
+
+        parent::setApellidos($apellidos);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getDni()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getDni', []);
+
+        return parent::getDni();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setDni($dni): void
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setDni', [$dni]);
+
+        parent::setDni($dni);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getReservas()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getReservas', []);
+
+        return parent::getReservas();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setReservas($reservas): void
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setReservas', [$reservas]);
+
+        parent::setReservas($reservas);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getSalt(): ?string
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getSalt', []);
+
+        return parent::getSalt();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function eraseCredentials()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'eraseCredentials', []);
+
+        return parent::eraseCredentials();
     }
 
 }
