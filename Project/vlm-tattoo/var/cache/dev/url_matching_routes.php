@@ -17,6 +17,7 @@ return [
         '/cliente' => [[['_route' => 'cliente', '_controller' => 'App\\Controller\\ClienteController::index'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'dashboard', '_controller' => 'App\\Controller\\DashboardController::index'], null, null, null, false, false, null]],
         '/descripcion' => [[['_route' => 'descripcion', '_controller' => 'App\\Controller\\DescripcionController::index'], null, null, null, false, false, null]],
+        '/pagamiento' => [[['_route' => 'pagamiento', '_controller' => 'App\\Controller\\PagamientoController::index'], null, null, null, false, false, null]],
         '/portfolio' => [[['_route' => 'portfolio', '_controller' => 'App\\Controller\\PortfolioController::index'], null, null, null, false, false, null]],
         '/reserva' => [[['_route' => 'reserva', '_controller' => 'App\\Controller\\ReservaController::index'], null, null, null, false, false, null]],
         '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],

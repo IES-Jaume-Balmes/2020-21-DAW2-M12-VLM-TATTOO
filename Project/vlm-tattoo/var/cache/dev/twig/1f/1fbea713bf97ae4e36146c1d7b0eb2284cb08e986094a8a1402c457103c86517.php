@@ -95,18 +95,6 @@ class __TwigTemplate_fc18a34446a06e1f23f418c1b84123e45cfac96b5a55cd74e0f6e713dff
         // line 12
         echo twig_escape_filter($this->env, (isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 12, $this->source); })()), "html", null, true);
         echo "! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href=\"";
-        // line 16
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("D:/xampp/htdocs/vlm-tattoo/src/Controller/TiendaController.php", 0), "html", null, true);
-        echo "\">src/Controller/TiendaController.php</a></code></li>
-        <li>Your template at <code><a href=\"";
-        // line 17
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\CodeExtension']->getFileLink("D:/xampp/htdocs/vlm-tattoo/templates/tienda/index.html.twig", 0), "html", null, true);
-        echo "\">templates/tienda/index.html.twig</a></code></li>
-    </ul>
 </div>
 ";
         
@@ -129,7 +117,7 @@ class __TwigTemplate_fc18a34446a06e1f23f418c1b84123e45cfac96b5a55cd74e0f6e713dff
 
     public function getDebugInfo()
     {
-        return array (  107 => 17,  103 => 16,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -146,14 +134,8 @@ class __TwigTemplate_fc18a34446a06e1f23f418c1b84123e45cfac96b5a55cd74e0f6e713dff
 
 <div class=\"example-wrapper\">
     <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href=\"{{ 'D:/xampp/htdocs/vlm-tattoo/src/Controller/TiendaController.php'|file_link(0) }}\">src/Controller/TiendaController.php</a></code></li>
-        <li>Your template at <code><a href=\"{{ 'D:/xampp/htdocs/vlm-tattoo/templates/tienda/index.html.twig'|file_link(0) }}\">templates/tienda/index.html.twig</a></code></li>
-    </ul>
 </div>
 {% endblock %}
-", "tienda/index.html.twig", "D:\\xampp\\htdocs\\vlm-tattoo\\templates\\tienda\\index.html.twig");
+", "tienda/index.html.twig", "C:\\Users\\david\\Desktop\\DAW\\M12\\2020-21-DAW2-M12-VLM-TATTOO\\Project\\vlm-tattoo\\templates\\tienda\\index.html.twig");
     }
 }

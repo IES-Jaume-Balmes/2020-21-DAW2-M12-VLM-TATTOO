@@ -656,3 +656,8 @@ dc9b82,::1,GET,http://localhost:8000/.$image.,1620916136,,404
 5d6175,::1,GET,http://localhost:8000/.$image.,1620916155,cf8131,404
 cf8131,::1,GET,http://localhost:8000/.$image.,1620916155,,404
 >>>>>>> 6ae457d271c7f3c314f2df70c39bf165840aa72f
+57ab11,::1,GET,http://localhost:8000/login,1620927795,,200
+196e3d,::1,GET,http://localhost:8000/pagamiento,1620927799,,200
+9eb59f,::1,GET,http://localhost:8000/pagamiento,1620928281,,200
+14b02d,::1,GET,http://localhost:8000/pagamiento,1620928316,,200
+2a549f,::1,GET,http://localhost:8000/pagamiento,1620928360,,200

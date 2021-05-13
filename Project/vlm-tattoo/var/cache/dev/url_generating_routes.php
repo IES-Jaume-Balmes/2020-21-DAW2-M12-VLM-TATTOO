@@ -19,6 +19,7 @@ return [
     'cliente' => [[], ['_controller' => 'App\\Controller\\ClienteController::index'], [], [['text', '/cliente']], [], []],
     'dashboard' => [[], ['_controller' => 'App\\Controller\\DashboardController::index'], [], [['text', '/']], [], []],
     'descripcion' => [[], ['_controller' => 'App\\Controller\\DescripcionController::index'], [], [['text', '/descripcion']], [], []],
+    'pagamiento' => [[], ['_controller' => 'App\\Controller\\PagamientoController::index'], [], [['text', '/pagamiento']], [], []],
     'portfolio' => [[], ['_controller' => 'App\\Controller\\PortfolioController::index'], [], [['text', '/portfolio']], [], []],
     'reserva' => [[], ['_controller' => 'App\\Controller\\ReservaController::index'], [], [['text', '/reserva']], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], []],
