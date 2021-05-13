@@ -1,11 +1,6 @@
 <?php
 
-<<<<<<< HEAD:Project/vlm-tattoo/var/cache/dev/ContainerR4ODFVb/getSecurity_Authentication_Provider_Guard_MainService.php
 namespace ContainerR4ODFVb;
-=======
-namespace ContainerHdy9UWs;
-
->>>>>>> 6ae457d271c7f3c314f2df70c39bf165840aa72f:Project/vlm-tattoo/var/cache/dev/ContainerHdy9UWs/getSecurity_Authentication_Provider_Guard_MainService.php
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\Exception\RuntimeException;

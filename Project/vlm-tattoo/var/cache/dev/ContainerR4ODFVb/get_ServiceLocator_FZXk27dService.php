@@ -1,11 +1,6 @@
 <?php
 
-<<<<<<< HEAD:Project/vlm-tattoo/var/cache/dev/ContainerR4ODFVb/get_ServiceLocator_FZXk27dService.php
 namespace ContainerR4ODFVb;
-=======
-namespace ContainerN3ePxNS;
-
->>>>>>> 6ae457d271c7f3c314f2df70c39bf165840aa72f:Project/vlm-tattoo/var/cache/dev/ContainerN3ePxNS/get_ServiceLocator_FZXk27dService.php
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\Exception\RuntimeException;

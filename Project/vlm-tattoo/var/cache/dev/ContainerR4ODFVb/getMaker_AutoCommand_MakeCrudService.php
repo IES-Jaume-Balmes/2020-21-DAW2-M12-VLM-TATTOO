@@ -1,11 +1,6 @@
 <?php
 
-<<<<<<< HEAD:Project/vlm-tattoo/var/cache/dev/ContainerR4ODFVb/getMaker_AutoCommand_MakeCrudService.php
 namespace ContainerR4ODFVb;
-=======
-namespace ContainerHdy9UWs;
-
->>>>>>> 6ae457d271c7f3c314f2df70c39bf165840aa72f:Project/vlm-tattoo/var/cache/dev/ContainerHdy9UWs/getMaker_AutoCommand_MakeCrudService.php
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\Exception\RuntimeException;
