@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-05-2021 a las 18:43:10
--- Versión del servidor: 10.4.18-MariaDB
+-- Tiempo de generación: 13-05-2021 a las 19:38:53
+-- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -42,7 +42,7 @@ CREATE TABLE `cliente` (
 --
 
 INSERT INTO `cliente` (`id`, `nombre`, `apellidos`, `telefono`, `password`, `email`, `roles`) VALUES
-(6, 'admin', 'admin', 0, '$argon2id$v=19$m=65536,t=4,p=1$RWU1Ry5iT0pkMG9EZ0VEdg$KcB/n1M4HppVppFdbTHxtg67izG50Jg74724+DIIX74', 'admin@admin.es', '[\"Cliente\"]');
+(6, 'prueba', 'prueba', 0, '$argon2id$v=19$m=65536,t=4,p=1$RWU1Ry5iT0pkMG9EZ0VEdg$KcB/n1M4HppVppFdbTHxtg67izG50Jg74724+DIIX74', 'prueba@prueba.es', '[\"Cliente\"]');
 
 -- --------------------------------------------------------
 
@@ -68,7 +68,8 @@ CREATE TABLE `reserva` (
 
 INSERT INTO `reserva` (`id`, `talla`, `descripcion`, `deposito`, `tatuador_id`, `cliente_id`, `imagen`, `fecha_inicio`, `fecha_final`) VALUES
 (8, 'pequeño', 'tatuaje en el brazo', '10.00', 1, 6, 'img.jpg', '2021-05-12 10:00:00', '2021-05-12 12:00:00'),
-(9, 'grande', 'tatuaje en la espalda', '30.00', 1, 6, 'hola.jpg', '2021-05-11 20:22:18', '2021-05-11 21:22:18');
+(9, 'grande', 'tatuaje en la espalda', '30.00', 1, 6, 'hola.jpg', '2021-05-11 20:22:18', '2021-05-11 21:22:18'),
+(10, 'Grande', '1,2 en modo diablo', '0.00', NULL, 6, 'ignacio-609c1e05a5c2a.jpg', '2016-01-01 00:00:00', '2016-01-01 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -80,17 +81,19 @@ CREATE TABLE `tatuador` (
   `id` int(11) NOT NULL,
   `nombre` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `apellidos` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `correo` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `dni` varchar(9) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(180) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `roles` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin NOT NULL CHECK (json_valid(`roles`))
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `tatuador`
 --
 
-INSERT INTO `tatuador` (`id`, `nombre`, `apellidos`, `correo`, `dni`, `password`) VALUES
-(1, 'ignacio', 'vlm', 'ignaciovlm@gmail.com', '21739401A', 'ign123');
+INSERT INTO `tatuador` (`id`, `nombre`, `apellidos`, `dni`, `password`, `email`, `roles`) VALUES
+(1, 'ignacio', 'vlm', '21739401A', 'ign123', '', ''),
+(2, 'admin', 'admin', '00000000W', '$argon2id$v=19$m=65536,t=4,p=1$UFllVWtYbWpvcS5IY3hqbg$aSX0BwK04JxV4w1X6XVV0eJfLdVQkBQyxH4hIty/nD8', 'admin@admin.es', '[\"Tatuador\"]');
 
 --
 -- Índices para tablas volcadas
@@ -115,7 +118,8 @@ ALTER TABLE `reserva`
 -- Indices de la tabla `tatuador`
 --
 ALTER TABLE `tatuador`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `UNIQ_5152B3D8E7927C74` (`email`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -131,13 +135,13 @@ ALTER TABLE `cliente`
 -- AUTO_INCREMENT de la tabla `reserva`
 --
 ALTER TABLE `reserva`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `tatuador`
 --
 ALTER TABLE `tatuador`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Restricciones para tablas volcadas

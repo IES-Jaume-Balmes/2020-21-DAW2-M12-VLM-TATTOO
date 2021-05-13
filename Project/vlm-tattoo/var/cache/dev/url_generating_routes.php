@@ -23,6 +23,7 @@ return [
     'reserva' => [[], ['_controller' => 'App\\Controller\\ReservaController::index'], [], [['text', '/reserva']], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], []],
+    'tatuador' => [[], ['_controller' => 'App\\Controller\\TatuadorController::index'], [], [['text', '/tatuador']], [], []],
     'tienda' => [[], ['_controller' => 'App\\Controller\\TiendaController::index'], [], [['text', '/tienda']], [], []],
     'videos' => [[], ['_controller' => 'App\\Controller\\VideosController::index'], [], [['text', '/videos']], [], []],
 ];
