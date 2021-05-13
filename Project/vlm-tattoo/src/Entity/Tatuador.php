@@ -4,11 +4,12 @@ namespace App\Entity;
 
 use App\Repository\TatuadorRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass=TatuadorRepository::class)
  */
-class Tatuador
+class Tatuador implements UserInterface
 {
     /**
      * @ORM\Id
@@ -28,9 +29,9 @@ class Tatuador
     private $apellidos;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=180, unique=true)
      */
-    private $correo;
+    private $email;
 
     /**
      * @ORM\Column(type="string", length=9)
@@ -38,7 +39,8 @@ class Tatuador
     private $dni;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @var string The hashed password
+     * @ORM\Column(type="string")
      */
     private $password;
 
@@ -47,62 +49,71 @@ class Tatuador
      */
     private $reservas;
 
+    /**
+     * @ORM\Column(type="json")
+     */
+    private $roles = [];
+
+    /**
+     * Cliente constructor.
+     */
+    public function __construct()
+    {
+        $this->roles = ['Tatuador'];
+    }
+
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getNombre(): ?string
+    public function getEmail(): ?string
     {
-        return $this->nombre;
+        return $this->email;
     }
 
-    public function setNombre(string $nombre): self
+    public function setEmail(string $email): self
     {
-        $this->nombre = $nombre;
+        $this->email = $email;
 
         return $this;
     }
 
-    public function getApellidos(): ?string
+    /**
+     * A visual identifier that represents this user.
+     *
+     * @see UserInterface
+     */
+    public function getUsername(): string
     {
-        return $this->apellidos;
+        return (string) $this->email;
     }
 
-    public function setApellidos(string $apellidos): self
+    /**
+     * @see UserInterface
+     */
+    public function getRoles(): array
     {
-        $this->apellidos = $apellidos;
+        $roles = $this->roles;
+        // guarantee every user at least has ROLE_USER
+        $roles[] = 'Tatuador';
+
+        return array_unique($roles);
+    }
+
+    public function setRoles(array $roles): self
+    {
+        $this->roles = $roles;
 
         return $this;
     }
 
-    public function getCorreo(): ?string
+    /**
+     * @see UserInterface
+     */
+    public function getPassword(): string
     {
-        return $this->correo;
-    }
-
-    public function setCorreo(string $correo): self
-    {
-        $this->correo = $correo;
-
-        return $this;
-    }
-
-    public function getDni(): ?string
-    {
-        return $this->dni;
-    }
-
-    public function setDni(string $dni): self
-    {
-        $this->dni = $dni;
-
-        return $this;
-    }
-
-    public function getPassword(): ?string
-    {
-        return $this->password;
+        return (string) $this->password;
     }
 
     public function setPassword(string $password): self
@@ -110,5 +121,89 @@ class Tatuador
         $this->password = $password;
 
         return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    /**
+     * @param mixed $nombre
+     */
+    public function setNombre($nombre): void
+    {
+        $this->nombre = $nombre;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getApellidos()
+    {
+        return $this->apellidos;
+    }
+
+    /**
+     * @param mixed $apellidos
+     */
+    public function setApellidos($apellidos): void
+    {
+        $this->apellidos = $apellidos;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDni()
+    {
+        return $this->dni;
+    }
+
+    /**
+     * @param mixed $dni
+     */
+    public function setDni($dni): void
+    {
+        $this->dni = $dni;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getReservas()
+    {
+        return $this->reservas;
+    }
+
+    /**
+     * @param mixed $reservas
+     */
+    public function setReservas($reservas): void
+    {
+        $this->reservas = $reservas;
+    }
+
+    /**
+     * Returning a salt is only needed, if you are not using a modern
+     * hashing algorithm (e.g. bcrypt or sodium) in your security.yaml.
+     *
+     * @see UserInterface
+     */
+    public function getSalt(): ?string
+    {
+        return null;
+    }
+
+    /**
+     * @see UserInterface
+     */
+    public function eraseCredentials()
+    {
+        // If you store any temporary, sensitive data on the user, clear it here
+        // $this->plainPassword = null;
     }
 }

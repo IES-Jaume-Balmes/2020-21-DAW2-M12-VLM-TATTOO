@@ -28,6 +28,7 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
 
         $this->blocks = [
             'title' => [$this, 'block_title'],
+            'meta' => [$this, 'block_meta'],
             'stylesheets' => [$this, 'block_stylesheets'],
             'javascripts' => [$this, 'block_javascripts'],
             'body' => [$this, 'block_body'],
@@ -66,13 +67,18 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
         <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/main.min.css\" integrity=\"sha256-uq9PNlMzB+1h01Ij9cx7zeE2OR2pLAfRw3uUUOOPKdA=\" crossorigin=\"anonymous\">
         ";
         // line 18
-        $this->displayBlock('stylesheets', $context, $blocks);
+        $this->displayBlock('meta', $context, $blocks);
         // line 21
         echo "
         ";
         // line 22
-        $this->displayBlock('javascripts', $context, $blocks);
+        $this->displayBlock('stylesheets', $context, $blocks);
         // line 25
+        echo "
+        ";
+        // line 26
+        $this->displayBlock('javascripts', $context, $blocks);
+        // line 29
         echo "        <script src=\"https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/main.min.js\" integrity=\"sha256-ekrJn2FeZaiUFq99QswpQCUTME/HxaDfX7R8INzKJGE=\" crossorigin=\"anonymous\"></script>
         <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
         <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js\"></script>
@@ -80,6 +86,7 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
         <script type=\"text/javascript\" src=\"js/index.js\"></script>
         <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>
         <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx\" crossorigin=\"anonymous\"></script>
+        <script src=\"https://js.stripe.com/v3/\"></script>
     </head>
     <body>
     <div class=\"img_background\">
@@ -111,7 +118,7 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
                                 d=\"M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z\" />
                         <path fill-rule=\"evenodd\"
                               d=\"M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z\" />
-                    </svg> Register</a>
+                    </svg> Registrar</a>
                 </button>
             </div>
         </div>
@@ -147,9 +154,9 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
             </ul>
         </nav>
         ";
-        // line 98
+        // line 103
         $this->displayBlock('body', $context, $blocks);
-        // line 99
+        // line 104
         echo "    </div>
     </body>
 </html>
@@ -182,14 +189,14 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
     }
 
     // line 18
-    public function block_stylesheets($context, array $blocks = [])
+    public function block_meta($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "meta"));
 
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "meta"));
 
         // line 19
         echo "
@@ -203,14 +210,14 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
     }
 
     // line 22
-    public function block_javascripts($context, array $blocks = [])
+    public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 23
         echo "
@@ -223,7 +230,28 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
 
     }
 
-    // line 98
+    // line 26
+    public function block_javascripts($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
+
+        // line 27
+        echo "
+        ";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
+    // line 103
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -248,7 +276,7 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
 
     public function getDebugInfo()
     {
-        return array (  227 => 98,  216 => 23,  206 => 22,  195 => 19,  185 => 18,  166 => 10,  153 => 99,  151 => 98,  76 => 25,  74 => 22,  71 => 21,  69 => 18,  58 => 10,  47 => 1,);
+        return array (  255 => 103,  244 => 27,  234 => 26,  223 => 23,  213 => 22,  202 => 19,  192 => 18,  173 => 10,  160 => 104,  158 => 103,  82 => 29,  80 => 26,  77 => 25,  75 => 22,  72 => 21,  70 => 18,  59 => 10,  48 => 1,);
     }
 
     public function getSourceContext()
@@ -270,6 +298,10 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
         <link rel=\"shortcut icon\" href=\"./img/lgo_cabecera.png\">
         <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css\" integrity=\"sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2\" crossorigin=\"anonymous\">
         <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/main.min.css\" integrity=\"sha256-uq9PNlMzB+1h01Ij9cx7zeE2OR2pLAfRw3uUUOOPKdA=\" crossorigin=\"anonymous\">
+        {% block meta %}
+
+        {% endblock %}
+
         {% block stylesheets %}
 
         {% endblock %}
@@ -284,6 +316,7 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
         <script type=\"text/javascript\" src=\"js/index.js\"></script>
         <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>
         <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx\" crossorigin=\"anonymous\"></script>
+        <script src=\"https://js.stripe.com/v3/\"></script>
     </head>
     <body>
     <div class=\"img_background\">
@@ -315,7 +348,7 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
                                 d=\"M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z\" />
                         <path fill-rule=\"evenodd\"
                               d=\"M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z\" />
-                    </svg> Register</a>
+                    </svg> Registrar</a>
                 </button>
             </div>
         </div>
@@ -354,6 +387,10 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
     </div>
     </body>
 </html>
+<<<<<<< HEAD
 ", "base.html.twig", "C:\\Users\\polhm\\Desktop\\DAW2\\Projecte_Final\\2020-21-DAW2-M12-VLM-TATTOO\\Project\\vlm-tattoo\\templates\\base.html.twig");
+=======
+", "base.html.twig", "C:\\Users\\david\\Desktop\\DAW\\M12\\2020-21-DAW2-M12-VLM-TATTOO\\Project\\vlm-tattoo\\templates\\base.html.twig");
+>>>>>>> d7dce993441fa2f9670f74d744367596e8a412bb
     }
 }
