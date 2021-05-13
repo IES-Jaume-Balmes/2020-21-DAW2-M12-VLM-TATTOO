@@ -21,6 +21,7 @@ class ReservaController extends AbstractController
         $reserva = new Reserva();
         $form = $this->createForm(ReservaType::class, $reserva);
         $form->handleRequest($request);
+
         if($form->isSubmitted() && $form->isValid()){
             $file = $form->get('imagen')->getData();
 

@@ -1,11 +1,6 @@
 <?php
 
-<<<<<<< HEAD:Project/vlm-tattoo/var/cache/dev/ContainerR4ODFVb/getConsole_Command_ValidatorDebugService.php
 namespace ContainerR4ODFVb;
-=======
-namespace ContainerHdy9UWs;
-
->>>>>>> 6ae457d271c7f3c314f2df70c39bf165840aa72f:Project/vlm-tattoo/var/cache/dev/ContainerHdy9UWs/getConsole_Command_ValidatorDebugService.php
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\Exception\RuntimeException;
