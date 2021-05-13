@@ -86,6 +86,7 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
         <script type=\"text/javascript\" src=\"js/index.js\"></script>
         <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>
         <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx\" crossorigin=\"anonymous\"></script>
+        <script src=\"https://js.stripe.com/v3/\"></script>
     </head>
     <body>
     <div class=\"img_background\">
@@ -153,9 +154,9 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
             </ul>
         </nav>
         ";
-        // line 102
-        $this->displayBlock('body', $context, $blocks);
         // line 103
+        $this->displayBlock('body', $context, $blocks);
+        // line 104
         echo "    </div>
     </body>
 </html>
@@ -250,7 +251,7 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
 
     }
 
-    // line 102
+    // line 103
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -275,7 +276,7 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
 
     public function getDebugInfo()
     {
-        return array (  254 => 102,  243 => 27,  233 => 26,  222 => 23,  212 => 22,  201 => 19,  191 => 18,  172 => 10,  159 => 103,  157 => 102,  82 => 29,  80 => 26,  77 => 25,  75 => 22,  72 => 21,  70 => 18,  59 => 10,  48 => 1,);
+        return array (  255 => 103,  244 => 27,  234 => 26,  223 => 23,  213 => 22,  202 => 19,  192 => 18,  173 => 10,  160 => 104,  158 => 103,  82 => 29,  80 => 26,  77 => 25,  75 => 22,  72 => 21,  70 => 18,  59 => 10,  48 => 1,);
     }
 
     public function getSourceContext()
@@ -315,6 +316,7 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
         <script type=\"text/javascript\" src=\"js/index.js\"></script>
         <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\" integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\" crossorigin=\"anonymous\"></script>
         <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx\" crossorigin=\"anonymous\"></script>
+        <script src=\"https://js.stripe.com/v3/\"></script>
     </head>
     <body>
     <div class=\"img_background\">
@@ -385,6 +387,6 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
     </div>
     </body>
 </html>
-", "base.html.twig", "D:\\xampp\\htdocs\\vlm-tattoo\\templates\\base.html.twig");
+", "base.html.twig", "C:\\Users\\david\\Desktop\\DAW\\M12\\2020-21-DAW2-M12-VLM-TATTOO\\Project\\vlm-tattoo\\templates\\base.html.twig");
     }
 }

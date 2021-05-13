@@ -27,6 +27,7 @@ class __TwigTemplate_dc2037ba3d96d8299e016906cdcad6f40f77357e2ba6794cbca9026beb6
         $this->blocks = [
             'title' => [$this, 'block_title'],
             'body' => [$this, 'block_body'],
+            'javascripts' => [$this, 'block_javascripts'],
         ];
     }
 
@@ -99,7 +100,58 @@ class __TwigTemplate_dc2037ba3d96d8299e016906cdcad6f40f77357e2ba6794cbca9026beb6
     Paga Paga Paga!!!
     <button id=\"checkout-button\">Pagar</button>
 </div>
-";
+    ";
+        // line 17
+        $this->displayBlock('javascripts', $context, $blocks);
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
+    public function block_javascripts($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
+
+        // line 18
+        echo "        <script type=\"text/javascript\">
+            // Create an instance of the Stripe object with your publishable API key
+            var stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+            var checkoutButton = document.getElementById('checkout-button');
+
+            checkoutButton.addEventListener('click', function() {
+                // Create a new Checkout Session using the server-side endpoint you
+                // created in step 3.
+                fetch('/create-checkout-session', {
+                    method: 'POST',
+                })
+                    .then(function(response) {
+                        return response.json();
+                    })
+                    .then(function(session) {
+                        return stripe.redirectToCheckout({ sessionId: session.id });
+                    })
+                    .then(function(result) {
+                        // If `redirectToCheckout` fails due to a browser or network
+                        // error, you should display the localized error message to your
+                        // customer using `error.message`.
+                        if (result.error) {
+                            alert(result.error.message);
+                        }
+                    })
+                    .catch(function(error) {
+                        console.error('Error:', error);
+                    });
+            });
+        </script>
+        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -120,7 +172,7 @@ class __TwigTemplate_dc2037ba3d96d8299e016906cdcad6f40f77357e2ba6794cbca9026beb6
 
     public function getDebugInfo()
     {
-        return array (  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  124 => 18,  105 => 17,  97 => 12,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -141,6 +193,38 @@ class __TwigTemplate_dc2037ba3d96d8299e016906cdcad6f40f77357e2ba6794cbca9026beb6
     Paga Paga Paga!!!
     <button id=\"checkout-button\">Pagar</button>
 </div>
+    {% block javascripts %}
+        <script type=\"text/javascript\">
+            // Create an instance of the Stripe object with your publishable API key
+            var stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+            var checkoutButton = document.getElementById('checkout-button');
+
+            checkoutButton.addEventListener('click', function() {
+                // Create a new Checkout Session using the server-side endpoint you
+                // created in step 3.
+                fetch('/create-checkout-session', {
+                    method: 'POST',
+                })
+                    .then(function(response) {
+                        return response.json();
+                    })
+                    .then(function(session) {
+                        return stripe.redirectToCheckout({ sessionId: session.id });
+                    })
+                    .then(function(result) {
+                        // If `redirectToCheckout` fails due to a browser or network
+                        // error, you should display the localized error message to your
+                        // customer using `error.message`.
+                        if (result.error) {
+                            alert(result.error.message);
+                        }
+                    })
+                    .catch(function(error) {
+                        console.error('Error:', error);
+                    });
+            });
+        </script>
+        {% endblock %}
 {% endblock %}
 ", "pagamiento/index.html.twig", "C:\\Users\\david\\Desktop\\DAW\\M12\\2020-21-DAW2-M12-VLM-TATTOO\\Project\\vlm-tattoo\\templates\\pagamiento\\index.html.twig");
     }

@@ -474,3 +474,23 @@ e264b0,::1,GET,http://localhost:8000/tatuador,1620927139,6e110d,500
 a5e601,::1,POST,http://localhost:8000/tatuador,1620927380,,302
 b87c11,::1,GET,http://localhost:8000/tatuador,1620927381,,200
 >>>>>>> 70978b698f3aeb717e7dbaa33c4eccc1840bea9e
+f4607c,::1,GET,http://localhost:8000/create-checkout-session,1620929768,,200
+390e5e,::1,GET,http://localhost:8000/favicon.ico,1620929769,372b13,404
+372b13,::1,GET,http://localhost:8000/favicon.ico,1620929769,,404
+799632,::1,GET,http://localhost:8000/pagamiento,1620929971,,200
+833dc2,::1,GET,http://localhost:8000/style/bootstrap.min.css.map,1620929976,199c13,404
+199c13,::1,GET,http://localhost:8000/style/bootstrap.min.css.map,1620929976,,404
+a779d7,::1,POST,http://localhost:8000/create-checkout-session,1620929979,,200
+6dac03,::1,GET,http://localhost:8000/pagamiento,1620929986,,200
+f670e1,::1,GET,http://localhost:8000/style/bootstrap.min.css.map,1620929987,8f31fb,404
+8f31fb,::1,GET,http://localhost:8000/style/bootstrap.min.css.map,1620929987,,404
+ac9ddd,::1,POST,http://localhost:8000/create-checkout-session,1620930157,,200
+76f8d9,::1,GET,http://localhost:8000/success,1620930213,7431c4,500
+7431c4,::1,GET,http://localhost:8000/success,1620930213,,500
+6844ae,::1,GET,http://localhost:8000/success,1620930232,,200
+d79145,::1,GET,http://localhost:8000/pagamiento,1620930244,,200
+d6a509,::1,POST,http://localhost:8000/create-checkout-session,1620930247,,200
+c0d1cb,::1,GET,http://localhost:8000/success,1620930272,,200
+eabf96,::1,POST,http://localhost:8000/create-checkout-session,1620930281,,200
+06d20f,::1,POST,http://localhost:8000/create-checkout-session,1620930321,,200
+b07900,::1,GET,http://localhost:8000/success,1620930344,,200
