@@ -611,3 +611,10 @@ a02be9,::1,GET,http://localhost:8000/,1620843150,,200
 aede11,::1,POST,http://localhost:8000/reserva,1620844037,,302
 d26c4f,::1,GET,http://localhost:8000/,1620844038,,200
 >>>>>>> 01af84126da51e39267aae86b0d7fabd6f786c85
+405ee5,::1,GET,http://localhost:8000/,1620913770,,200
+320032,::1,GET,http://localhost:8000/calendari,1620913776,,200
+9a6d50,::1,GET,http://localhost:8000/style/bootstrap.min.css.map,1620913780,67c770,404
+67c770,::1,GET,http://localhost:8000/style/bootstrap.min.css.map,1620913780,,404
+cfb0d6,::1,GET,http://localhost:8000/,1620913801,,200
+44c22d,::1,GET,http://localhost:8000/style/bootstrap.min.css.map,1620913802,2f96c1,404
+2f96c1,::1,GET,http://localhost:8000/style/bootstrap.min.css.map,1620913802,,404
