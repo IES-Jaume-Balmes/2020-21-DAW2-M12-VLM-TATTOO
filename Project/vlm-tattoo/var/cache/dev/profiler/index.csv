@@ -618,3 +618,16 @@ d26c4f,::1,GET,http://localhost:8000/,1620844038,,200
 cfb0d6,::1,GET,http://localhost:8000/,1620913801,,200
 44c22d,::1,GET,http://localhost:8000/style/bootstrap.min.css.map,1620913802,2f96c1,404
 2f96c1,::1,GET,http://localhost:8000/style/bootstrap.min.css.map,1620913802,,404
+dcef3e,::1,GET,http://localhost:8000/,1620916039,,200
+340dea,::1,GET,http://localhost:8000/portfolio,1620916043,,200
+2cd820,::1,GET,http://localhost:8000/.$image.,1620916044,067fb2,404
+067fb2,::1,GET,http://localhost:8000/.$image.,1620916044,,404
+85ca56,::1,GET,http://localhost:8000/portfolio,1620916123,,200
+38ff89,::1,GET,http://localhost:8000/.$image.,1620916124,be68f7,404
+be68f7,::1,GET,http://localhost:8000/.$image.,1620916124,,404
+cfdf37,::1,GET,http://localhost:8000/portfolio,1620916135,,200
+fd3a10,::1,GET,http://localhost:8000/.$image.,1620916136,dc9b82,404
+dc9b82,::1,GET,http://localhost:8000/.$image.,1620916136,,404
+378208,::1,GET,http://localhost:8000/portfolio,1620916154,,200
+5d6175,::1,GET,http://localhost:8000/.$image.,1620916155,cf8131,404
+cf8131,::1,GET,http://localhost:8000/.$image.,1620916155,,404

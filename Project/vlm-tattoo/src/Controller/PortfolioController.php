@@ -11,7 +11,7 @@ class PortfolioController extends AbstractController
     #[Route('/portfolio', name: 'portfolio')]
     public function index(): Response
     {
-        return $this->render('portfolio/index.html.twig', [
+        return $this->render('portfolio/portfolio.php', [
             'controller_name' => 'PortfolioController',
         ]);
     }
