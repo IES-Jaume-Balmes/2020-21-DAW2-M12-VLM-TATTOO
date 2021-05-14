@@ -9,6 +9,10 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <h1>Hello {{ user_first_name }}! ✅</h1>
+    {% for image in images %}
+         <img src="{{ image }}">
+    {% endfor %}
+
 </div>
 {% endblock %}

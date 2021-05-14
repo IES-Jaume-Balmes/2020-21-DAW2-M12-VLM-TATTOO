@@ -13,7 +13,7 @@ return [
         '/_profiler/search_bar' => [[['_route' => '_profiler_search_bar', '_controller' => 'web_profiler.controller.profiler::searchBarAction'], null, null, null, false, false, null]],
         '/_profiler/phpinfo' => [[['_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'], null, null, null, false, false, null]],
         '/_profiler/open' => [[['_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'], null, null, null, false, false, null]],
-        '/calendari' => [[['_route' => 'calendari', '_controller' => 'App\\Controller\\CalendariController::index'], null, null, null, false, false, null]],
+        '/admin/calendari' => [[['_route' => 'calendari', '_controller' => 'App\\Controller\\CalendariController::index'], null, null, null, false, false, null]],
         '/cliente' => [[['_route' => 'cliente', '_controller' => 'App\\Controller\\ClienteController::index'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'dashboard', '_controller' => 'App\\Controller\\DashboardController::index'], null, null, null, false, false, null]],
         '/descripcion' => [[['_route' => 'descripcion', '_controller' => 'App\\Controller\\DescripcionController::index'], null, null, null, false, false, null]],

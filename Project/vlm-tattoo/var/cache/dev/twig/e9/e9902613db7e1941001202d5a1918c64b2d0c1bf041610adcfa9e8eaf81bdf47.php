@@ -93,8 +93,9 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
 <div class=\"example-wrapper\">
     <h1>Hello ";
         // line 12
-        echo twig_escape_filter($this->env, (isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 12, $this->source); })()), "html", null, true);
+        echo twig_escape_filter($this->env, (isset($context["user_first_name"]) || array_key_exists("user_first_name", $context) ? $context["user_first_name"] : (function () { throw new RuntimeError('Variable "user_first_name" does not exist.', 12, $this->source); })()), "html", null, true);
         echo "! ✅</h1>
+
 </div>
 ";
         
@@ -133,9 +134,10 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
 </style>
 
 <div class=\"example-wrapper\">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <h1>Hello {{ user_first_name }}! ✅</h1>
+
 </div>
 {% endblock %}
-", "portfolio/index.html.twig", "C:\\Users\\polhm\\Desktop\\DAW2\\Projecte_Final\\2020-21-DAW2-M12-VLM-TATTOO\\Project\\vlm-tattoo\\templates\\portfolio\\index.html.twig");
+", "portfolio/index.html.twig", "C:\\Users\\david\\Desktop\\DAW\\M12\\2020-21-DAW2-M12-VLM-TATTOO\\Project\\vlm-tattoo\\templates\\portfolio\\index.html.twig");
     }
 }

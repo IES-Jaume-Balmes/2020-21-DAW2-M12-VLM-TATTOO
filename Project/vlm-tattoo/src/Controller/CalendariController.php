@@ -14,7 +14,7 @@ use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 class CalendariController extends AbstractController
 {
     /**
-     * @Route("/calendari", name="calendari")
+     * @Route("/admin/calendari", name="calendari")
      */
     public function index(ReservaRepository $reserva){
 

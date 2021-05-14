@@ -92,6 +92,10 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
         width: 50%;
     }
 
+    .contenidor{
+        
+    }
+
 </style>
 
 ";
@@ -103,7 +107,7 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
 
     }
 
-    // line 15
+    // line 19
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -113,9 +117,9 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 16
+        // line 20
         echo "
-    <div style=\"display: flex;justify-content: space-evenly\">
+    <div class=\"contenidor\" style=\"display: flex;justify-content: space-evenly\">
         <div id=\"calendari\" class=\"bg-white\"></div>
         <div class=\"card\" style=\"width: 18rem;\">
             <img src=\"...\" class=\"card-img-top\" alt=\"...\">
@@ -144,7 +148,7 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
 
     }
 
-    // line 39
+    // line 43
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -154,7 +158,7 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 40
+        // line 44
         echo "
 <script>
     window.onload = () => {
@@ -192,8 +196,8 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
             },
 
             events: ";
-        // line 76
-        echo (isset($context["data"]) || array_key_exists("data", $context) ? $context["data"] : (function () { throw new RuntimeError('Variable "data" does not exist.', 76, $this->source); })());
+        // line 80
+        echo (isset($context["data"]) || array_key_exists("data", $context) ? $context["data"] : (function () { throw new RuntimeError('Variable "data" does not exist.', 80, $this->source); })());
         echo "
 
         })
@@ -222,7 +226,7 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
 
     public function getDebugInfo()
     {
-        return array (  196 => 76,  158 => 40,  148 => 39,  117 => 16,  107 => 15,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  200 => 80,  162 => 44,  152 => 43,  121 => 20,  111 => 19,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -237,13 +241,17 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
         width: 50%;
     }
 
+    .contenidor{
+        
+    }
+
 </style>
 
 {% endblock %}
 
 {% block body %}
 
-    <div style=\"display: flex;justify-content: space-evenly\">
+    <div class=\"contenidor\" style=\"display: flex;justify-content: space-evenly\">
         <div id=\"calendari\" class=\"bg-white\"></div>
         <div class=\"card\" style=\"width: 18rem;\">
             <img src=\"...\" class=\"card-img-top\" alt=\"...\">
@@ -309,6 +317,6 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
     }
 </script>
 
-{% endblock %}", "calendari/index.html.twig", "C:\\Users\\polhm\\Desktop\\DAW2\\Projecte_Final\\2020-21-DAW2-M12-VLM-TATTOO\\Project\\vlm-tattoo\\templates\\calendari\\index.html.twig");
+{% endblock %}", "calendari/index.html.twig", "C:\\Users\\david\\Desktop\\DAW\\M12\\2020-21-DAW2-M12-VLM-TATTOO\\Project\\vlm-tattoo\\templates\\calendari\\index.html.twig");
     }
 }

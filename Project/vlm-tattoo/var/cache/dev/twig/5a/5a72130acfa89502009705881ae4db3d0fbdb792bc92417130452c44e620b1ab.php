@@ -136,6 +136,6 @@ class __TwigTemplate_5a29d61cdab485e292cfdc596f0dcecf50d94eafa478b0c9f6edac376d2
     <h1>{{ controller_name }}! ✅</h1>
 </div>
 {% endblock %}
-", "dashboard/index.html.twig", "C:\\Users\\polhm\\Desktop\\DAW2\\Projecte_Final\\2020-21-DAW2-M12-VLM-TATTOO\\Project\\vlm-tattoo\\templates\\dashboard\\index.html.twig");
+", "dashboard/index.html.twig", "C:\\Users\\david\\Desktop\\DAW\\M12\\2020-21-DAW2-M12-VLM-TATTOO\\Project\\vlm-tattoo\\templates\\dashboard\\index.html.twig");
     }
 }
