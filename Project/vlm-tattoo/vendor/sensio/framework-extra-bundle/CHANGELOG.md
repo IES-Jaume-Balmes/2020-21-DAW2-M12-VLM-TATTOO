@@ -1,16 +1,6 @@
 CHANGELOG
 =========
 
-6.1
----
-
- * Add support for PHP 8 attributes
-
-6.0
----
-
- * Remove PSR-7 support
-
 5.6
 ---
 
