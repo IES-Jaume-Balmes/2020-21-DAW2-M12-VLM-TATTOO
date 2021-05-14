@@ -11,7 +11,6 @@ class PortfolioController extends AbstractController
     #[Route('/portfolio', name: 'portfolio')]
     public function index(): Response
     {
-<<<<<<< HEAD
         // ...
 
 
@@ -32,10 +31,13 @@ class PortfolioController extends AbstractController
         $dirint->close();
 
         // the template path is the relative file path from `templates/`
-=======
->>>>>>> 8e364048dfe7aca3c6aba07233dabd335d627957
         return $this->render('portfolio/index.html.twig', [
-            'controller_name' => 'PortfolioController',
+
+            'images' => $images,
+
+
         ]);
+
     }
+
 }
