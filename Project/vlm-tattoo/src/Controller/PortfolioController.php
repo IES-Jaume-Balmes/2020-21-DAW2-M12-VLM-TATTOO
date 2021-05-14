@@ -16,8 +16,8 @@ class PortfolioController extends AbstractController
 
         // get the user information and notifications somehow
         $userFirstName = 'david';
-        $webPath = $this->get('kernel')->getProjectDir() . '/public/';
-        $directory= $webPath.'/img';
+        //$webPath = $this->get('kernel')->getProjectDir() . '/public/';
+        $directory= 'img/';
         $dirint = dir($directory);
         $images = [];
 
