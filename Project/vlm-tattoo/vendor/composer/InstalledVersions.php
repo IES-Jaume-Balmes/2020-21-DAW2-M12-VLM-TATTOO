@@ -27,24 +27,24 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => 'dev-main',
-    'version' => 'dev-main',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => '453ebdb3fc12e8564488ad9f17f6330f53b6ebb5',
+    'reference' => 'aea0a3709287421c10fe8ab98a6f15f97be8cbda',
     'name' => '__root__',
   ),
   'versions' => 
   array (
     '__root__' => 
     array (
-      'pretty_version' => 'dev-main',
-      'version' => 'dev-main',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => '453ebdb3fc12e8564488ad9f17f6330f53b6ebb5',
+      'reference' => 'aea0a3709287421c10fe8ab98a6f15f97be8cbda',
     ),
     'composer/package-versions-deprecated' => 
     array (
@@ -414,21 +414,12 @@ private static $installed = array (
     ),
     'sensio/framework-extra-bundle' => 
     array (
-      'pretty_version' => 'v6.1.2',
-      'version' => '6.1.2.0',
+      'pretty_version' => 'v5.6.1',
+      'version' => '5.6.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '676262b7a65a1033befbcf59e180d072df7504b6',
-    ),
-    'stripe/stripe-php' => 
-    array (
-      'pretty_version' => 'v7.78.0',
-      'version' => '7.78.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '6ec33fa8e9de2322be93d28dfd685661c67ca549',
+      'reference' => '430d14c01836b77c28092883d195a43ce413ee32',
     ),
     'symfony/asset' => 
     array (
@@ -705,12 +696,12 @@ private static $installed = array (
     ),
     'symfony/maker-bundle' => 
     array (
-      'pretty_version' => 'v1.31.1',
-      'version' => '1.31.1.0',
+      'pretty_version' => 'v1.30.2',
+      'version' => '1.30.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => '4f57a44cef0b4555043160b8bf223fcde8a7a59a',
+      'reference' => 'a395a85aa4ded6c1fa3da118d60329b64b6c2acd',
     ),
     'symfony/mime' => 
     array (
