@@ -3,14 +3,34 @@
 {% block title %}Calendari{% endblock %}
 
 {% block stylesheets %}
+
 <style>
-    #calendari{
-        width: 50%;
+    .contenidor{
+        padding: 1% 0 1% 0;
     }
 
-    .contenidor{
-        
+    #calendari{
+        padding: 1%;
+        width: 50%;
+        border-radius: 2%;
     }
+    .card-img-top{
+        max-height: 40%;
+    }
+
+    #EpicModal{
+        background-color: white;
+    }
+
+    #img2{
+        max-height: 50%;
+        max-width: 50%;
+    }
+
+    .card-cos{
+        margin: 10%;
+    }
+
 
 </style>
 
@@ -18,22 +38,52 @@
 
 {% block body %}
 
+
+    <!-- Calendari i Card -->
     <div class="contenidor" style="display: flex;justify-content: space-evenly">
         <div id="calendari" class="bg-white"></div>
         <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title" id="titol"></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#EpicModal">
+                Imagen
+            </button>
+
+            <div class="modal fade" id="EpicModal" tabindex="-1" aria-labelledby="EpicModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="EpicModalLabel">Imagen de referencia del cliente</h5>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <img id="img2" src="{{ asset('/img/logo.jpg') }}">
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card-cos">
+                <h5 class="card-title" >Cita</h5>
+                <p id="des" class="card-text">Descripción de la reserva</p>
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item" id="fecha_inicio"></li>
-                <li class="list-group-item" id="fecha_fin"></li>
+                <li class="list-group-item" id="fecha_inicio">Fecha de inicio</li>
+                <li class="list-group-item" id="fecha_fin">Fecha de finalización</li>
             </ul>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item" id="cliente_nombre"></li>
-                <li class="list-group-item" id="cliente_email"></li>
-                <li class="list-group-item" id="cliente_telefono"></li>
+                <li class="list-group-item"><strong>Información del cliente</strong></li>
+            </ul>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" id="cliente_nombre">Nombre del cliente</li>
+                <li class="list-group-item" id="cliente_email">Email del cliente</li>
+                <li class="list-group-item" id="cliente_telefono">Telefono del cliene</li>
             </ul>
         </div>
     </div>
@@ -41,6 +91,8 @@
 {% endblock %}
 
 {% block javascripts %}
+
+
 
 <script>
     window.onload = () => {
@@ -64,16 +116,26 @@
                 list:'Lista',
             },
             eventClick:function (info){
-                $('#titol').html(info.event.title);
+                $('#des').html(info.event._def.extendedProps.des);
                 $('#tamano').html(info.event._def.extendedProps.talla);
-                $('#fecha_inicio').html(info.event.start);
-                $('#fecha_fin').html(info.event.end);
+                var fecha=info.event.start;
+                var fecha_fin=info.event.end;
+
+                console.log(fecha);
+
+                console.log(fecha.toLocaleDateString());
+                console.log(fecha.toLocaleDateString()+" a las "+fecha.getUTCHours()+":"+fecha.getUTCMinutes());
+                $('#fecha_inicio').html(fecha.toLocaleDateString()+" a las "+fecha.getUTCHours()+":"+fecha.getUTCMinutes());
+                $('#fecha_fin').html(fecha_fin.toLocaleDateString()+" a las "+fecha_fin.getUTCHours()+":"+fecha_fin.getUTCMinutes());
                 $('#cliente_nombre').html(info.event._def.extendedProps.cliente_apellido);
                 $('#cliente_email').html(info.event._def.extendedProps.cliente_email);
                 $('#cliente_telefono').html(info.event._def.extendedProps.cliente_telefono);
+                //$('#img').src("/img/icon.png");
+                //$("#img").attr("src", {{ asset('/img/icon.png') }});
+                document.getElementById("img2").src = "/uploads/imagenes/"+ info.event.extendedProps.imatge;
 
-                console.log(info.event._def.extendedProps.imatge);
-                console.log(info.event._def.extendedProps.cliente);
+                //console.log(_def.extendedProps.imatge);
+                //console.log(info.event._def.extendedProps.cliente);
 
             },
 
@@ -82,6 +144,9 @@
         })
         calendari.render()
     }
+
+
+
 </script>
 
 {% endblock %}
