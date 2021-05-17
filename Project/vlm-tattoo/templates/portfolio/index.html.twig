@@ -4,10 +4,12 @@
 
 {% block stylesheets %}
     <link rel="stylesheet" href="style/portfolio.css" type="text/css">
+
 {% endblock %}
-{% block javascripts %}
-    <script type="text/javascript" src="js/portfolio.js"></script>
-{% endblock %}
+ {% block javascripts %}
+
+ {% endblock %}
+
 
 {% block body %}
 <style>
@@ -15,40 +17,70 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<<<<<<< HEAD
 
-    <!-- MAIN (Center website) -->
-
-
-    <h2>PORTFOLIO</h2>
-
-    <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filter('backwork')"> BackWork Soft</button>
-        <button class="btn" onclick="filterSelection('Full-Color')"> Full Color</button>
+    <div id="myBtnContainer" >
+        <div id="navbar">
+        <a class="active" href="javascript:void(0)">Home</a>
+        <a href="javascript:void(0)">News</a>
+        <a href="javascript:void(0)">Contact</a>
+        </div>
+        <button class="btn" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn"  onclick="filterSelection('tradicional')"> Tradicional</button>
+        <button class="btn" onclick="filterSelection('full-color')"> Full Color</button>
         <button class="btn" onclick="filterSelection('realismo')"> Realismo</button>
-        <button class="btn" onclick="filterSelection('Tradicional')"> Tradicional</button>
+        <button class="btn" onclick="filterSelection('backwoorksoft')"> BackWork Soft</button>
     </div>
-
-
 
 <div class="row">
 
-    <div class="Tradicional">
-        {% for imageTradicional in imagesTradicional %}
-            <div class="column Tradicional">
-                <div class="content">
-                    <img src="{{ asset(imageTradicional) }}" alt="Tradicional" style="width:100%">
-                </div>
-            </div>
+    <div class="gallery">
+        {% for img in imagesTradicional %}
+
+                <figure class="content img-portfolio {{ img['cat'] }}">
+                    <img class="gallery_img" src="{{ asset(img['src']) }}" alt="tradicional" style="width:100%" loading="lazy" >
+                </figure>
+
         {% endfor %}
     </div>
-=======
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
->>>>>>> 4fb2d0d2d86595367edc093f52a29628fe2b2939
 </div>
-    <!-- END MAIN -->
+    <script>
 
-    <div class="main"></div>
+        filterSelection("all")
+
+        function filterSelection(c) {
+            console.log(c)
+            x = document.getElementsByClassName("img-portfolio");
+            if (c === 'all') {
+                for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "block"
+                };
+                return
+            }
+            var x, i;
+            for (i = 0; i < x.length; i++) {
+                if (x[i].classList.contains(c))
+                    x[i].style.display = "block"
+                else
+                    x[i].style.display = "none"
+
+            };
+        }
+
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
+
+
+
 {% endblock %}

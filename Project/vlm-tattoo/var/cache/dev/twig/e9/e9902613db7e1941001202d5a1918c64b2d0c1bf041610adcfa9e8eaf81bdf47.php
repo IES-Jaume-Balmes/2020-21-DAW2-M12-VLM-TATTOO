@@ -88,6 +88,7 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
 
         // line 6
         echo "    <link rel=\"stylesheet\" href=\"style/portfolio.css\" type=\"text/css\">
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -97,7 +98,7 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
 
     }
 
-    // line 8
+    // line 9
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -107,9 +108,9 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 9
-        echo "    <script type=\"text/javascript\" src=\"js/portfolio.js\"></script>
-";
+        // line 10
+        echo "
+ ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -118,7 +119,7 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
 
     }
 
-    // line 12
+    // line 14
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -128,56 +129,94 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 13
+        // line 15
         echo "<style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
 
-    <!-- MAIN (Center website) -->
-
-
-    <h2>PORTFOLIO</h2>
-
-    <div id=\"myBtnContainer\">
-        <button class=\"btn active\" onclick=\"filterSelection('all')\"> Show all</button>
-        <button class=\"btn\" onclick=\"filter('backwork')\"> BackWork Soft</button>
-        <button class=\"btn\" onclick=\"filterSelection('Full-Color')\"> Full Color</button>
+    <div id=\"myBtnContainer\" >
+        <div id=\"navbar\">
+        <a class=\"active\" href=\"javascript:void(0)\">Home</a>
+        <a href=\"javascript:void(0)\">News</a>
+        <a href=\"javascript:void(0)\">Contact</a>
+        </div>
+        <button class=\"btn\" onclick=\"filterSelection('all')\"> Show all</button>
+        <button class=\"btn\"  onclick=\"filterSelection('tradicional')\"> Tradicional</button>
+        <button class=\"btn\" onclick=\"filterSelection('full-color')\"> Full Color</button>
         <button class=\"btn\" onclick=\"filterSelection('realismo')\"> Realismo</button>
-        <button class=\"btn\" onclick=\"filterSelection('Tradicional')\"> Tradicional</button>
+        <button class=\"btn\" onclick=\"filterSelection('backwoorksoft')\"> BackWork Soft</button>
     </div>
-    
-
 
 <div class=\"row\">
 
-    <div class=\"Tradicional\">
+    <div class=\"gallery\">
         ";
         // line 37
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["imagesTradicional"]) || array_key_exists("imagesTradicional", $context) ? $context["imagesTradicional"] : (function () { throw new RuntimeError('Variable "imagesTradicional" does not exist.', 37, $this->source); })()));
-        foreach ($context['_seq'] as $context["_key"] => $context["imageTradicional"]) {
+        foreach ($context['_seq'] as $context["_key"] => $context["img"]) {
             // line 38
-            echo "            <div class=\"column Tradicional\">
-                <div class=\"content\">
-                    <img src=\"";
+            echo "
+                <figure class=\"content img-portfolio ";
+            // line 39
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["img"], "cat", [], "array", false, false, false, 39), "html", null, true);
+            echo "\">
+                    <img class=\"gallery_img\" src=\"";
             // line 40
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl($context["imageTradicional"]), "html", null, true);
-            echo "\" alt=\"Tradicional\" style=\"width:100%\">
-                </div>
-            </div>
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, $context["img"], "src", [], "array", false, false, false, 40)), "html", null, true);
+            echo "\" alt=\"tradicional\" style=\"width:100%\" loading=\"lazy\" >
+                </figure>
+
         ";
         }
         $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['imageTradicional'], $context['_parent'], $context['loop']);
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['img'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 44
         echo "    </div>
 </div>
-    <!-- END MAIN -->
+    <script>
 
-    <div class=\"main\"></div>
+        filterSelection(\"all\")
+
+        function filterSelection(c) {
+            console.log(c)
+            x = document.getElementsByClassName(\"img-portfolio\");
+            if (c === 'all') {
+                for (i = 0; i < x.length; i++) {
+                        x[i].style.display = \"block\"
+                };
+                return
+            }
+            var x, i;
+            for (i = 0; i < x.length; i++) {
+                if (x[i].classList.contains(c))
+                    x[i].style.display = \"block\"
+                else
+                    x[i].style.display = \"none\"
+
+            };
+        }
+
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById(\"navbar\");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add(\"sticky\")
+            } else {
+                navbar.classList.remove(\"sticky\");
+            }
+        }
+
+    </script>
+
+
+
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -199,7 +238,7 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
 
     public function getDebugInfo()
     {
-        return array (  176 => 44,  166 => 40,  162 => 38,  158 => 37,  132 => 13,  122 => 12,  111 => 9,  101 => 8,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  178 => 44,  168 => 40,  164 => 39,  161 => 38,  157 => 37,  133 => 15,  123 => 14,  112 => 10,  102 => 9,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -210,10 +249,12 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
 
 {% block stylesheets %}
     <link rel=\"stylesheet\" href=\"style/portfolio.css\" type=\"text/css\">
+
 {% endblock %}
-{% block javascripts %}
-    <script type=\"text/javascript\" src=\"js/portfolio.js\"></script>
-{% endblock %}
+ {% block javascripts %}
+
+ {% endblock %}
+
 
 {% block body %}
 <style>
@@ -222,36 +263,71 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
 </style>
 
 
-    <!-- MAIN (Center website) -->
-
-
-    <h2>PORTFOLIO</h2>
-
-    <div id=\"myBtnContainer\">
-        <button class=\"btn active\" onclick=\"filterSelection('all')\"> Show all</button>
-        <button class=\"btn\" onclick=\"filter('backwork')\"> BackWork Soft</button>
-        <button class=\"btn\" onclick=\"filterSelection('Full-Color')\"> Full Color</button>
+    <div id=\"myBtnContainer\" >
+        <div id=\"navbar\">
+        <a class=\"active\" href=\"javascript:void(0)\">Home</a>
+        <a href=\"javascript:void(0)\">News</a>
+        <a href=\"javascript:void(0)\">Contact</a>
+        </div>
+        <button class=\"btn\" onclick=\"filterSelection('all')\"> Show all</button>
+        <button class=\"btn\"  onclick=\"filterSelection('tradicional')\"> Tradicional</button>
+        <button class=\"btn\" onclick=\"filterSelection('full-color')\"> Full Color</button>
         <button class=\"btn\" onclick=\"filterSelection('realismo')\"> Realismo</button>
-        <button class=\"btn\" onclick=\"filterSelection('Tradicional')\"> Tradicional</button>
+        <button class=\"btn\" onclick=\"filterSelection('backwoorksoft')\"> BackWork Soft</button>
     </div>
-    
-
 
 <div class=\"row\">
 
-    <div class=\"Tradicional\">
-        {% for imageTradicional in imagesTradicional %}
-            <div class=\"column Tradicional\">
-                <div class=\"content\">
-                    <img src=\"{{ asset(imageTradicional) }}\" alt=\"Tradicional\" style=\"width:100%\">
-                </div>
-            </div>
+    <div class=\"gallery\">
+        {% for img in imagesTradicional %}
+
+                <figure class=\"content img-portfolio {{ img['cat'] }}\">
+                    <img class=\"gallery_img\" src=\"{{ asset(img['src']) }}\" alt=\"tradicional\" style=\"width:100%\" loading=\"lazy\" >
+                </figure>
+
         {% endfor %}
     </div>
 </div>
-    <!-- END MAIN -->
+    <script>
 
-    <div class=\"main\"></div>
+        filterSelection(\"all\")
+
+        function filterSelection(c) {
+            console.log(c)
+            x = document.getElementsByClassName(\"img-portfolio\");
+            if (c === 'all') {
+                for (i = 0; i < x.length; i++) {
+                        x[i].style.display = \"block\"
+                };
+                return
+            }
+            var x, i;
+            for (i = 0; i < x.length; i++) {
+                if (x[i].classList.contains(c))
+                    x[i].style.display = \"block\"
+                else
+                    x[i].style.display = \"none\"
+
+            };
+        }
+
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById(\"navbar\");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add(\"sticky\")
+            } else {
+                navbar.classList.remove(\"sticky\");
+            }
+        }
+
+    </script>
+
+
+
 {% endblock %}
 ", "portfolio/index.html.twig", "C:\\Users\\david\\Desktop\\DAW\\M12\\2020-21-DAW2-M12-VLM-TATTOO\\Project\\vlm-tattoo\\templates\\portfolio\\index.html.twig");
     }

@@ -13,32 +13,31 @@ class PortfolioController extends AbstractController
     #[Route('/portfolio', name: 'portfolio')]
     public function index(): Response
     {
-<<<<<<< HEAD
-        $directoryTradicional= 'portfolio/tradicional/';
-
-        $dirintTradicional = dir($directoryTradicional);
+        $directoryTradicional = [
+            'tradicional' => 'portfolio/tradicional/',
+            'full-color' => 'portfolio/full-color/',
+            'backwoorksoft' => 'portfolio/backwoorksoft/',
+            'realismo' => 'portfolio/realismo/'
+        ];
         $imagesTradicional = [];
-       while (($archivo = $dirintTradicional->read()) != false)
-        {
-           if (strpos($archivo,'jpg') || strpos($archivo,'jpeg')){
-                $imagesTradicional[] = $directoryTradicional. $archivo;
-           }
-        }
-        $dirintTradicional->close();
 
+        foreach ($directoryTradicional as $cat => $directorio) {
+            $dirintTradicional = dir($directorio);
+            while (($archivo = $dirintTradicional->read()) != false) {
+                if (strpos($archivo, 'jpg') || strpos($archivo, 'png') || strpos($archivo, 'jpeg')) {
+                    $imagesTradicional[] = [
+                        'src' => $directorio . $archivo,
+                        'cat' => $cat
+                    ];
+
+                }
+            }
+            $dirintTradicional->close();
+        }
         return $this->render('portfolio/index.html.twig', [
             'imagesTradicional' => $imagesTradicional,
-
        ]);
      }
 
-
-
 }
-=======
-        return $this->render('portfolio/index.html.twig', [
-            'controller_name' => 'PortfolioController',
-        ]);
-    }
-}
->>>>>>> 4fb2d0d2d86595367edc093f52a29628fe2b2939
+
