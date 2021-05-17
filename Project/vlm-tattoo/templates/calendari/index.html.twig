@@ -6,17 +6,18 @@
 
 <style>
     .contenidor{
-        padding: 1% 0 1% 0;
+         padding: 1% 0 1% 0;
     }
 
     #calendari{
-        padding: 1%;
-        width: 50%;
-<<<<<<< HEAD
-        border-radius: 2%;
+
     }
-    .card-img-top{
-        max-height: 40%;
+
+    .calendari-container{
+        width: 50%;
+        padding: 1%;
+        background-color: white;
+        border-radius: 2%;
     }
 
     #EpicModal{
@@ -26,9 +27,8 @@
     #img2{
         max-height: 50%;
         max-width: 50%;
-=======
         margin: auto;
->>>>>>> b019d7f7878f5688494cf6c47071fc350fd5d4f7
+
     }
 
     .card-cos{
@@ -43,15 +43,17 @@
 {% block body %}
 
 
-<<<<<<< HEAD
     <!-- Calendari i Card -->
     <div class="contenidor" style="display: flex;justify-content: space-evenly">
-        <div id="calendari" class="bg-white"></div>
+        <div class="calendari-container">
+            <div id="calendari" class="bg-white"></div>
+        </div>
+
         <div class="card" style="width: 18rem;">
             <button type="button" class="btn btn-success" data-toggle="modal" data-target="#EpicModal">
                 Imagen
             </button>
-
+            <!-- Modal -->
             <div class="modal fade" id="EpicModal" tabindex="-1" aria-labelledby="EpicModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-header">
@@ -92,19 +94,14 @@
             </ul>
         </div>
     </div>
-=======
+
     <div id="calendari" class="bg-white"></div>
->>>>>>> b019d7f7878f5688494cf6c47071fc350fd5d4f7
+
 
 {% endblock %}
 
 {% block javascripts %}
-<<<<<<< HEAD
 
-
-
-=======
->>>>>>> b019d7f7878f5688494cf6c47071fc350fd5d4f7
 <script>
     window.onload = () => {
        let calendariElt = document.querySelector("#calendari")
@@ -117,7 +114,7 @@
                 center: 'title',
                 end: 'dayGridMonth,timeGridWeek'
             },
-<<<<<<< HEAD
+
             eventClick:function (info){
                 $('#des').html(info.event._def.extendedProps.des);
                 $('#tamano').html(info.event._def.extendedProps.talla);
@@ -142,8 +139,6 @@
 
             },
 
-=======
->>>>>>> b019d7f7878f5688494cf6c47071fc350fd5d4f7
             events: {{ data|raw  }}
         })
         calendari.render()
