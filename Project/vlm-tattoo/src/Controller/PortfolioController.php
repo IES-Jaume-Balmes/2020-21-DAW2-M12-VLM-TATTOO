@@ -8,36 +8,29 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class PortfolioController extends AbstractController
 {
+
+
     #[Route('/portfolio', name: 'portfolio')]
     public function index(): Response
     {
-        // ...
+        $directoryTradicional= 'portfolio/tradicional/';
 
-
-        // get the user information and notifications somehow
-        $userFirstName = 'david';
-        //$webPath = $this->get('kernel')->getProjectDir() . '/public/';
-        $directory= 'img/';
-        $dirint = dir($directory);
-        $images = [];
-
-        while (($archivo = $dirint->read()) != false)
+        $dirintTradicional = dir($directoryTradicional);
+        $imagesTradicional = [];
+       while (($archivo = $dirintTradicional->read()) != false)
         {
-            if (strpos($archivo,'jpg') || strpos($archivo,'jpeg')){
-                $images[] = $directory. $archivo;
-
-            }
+           if (strpos($archivo,'jpg') || strpos($archivo,'jpeg')){
+                $imagesTradicional[] = $directoryTradicional. $archivo;
+           }
         }
-        $dirint->close();
+        $dirintTradicional->close();
 
-        // the template path is the relative file path from `templates/`
         return $this->render('portfolio/index.html.twig', [
+            'imagesTradicional' => $imagesTradicional,
 
-            'images' => $images,
+       ]);
+     }
 
 
-        ]);
-
-    }
 
 }

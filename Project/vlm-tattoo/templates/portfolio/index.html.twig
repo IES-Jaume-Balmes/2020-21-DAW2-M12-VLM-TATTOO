@@ -2,21 +2,48 @@
 
 {% block title %}Hello PortfolioController!{% endblock %}
 
+{% block stylesheets %}
+    <link rel="stylesheet" href="style/portfolio.css" type="text/css">
+{% endblock %}
+{% block javascripts %}
+    <script type="text/javascript" src="js/portfolio.js"></script>
+{% endblock %}
+
 {% block body %}
 <style>
     .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class="example-wrapper">
 
-    <h1>Hello </h1>
-    {% for image in images %}
-         <img src="{{ asset(image) }}">
-    {% endfor %}
+    <!-- MAIN (Center website) -->
 
 
+    <h2>PORTFOLIO</h2>
+
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filter('backwork')"> BackWork Soft</button>
+        <button class="btn" onclick="filterSelection('Full-Color')"> Full Color</button>
+        <button class="btn" onclick="filterSelection('realismo')"> Realismo</button>
+        <button class="btn" onclick="filterSelection('Tradicional')"> Tradicional</button>
+    </div>
 
 
+
+<div class="row">
+
+    <div class="Tradicional">
+        {% for imageTradicional in imagesTradicional %}
+            <div class="column Tradicional">
+                <div class="content">
+                    <img src="{{ asset(imageTradicional) }}" alt="Tradicional" style="width:100%">
+                </div>
+            </div>
+        {% endfor %}
+    </div>
 </div>
+    <!-- END MAIN -->
+
+    <div class="main"></div>
 {% endblock %}
