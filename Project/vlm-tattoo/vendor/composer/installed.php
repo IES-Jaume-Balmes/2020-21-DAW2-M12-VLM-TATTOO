@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '453ebdb3fc12e8564488ad9f17f6330f53b6ebb5',
+    'reference' => 'd32493383e671e592b6bd9bf4f1a3ba025889db5',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '453ebdb3fc12e8564488ad9f17f6330f53b6ebb5',
+      'reference' => 'd32493383e671e592b6bd9bf4f1a3ba025889db5',
     ),
     'composer/package-versions-deprecated' => 
     array (
@@ -31,12 +31,12 @@
     ),
     'doctrine/annotations' => 
     array (
-      'pretty_version' => '1.12.1',
-      'version' => '1.12.1.0',
+      'pretty_version' => '1.13.1',
+      'version' => '1.13.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'b17c5014ef81d212ac539f07a1001832df1b6d3b',
+      'reference' => 'e6e7b7d5b45a2f2abc5460cc6396480b2b1d321f',
     ),
     'doctrine/cache' => 
     array (
@@ -388,21 +388,12 @@
     ),
     'sensio/framework-extra-bundle' => 
     array (
-      'pretty_version' => 'v6.1.2',
-      'version' => '6.1.2.0',
+      'pretty_version' => 'v5.6.1',
+      'version' => '5.6.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '676262b7a65a1033befbcf59e180d072df7504b6',
-    ),
-    'stripe/stripe-php' => 
-    array (
-      'pretty_version' => 'v7.78.0',
-      'version' => '7.78.0.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '6ec33fa8e9de2322be93d28dfd685661c67ca549',
+      'reference' => '430d14c01836b77c28092883d195a43ce413ee32',
     ),
     'symfony/asset' => 
     array (
@@ -679,12 +670,12 @@
     ),
     'symfony/maker-bundle' => 
     array (
-      'pretty_version' => 'v1.31.1',
-      'version' => '1.31.1.0',
+      'pretty_version' => 'v1.30.2',
+      'version' => '1.30.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => '4f57a44cef0b4555043160b8bf223fcde8a7a59a',
+      'reference' => 'a395a85aa4ded6c1fa3da118d60329b64b6c2acd',
     ),
     'symfony/mime' => 
     array (
@@ -914,6 +905,15 @@
       ),
       'reference' => '3aebf0ee0666592128156253ba989197e7b6e503',
     ),
+    'symfony/sendgrid-mailer' => 
+    array (
+      'pretty_version' => 'v5.2.4',
+      'version' => '5.2.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'f523791455b51545ccfe67398994af33e91e8a3a',
+    ),
     'symfony/serializer' => 
     array (
       'pretty_version' => 'v5.2.7',
@@ -1053,6 +1053,15 @@
       array (
       ),
       'reference' => '76546cbeddd0a9540b4e4e57eddeec3e9bb444a5',
+    ),
+    'symfonycasts/reset-password-bundle' => 
+    array (
+      'pretty_version' => 'v1.8.0',
+      'version' => '1.8.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'a41cceff06039e586619b1505af05f77b22b41b5',
     ),
     'twig/extra-bundle' => 
     array (

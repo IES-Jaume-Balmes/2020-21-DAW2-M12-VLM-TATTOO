@@ -12,6 +12,7 @@
     #calendari{
         padding: 1%;
         width: 50%;
+<<<<<<< HEAD
         border-radius: 2%;
     }
     .card-img-top{
@@ -25,6 +26,9 @@
     #img2{
         max-height: 50%;
         max-width: 50%;
+=======
+        margin: auto;
+>>>>>>> b019d7f7878f5688494cf6c47071fc350fd5d4f7
     }
 
     .card-cos{
@@ -39,6 +43,7 @@
 {% block body %}
 
 
+<<<<<<< HEAD
     <!-- Calendari i Card -->
     <div class="contenidor" style="display: flex;justify-content: space-evenly">
         <div id="calendari" class="bg-white"></div>
@@ -87,34 +92,32 @@
             </ul>
         </div>
     </div>
+=======
+    <div id="calendari" class="bg-white"></div>
+>>>>>>> b019d7f7878f5688494cf6c47071fc350fd5d4f7
 
 {% endblock %}
 
 {% block javascripts %}
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> b019d7f7878f5688494cf6c47071fc350fd5d4f7
 <script>
     window.onload = () => {
        let calendariElt = document.querySelector("#calendari")
         let calendari = new FullCalendar.Calendar(calendariElt,{
             initialView: 'dayGridMonth',
-            themeSystem: 'bootstrap',
             locale:'esp',
             timeZone: 'Europe/Barcelona',
             headerToolbar: {
-                left: 'prev,next today',
+                start: 'prev,next today',
                 center: 'title',
-                right: 'dayGridMonth,timeGridWeek,list'
+                end: 'dayGridMonth,timeGridWeek'
             },
-            buttonText: {
-                prev: '<',
-                next: '>',
-                today:'Hoy',
-                month:'Mes',
-                week:'Semana',
-                list:'Lista',
-            },
+<<<<<<< HEAD
             eventClick:function (info){
                 $('#des').html(info.event._def.extendedProps.des);
                 $('#tamano').html(info.event._def.extendedProps.talla);
@@ -139,8 +142,9 @@
 
             },
 
+=======
+>>>>>>> b019d7f7878f5688494cf6c47071fc350fd5d4f7
             events: {{ data|raw  }}
-
         })
         calendari.render()
     }

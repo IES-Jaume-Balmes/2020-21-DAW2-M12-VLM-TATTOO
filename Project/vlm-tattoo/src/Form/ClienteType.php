@@ -6,6 +6,7 @@ use App\Entity\Cliente;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
+use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TelType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -20,7 +21,13 @@ class ClienteType extends AbstractType
             ->add('apellidos')
             ->add('email', EmailType::class)
             ->add('telefono', TelType::class)
-            ->add('password', PasswordType::class)
+            ->add('password', RepeatedType::class, [
+                'type' => PasswordType::class,
+                'invalid_message' => 'Las contraseñas no coinciden.',
+                'required' => true,
+                'first_options'  => ['label' => 'Contraseña'],
+                'second_options' => ['label' => 'Repite la contraseña'],
+            ])
             ->add('Registrar', SubmitType::class)
         ;
     }
