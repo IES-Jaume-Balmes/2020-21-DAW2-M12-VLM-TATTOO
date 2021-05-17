@@ -151,6 +151,10 @@ class __TwigTemplate_f3cf853d7b63b2d72d1d267778ae2f3b71785c690e8c765463ae25cff0d
     </div>
 </div>
 {% endblock %}
+<<<<<<< HEAD
 ", "descripcion/index.html.twig", "C:\\Users\\david\\Desktop\\DAW\\M12\\2020-21-DAW2-M12-VLM-TATTOO\\Project\\vlm-tattoo\\templates\\descripcion\\index.html.twig");
+=======
+", "descripcion/index.html.twig", "D:\\INSTI\\M12 VLM TATTOO\\project\\Project\\vlm-tattoo\\templates\\descripcion\\index.html.twig");
+>>>>>>> b9758f1c1ea4c7bef1dccf059066a519f9c456df
     }
 }

@@ -13,12 +13,18 @@ class PortfolioController extends AbstractController
     #[Route('/portfolio', name: 'portfolio')]
     public function index(): Response
     {
+<<<<<<< HEAD
         $directoryTradicional = [
             'tradicional' => 'portfolio/tradicional/',
             'full-color' => 'portfolio/full-color/',
             'backwoorksoft' => 'portfolio/backwoorksoft/',
             'realismo' => 'portfolio/realismo/'
         ];
+=======
+        $directoryTradicional= 'portfolio/tradicional/';
+
+        $dirintTradicional = dir($directoryTradicional);
+>>>>>>> b9758f1c1ea4c7bef1dccf059066a519f9c456df
         $imagesTradicional = [];
 
         foreach ($directoryTradicional as $cat => $directorio) {
@@ -36,8 +42,16 @@ class PortfolioController extends AbstractController
         }
         return $this->render('portfolio/index.html.twig', [
             'imagesTradicional' => $imagesTradicional,
+<<<<<<< HEAD
        ]);
      }
 
 }
 
+=======
+            'controller_name' => 'PortfolioController',
+
+       ]);
+     }
+}
+>>>>>>> b9758f1c1ea4c7bef1dccf059066a519f9c456df

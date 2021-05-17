@@ -136,6 +136,10 @@ class __TwigTemplate_a6b734c9fd4ba21e0f30b57d41a520da8877cabd2cfdc18365273d0b439
     <h1>Hello {{ controller_name }}! ✅</h1>
 </div>
 {% endblock %}
+<<<<<<< HEAD
 ", "videos/index.html.twig", "C:\\Users\\david\\Desktop\\DAW\\M12\\2020-21-DAW2-M12-VLM-TATTOO\\Project\\vlm-tattoo\\templates\\videos\\index.html.twig");
+=======
+", "videos/index.html.twig", "D:\\INSTI\\M12 VLM TATTOO\\project\\Project\\vlm-tattoo\\templates\\videos\\index.html.twig");
+>>>>>>> b9758f1c1ea4c7bef1dccf059066a519f9c456df
     }
 }

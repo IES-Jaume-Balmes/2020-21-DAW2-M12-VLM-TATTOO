@@ -135,6 +135,7 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
+<<<<<<< HEAD
 
     <div id=\"myBtnContainer\" >
         <div id=\"navbar\">
@@ -148,13 +149,19 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
         <button class=\"btn\" onclick=\"filterSelection('realismo')\"> Realismo</button>
         <button class=\"btn\" onclick=\"filterSelection('backwoorksoft')\"> BackWork Soft</button>
     </div>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> b9758f1c1ea4c7bef1dccf059066a519f9c456df
 
 <div class=\"row\">
 
     <div class=\"gallery\">
         ";
-        // line 37
+        // line 38
         $context['_parent'] = $context;
+<<<<<<< HEAD
         $context['_seq'] = twig_ensure_traversable((isset($context["imagesTradicional"]) || array_key_exists("imagesTradicional", $context) ? $context["imagesTradicional"] : (function () { throw new RuntimeError('Variable "imagesTradicional" does not exist.', 37, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["img"]) {
             // line 38
@@ -169,13 +176,33 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
             echo "\" alt=\"tradicional\" style=\"width:100%\" loading=\"lazy\" >
                 </figure>
 
+=======
+        $context['_seq'] = twig_ensure_traversable((isset($context["imagesTradicional"]) || array_key_exists("imagesTradicional", $context) ? $context["imagesTradicional"] : (function () { throw new RuntimeError('Variable "imagesTradicional" does not exist.', 38, $this->source); })()));
+        foreach ($context['_seq'] as $context["_key"] => $context["imageTradicional"]) {
+            // line 39
+            echo "            <div class=\"column Tradicional\">
+                <div class=\"content\">
+                    <img src=\"";
+            // line 41
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl($context["imageTradicional"]), "html", null, true);
+            echo "\" alt=\"Tradicional\" style=\"width:100%\">
+                </div>
+            </div>
+>>>>>>> b9758f1c1ea4c7bef1dccf059066a519f9c456df
         ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['img'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 44
+        // line 45
         echo "    </div>
+=======
+<div class=\"example-wrapper\">
+    <h1>Hello ";
+        // line 48
+        echo twig_escape_filter($this->env, (isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 48, $this->source); })()), "html", null, true);
+        echo "! ✅</h1>
+>>>>>>> 4fb2d0d2d86595367edc093f52a29628fe2b2939
 </div>
     <script>
 
@@ -238,7 +265,11 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
 
     public function getDebugInfo()
     {
+<<<<<<< HEAD
         return array (  178 => 44,  168 => 40,  164 => 39,  161 => 38,  157 => 37,  133 => 15,  123 => 14,  112 => 10,  102 => 9,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+=======
+        return array (  182 => 48,  177 => 45,  167 => 41,  163 => 39,  159 => 38,  132 => 13,  122 => 12,  111 => 9,  101 => 8,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+>>>>>>> b9758f1c1ea4c7bef1dccf059066a519f9c456df
     }
 
     public function getSourceContext()
@@ -262,6 +293,7 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
+<<<<<<< HEAD
 
     <div id=\"myBtnContainer\" >
         <div id=\"navbar\">
@@ -275,6 +307,11 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
         <button class=\"btn\" onclick=\"filterSelection('realismo')\"> Realismo</button>
         <button class=\"btn\" onclick=\"filterSelection('backwoorksoft')\"> BackWork Soft</button>
     </div>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> b9758f1c1ea4c7bef1dccf059066a519f9c456df
 
 <div class=\"row\">
 
@@ -287,6 +324,10 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
 
         {% endfor %}
     </div>
+=======
+<div class=\"example-wrapper\">
+    <h1>Hello {{ controller_name }}! ✅</h1>
+>>>>>>> 4fb2d0d2d86595367edc093f52a29628fe2b2939
 </div>
     <script>
 
@@ -329,6 +370,6 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
 
 
 {% endblock %}
-", "portfolio/index.html.twig", "C:\\Users\\david\\Desktop\\DAW\\M12\\2020-21-DAW2-M12-VLM-TATTOO\\Project\\vlm-tattoo\\templates\\portfolio\\index.html.twig");
+", "portfolio/index.html.twig", "D:\\INSTI\\M12 VLM TATTOO\\project\\Project\\vlm-tattoo\\templates\\portfolio\\index.html.twig");
     }
 }

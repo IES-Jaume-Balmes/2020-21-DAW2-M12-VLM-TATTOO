@@ -27,24 +27,24 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => 'dev-master',
-    'version' => 'dev-master',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => 'aea0a3709287421c10fe8ab98a6f15f97be8cbda',
+    'reference' => 'd32493383e671e592b6bd9bf4f1a3ba025889db5',
     'name' => '__root__',
   ),
   'versions' => 
   array (
     '__root__' => 
     array (
-      'pretty_version' => 'dev-master',
-      'version' => 'dev-master',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => 'aea0a3709287421c10fe8ab98a6f15f97be8cbda',
+      'reference' => 'd32493383e671e592b6bd9bf4f1a3ba025889db5',
     ),
     'composer/package-versions-deprecated' => 
     array (
@@ -57,12 +57,12 @@ private static $installed = array (
     ),
     'doctrine/annotations' => 
     array (
-      'pretty_version' => '1.12.1',
-      'version' => '1.12.1.0',
+      'pretty_version' => '1.13.1',
+      'version' => '1.13.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'b17c5014ef81d212ac539f07a1001832df1b6d3b',
+      'reference' => 'e6e7b7d5b45a2f2abc5460cc6396480b2b1d321f',
     ),
     'doctrine/cache' => 
     array (
@@ -931,6 +931,15 @@ private static $installed = array (
       ),
       'reference' => '3aebf0ee0666592128156253ba989197e7b6e503',
     ),
+    'symfony/sendgrid-mailer' => 
+    array (
+      'pretty_version' => 'v5.2.4',
+      'version' => '5.2.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'f523791455b51545ccfe67398994af33e91e8a3a',
+    ),
     'symfony/serializer' => 
     array (
       'pretty_version' => 'v5.2.7',
@@ -1070,6 +1079,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '76546cbeddd0a9540b4e4e57eddeec3e9bb444a5',
+    ),
+    'symfonycasts/reset-password-bundle' => 
+    array (
+      'pretty_version' => 'v1.8.0',
+      'version' => '1.8.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'a41cceff06039e586619b1505af05f77b22b41b5',
     ),
     'twig/extra-bundle' => 
     array (
