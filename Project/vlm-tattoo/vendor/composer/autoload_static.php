@@ -71,6 +71,7 @@ class ComposerStaticInit6bc2dd14d1c95dd4df2aa0c86ea05989
             'Symfony\\Component\\OptionsResolver\\' => 34,
             'Symfony\\Component\\Notifier\\' => 27,
             'Symfony\\Component\\Mime\\' => 23,
+            'Symfony\\Component\\Mailer\\Bridge\\Sendgrid\\' => 41,
             'Symfony\\Component\\Mailer\\' => 25,
             'Symfony\\Component\\Intl\\' => 23,
             'Symfony\\Component\\HttpKernel\\' => 29,
@@ -306,6 +307,10 @@ class ComposerStaticInit6bc2dd14d1c95dd4df2aa0c86ea05989
         'Symfony\\Component\\Mime\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/mime',
+        ),
+        'Symfony\\Component\\Mailer\\Bridge\\Sendgrid\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/sendgrid-mailer',
         ),
         'Symfony\\Component\\Mailer\\' => 
         array (
@@ -575,19 +580,24 @@ class ComposerStaticInit6bc2dd14d1c95dd4df2aa0c86ea05989
         'App\\Controller\\PagamientoController' => __DIR__ . '/../..' . '/src/Controller/PagamientoController.php',
         'App\\Controller\\PortfolioController' => __DIR__ . '/../..' . '/src/Controller/PortfolioController.php',
         'App\\Controller\\ReservaController' => __DIR__ . '/../..' . '/src/Controller/ReservaController.php',
+        'App\\Controller\\ResetPasswordController' => __DIR__ . '/../..' . '/src/Controller/ResetPasswordController.php',
         'App\\Controller\\SecurityController' => __DIR__ . '/../..' . '/src/Controller/SecurityController.php',
         'App\\Controller\\TatuadorController' => __DIR__ . '/../..' . '/src/Controller/TatuadorController.php',
         'App\\Controller\\TiendaController' => __DIR__ . '/../..' . '/src/Controller/TiendaController.php',
         'App\\Controller\\VideosController' => __DIR__ . '/../..' . '/src/Controller/VideosController.php',
         'App\\Entity\\Cliente' => __DIR__ . '/../..' . '/src/Entity/Cliente.php',
         'App\\Entity\\Reserva' => __DIR__ . '/../..' . '/src/Entity/Reserva.php',
+        'App\\Entity\\ResetPasswordRequest' => __DIR__ . '/../..' . '/src/Entity/ResetPasswordRequest.php',
         'App\\Entity\\Tatuador' => __DIR__ . '/../..' . '/src/Entity/Tatuador.php',
+        'App\\Form\\ChangePasswordFormType' => __DIR__ . '/../..' . '/src/Form/ChangePasswordFormType.php',
         'App\\Form\\ClienteType' => __DIR__ . '/../..' . '/src/Form/ClienteType.php',
         'App\\Form\\ReservaType' => __DIR__ . '/../..' . '/src/Form/ReservaType.php',
+        'App\\Form\\ResetPasswordRequestFormType' => __DIR__ . '/../..' . '/src/Form/ResetPasswordRequestFormType.php',
         'App\\Form\\TatuadorType' => __DIR__ . '/../..' . '/src/Form/TatuadorType.php',
         'App\\Kernel' => __DIR__ . '/../..' . '/src/Kernel.php',
         'App\\Repository\\ClienteRepository' => __DIR__ . '/../..' . '/src/Repository/ClienteRepository.php',
         'App\\Repository\\ReservaRepository' => __DIR__ . '/../..' . '/src/Repository/ReservaRepository.php',
+        'App\\Repository\\ResetPasswordRequestRepository' => __DIR__ . '/../..' . '/src/Repository/ResetPasswordRequestRepository.php',
         'App\\Repository\\TatuadorRepository' => __DIR__ . '/../..' . '/src/Repository/TatuadorRepository.php',
         'App\\Security\\LoginFormAuthenticationAuthenticator' => __DIR__ . '/../..' . '/src/Security/LoginFormAuthenticationAuthenticator.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
@@ -3984,6 +3994,9 @@ class ComposerStaticInit6bc2dd14d1c95dd4df2aa0c86ea05989
         'Symfony\\Component\\Intl\\Util\\IcuVersion' => __DIR__ . '/..' . '/symfony/intl/Util/IcuVersion.php',
         'Symfony\\Component\\Intl\\Util\\IntlTestHelper' => __DIR__ . '/..' . '/symfony/intl/Util/IntlTestHelper.php',
         'Symfony\\Component\\Intl\\Util\\Version' => __DIR__ . '/..' . '/symfony/intl/Util/Version.php',
+        'Symfony\\Component\\Mailer\\Bridge\\Sendgrid\\Transport\\SendgridApiTransport' => __DIR__ . '/..' . '/symfony/sendgrid-mailer/Transport/SendgridApiTransport.php',
+        'Symfony\\Component\\Mailer\\Bridge\\Sendgrid\\Transport\\SendgridSmtpTransport' => __DIR__ . '/..' . '/symfony/sendgrid-mailer/Transport/SendgridSmtpTransport.php',
+        'Symfony\\Component\\Mailer\\Bridge\\Sendgrid\\Transport\\SendgridTransportFactory' => __DIR__ . '/..' . '/symfony/sendgrid-mailer/Transport/SendgridTransportFactory.php',
         'Symfony\\Component\\Mailer\\DataCollector\\MessageDataCollector' => __DIR__ . '/..' . '/symfony/mailer/DataCollector/MessageDataCollector.php',
         'Symfony\\Component\\Mailer\\DelayedEnvelope' => __DIR__ . '/..' . '/symfony/mailer/DelayedEnvelope.php',
         'Symfony\\Component\\Mailer\\Envelope' => __DIR__ . '/..' . '/symfony/mailer/Envelope.php',
