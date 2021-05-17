@@ -13,7 +13,6 @@ class PortfolioController extends AbstractController
     #[Route('/portfolio', name: 'portfolio')]
     public function index(): Response
     {
-<<<<<<< HEAD
         $directoryTradicional= 'portfolio/tradicional/';
 
         $dirintTradicional = dir($directoryTradicional);
@@ -28,17 +27,8 @@ class PortfolioController extends AbstractController
 
         return $this->render('portfolio/index.html.twig', [
             'imagesTradicional' => $imagesTradicional,
+            'controller_name' => 'PortfolioController',
 
        ]);
      }
-
-
-
 }
-=======
-        return $this->render('portfolio/index.html.twig', [
-            'controller_name' => 'PortfolioController',
-        ]);
-    }
-}
->>>>>>> 4fb2d0d2d86595367edc093f52a29628fe2b2939
