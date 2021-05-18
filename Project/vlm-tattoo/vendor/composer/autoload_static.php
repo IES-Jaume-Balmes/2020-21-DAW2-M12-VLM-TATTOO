@@ -582,7 +582,6 @@ class ComposerStaticInit6bc2dd14d1c95dd4df2aa0c86ea05989
         'App\\Controller\\ReservaController' => __DIR__ . '/../..' . '/src/Controller/ReservaController.php',
         'App\\Controller\\SecurityController' => __DIR__ . '/../..' . '/src/Controller/SecurityController.php',
         'App\\Controller\\TatuadorController' => __DIR__ . '/../..' . '/src/Controller/TatuadorController.php',
-        'App\\Controller\\TiendaController' => __DIR__ . '/../..' . '/src/Controller/TiendaController.php',
         'App\\Controller\\VideosController' => __DIR__ . '/../..' . '/src/Controller/VideosController.php',
         'App\\Entity\\Cliente' => __DIR__ . '/../..' . '/src/Entity/Cliente.php',
         'App\\Entity\\Reserva' => __DIR__ . '/../..' . '/src/Entity/Reserva.php',

@@ -15,7 +15,6 @@ return array(
     'App\\Controller\\ReservaController' => $baseDir . '/src/Controller/ReservaController.php',
     'App\\Controller\\SecurityController' => $baseDir . '/src/Controller/SecurityController.php',
     'App\\Controller\\TatuadorController' => $baseDir . '/src/Controller/TatuadorController.php',
-    'App\\Controller\\TiendaController' => $baseDir . '/src/Controller/TiendaController.php',
     'App\\Controller\\VideosController' => $baseDir . '/src/Controller/VideosController.php',
     'App\\Entity\\Cliente' => $baseDir . '/src/Entity/Cliente.php',
     'App\\Entity\\Reserva' => $baseDir . '/src/Entity/Reserva.php',
