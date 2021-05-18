@@ -66,13 +66,6 @@
         <parameter key="path">C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\twig\extra-bundle</parameter>
         <parameter key="namespace">Twig\Extra\TwigExtraBundle</parameter>
       </parameter>
-<<<<<<< HEAD
-=======
-      <parameter key="SymfonyCastsResetPasswordBundle" type="collection">
-        <parameter key="path">C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src</parameter>
-        <parameter key="namespace">SymfonyCasts\Bundle\ResetPassword</parameter>
-      </parameter>
->>>>>>> 586789fc98509f524d916b90672fda6ec3c6e580
     </parameter>
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">App_KernelDevDebugContainer</parameter>
@@ -1696,23 +1689,9 @@
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.af.xlf</argument>
           </argument>
           <argument key="ar" type="collection">
-<<<<<<< HEAD
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.ar.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.ar.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.ar.xlf</argument>
-            <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.ar.xlf</argument>
-=======
-<<<<<<< HEAD
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.ar.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.ar.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.ar.xlf</argument>
-=======
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.ar.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.ar.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.ar.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.ar.xlf</argument>
->>>>>>> 586789fc98509f524d916b90672fda6ec3c6e580
->>>>>>> 530b90a55807a613df6cf3625a7ab7c37d276ffd
           </argument>
           <argument key="az" type="collection">
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.az.xlf</argument>
@@ -1753,23 +1732,9 @@
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.da.xlf</argument>
           </argument>
           <argument key="de" type="collection">
-<<<<<<< HEAD
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.de.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.de.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.de.xlf</argument>
-            <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.de.xlf</argument>
-=======
-<<<<<<< HEAD
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.de.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.de.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.de.xlf</argument>
-=======
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.de.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.de.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.de.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.de.xlf</argument>
->>>>>>> 586789fc98509f524d916b90672fda6ec3c6e580
->>>>>>> 530b90a55807a613df6cf3625a7ab7c37d276ffd
           </argument>
           <argument key="el" type="collection">
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.el.xlf</argument>
@@ -1777,40 +1742,14 @@
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.el.xlf</argument>
           </argument>
           <argument key="en" type="collection">
-<<<<<<< HEAD
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.en.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.en.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.en.xlf</argument>
-            <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.en.xlf</argument>
           </argument>
           <argument key="es" type="collection">
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.es.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.es.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.es.xlf</argument>
-            <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.es.xlf</argument>
-=======
-<<<<<<< HEAD
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.en.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.en.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.en.xlf</argument>
-          </argument>
-          <argument key="es" type="collection">
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.es.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.es.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.es.xlf</argument>
-=======
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.en.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.en.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.en.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.en.xlf</argument>
-          </argument>
-          <argument key="es" type="collection">
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.es.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.es.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.es.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.es.xlf</argument>
->>>>>>> 586789fc98509f524d916b90672fda6ec3c6e580
->>>>>>> 530b90a55807a613df6cf3625a7ab7c37d276ffd
           </argument>
           <argument key="et" type="collection">
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.et.xlf</argument>
@@ -1832,23 +1771,9 @@
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.fi.xlf</argument>
           </argument>
           <argument key="fr" type="collection">
-<<<<<<< HEAD
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.fr.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.fr.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.fr.xlf</argument>
-            <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.fr.xlf</argument>
-=======
-<<<<<<< HEAD
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.fr.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.fr.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.fr.xlf</argument>
-=======
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.fr.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.fr.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.fr.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.fr.xlf</argument>
->>>>>>> 586789fc98509f524d916b90672fda6ec3c6e580
->>>>>>> 530b90a55807a613df6cf3625a7ab7c37d276ffd
           </argument>
           <argument key="gl" type="collection">
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.gl.xlf</argument>
@@ -1881,23 +1806,9 @@
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.id.xlf</argument>
           </argument>
           <argument key="it" type="collection">
-<<<<<<< HEAD
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.it.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.it.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.it.xlf</argument>
-            <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.it.xlf</argument>
-=======
-<<<<<<< HEAD
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.it.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.it.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.it.xlf</argument>
-=======
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.it.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.it.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.it.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.it.xlf</argument>
->>>>>>> 586789fc98509f524d916b90672fda6ec3c6e580
->>>>>>> 530b90a55807a613df6cf3625a7ab7c37d276ffd
           </argument>
           <argument key="ja" type="collection">
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.ja.xlf</argument>
@@ -1945,40 +1856,14 @@
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.no.xlf</argument>
           </argument>
           <argument key="pl" type="collection">
-<<<<<<< HEAD
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.pl.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.pl.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.pl.xlf</argument>
-            <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.pl.xlf</argument>
           </argument>
           <argument key="pt" type="collection">
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.pt.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.pt.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.pt.xlf</argument>
-            <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.pt.xlf</argument>
-=======
-<<<<<<< HEAD
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.pl.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.pl.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.pl.xlf</argument>
-          </argument>
-          <argument key="pt" type="collection">
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.pt.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.pt.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.pt.xlf</argument>
-=======
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.pl.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.pl.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.pl.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.pl.xlf</argument>
-          </argument>
-          <argument key="pt" type="collection">
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.pt.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.pt.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.pt.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.pt.xlf</argument>
->>>>>>> 586789fc98509f524d916b90672fda6ec3c6e580
->>>>>>> 530b90a55807a613df6cf3625a7ab7c37d276ffd
           </argument>
           <argument key="pt_BR" type="collection">
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.pt_BR.xlf</argument>
@@ -1991,23 +1876,9 @@
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.ro.xlf</argument>
           </argument>
           <argument key="ru" type="collection">
-<<<<<<< HEAD
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.ru.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.ru.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.ru.xlf</argument>
-            <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.ru.xlf</argument>
-=======
-<<<<<<< HEAD
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.ru.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.ru.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.ru.xlf</argument>
-=======
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.ru.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.ru.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.ru.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.ru.xlf</argument>
->>>>>>> 586789fc98509f524d916b90672fda6ec3c6e580
->>>>>>> 530b90a55807a613df6cf3625a7ab7c37d276ffd
           </argument>
           <argument key="sk" type="collection">
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.sk.xlf</argument>
@@ -2050,40 +1921,14 @@
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.tl.xlf</argument>
           </argument>
           <argument key="tr" type="collection">
-<<<<<<< HEAD
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.tr.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.tr.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.tr.xlf</argument>
-            <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.tr.xlf</argument>
           </argument>
           <argument key="uk" type="collection">
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.uk.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.uk.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.uk.xlf</argument>
-            <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.uk.xlf</argument>
-=======
-<<<<<<< HEAD
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.tr.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.tr.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.tr.xlf</argument>
-          </argument>
-          <argument key="uk" type="collection">
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.uk.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.uk.xlf</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.uk.xlf</argument>
-=======
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.tr.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.tr.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.tr.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.tr.xlf</argument>
-          </argument>
-          <argument key="uk" type="collection">
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.uk.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.uk.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.uk.xlf</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.uk.xlf</argument>
->>>>>>> 586789fc98509f524d916b90672fda6ec3c6e580
->>>>>>> 530b90a55807a613df6cf3625a7ab7c37d276ffd
           </argument>
           <argument key="uz" type="collection">
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations\validators.uz.xlf</argument>
@@ -2105,40 +1950,11 @@
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations\validators.zh_TW.xlf</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations\security.zh_TW.xlf</argument>
           </argument>
-<<<<<<< HEAD
-        </argument>
-        <argument key="scanned_directories" type="collection">
-          <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations</argument>
-          <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\form/Resources/translations</argument>
-          <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations</argument>
-          <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo/translations</argument>
-          <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\framework-bundle/translations</argument>
-          <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\sensio\framework-extra-bundle\src/translations</argument>
-          <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\twig-bundle/translations</argument>
-          <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\web-profiler-bundle/translations</argument>
-          <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\monolog-bundle/translations</argument>
-          <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\debug-bundle/translations</argument>
-          <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\maker-bundle\src/translations</argument>
-          <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\doctrine\doctrine-bundle/translations</argument>
-          <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\doctrine\doctrine-migrations-bundle/translations</argument>
-          <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\security-bundle/translations</argument>
-          <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\twig\extra-bundle/translations</argument>
-        </argument>
-        <argument key="cache_vary" type="collection">
-          <argument key="scanned_directories" type="collection">
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\form/Resources/translations</argument>
-            <argument>D:\INSTI\M12 VLM TATTOO\project\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations</argument>
-=======
-          <argument key="sr" type="collection">
-            <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations\ResetPasswordBundle.sr.xlf</argument>
-          </argument>
         </argument>
         <argument key="scanned_directories" type="collection">
           <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations</argument>
           <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations</argument>
           <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations</argument>
-          <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations</argument>
           <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo/translations</argument>
           <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\framework-bundle/translations</argument>
           <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\sensio\framework-extra-bundle\src/translations</argument>
@@ -2154,18 +1970,9 @@
         </argument>
         <argument key="cache_vary" type="collection">
           <argument key="scanned_directories" type="collection">
-<<<<<<< HEAD
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations</argument>
-            <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations</argument>
-=======
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\validator/Resources/translations</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\form/Resources/translations</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\security-core/Resources/translations</argument>
-            <argument>C:\Users\polhm\Desktop\DAW2\Projecte_Final\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfonycasts\reset-password-bundle\src/Resources/translations</argument>
->>>>>>> 586789fc98509f524d916b90672fda6ec3c6e580
->>>>>>> 530b90a55807a613df6cf3625a7ab7c37d276ffd
             <argument>translations</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\symfony\framework-bundle/translations</argument>
             <argument>C:\Users\david\Desktop\DAW\M12\2020-21-DAW2-M12-VLM-TATTOO\Project\vlm-tattoo\vendor\sensio\framework-extra-bundle\src/translations</argument>

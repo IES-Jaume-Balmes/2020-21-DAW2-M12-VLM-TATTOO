@@ -130,48 +130,50 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 15
-        echo "<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+        echo "
 
 
-    <div id=\"myBtnContainer\" >
+    <div id=\"myBtnContainer\">
         <button class=\"btn\" onclick=\"filterSelection('all')\"> Show all</button>
-        <button class=\"btn\"  onclick=\"filterSelection('tradicional')\"> Tradicional</button>
+        <button class=\"btn\" onclick=\"filterSelection('tradicional')\"> Tradicional</button>
         <button class=\"btn\" onclick=\"filterSelection('full-color')\"> Full Color</button>
         <button class=\"btn\" onclick=\"filterSelection('realismo')\"> Realismo</button>
         <button class=\"btn\" onclick=\"filterSelection('backwoorksoft')\"> BackWork Soft</button>
     </div>
 
-<div class=\"row\">
+    <div class=\"row\">
 
-    <div class=\"gallery\">
-        ";
-        // line 32
+        <div class=\"gallery\">
+            ";
+        // line 29
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["imagesTradicional"]) || array_key_exists("imagesTradicional", $context) ? $context["imagesTradicional"] : (function () { throw new RuntimeError('Variable "imagesTradicional" does not exist.', 32, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["imagesTradicional"]) || array_key_exists("imagesTradicional", $context) ? $context["imagesTradicional"] : (function () { throw new RuntimeError('Variable "imagesTradicional" does not exist.', 29, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["img"]) {
-            // line 33
+            // line 30
             echo "
                 <figure class=\"content img-portfolio ";
-            // line 34
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["img"], "cat", [], "array", false, false, false, 34), "html", null, true);
+            // line 31
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["img"], "cat", [], "array", false, false, false, 31), "html", null, true);
             echo "\">
                     <img class=\"gallery_img\" src=\"";
-            // line 35
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, $context["img"], "src", [], "array", false, false, false, 35)), "html", null, true);
-            echo "\" alt=\"tradicional\" style=\"width:100%\" loading=\"lazy\" >
+            // line 32
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl(twig_get_attribute($this->env, $this->source, $context["img"], "src", [], "array", false, false, false, 32)), "html", null, true);
+            echo "\" alt=\"tradicional\" style=\"width:100%\"
+                         loading=\"lazy\">
                 </figure>
 
-        ";
+            ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['img'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 39
-        echo "    </div>
-</div>
+        // line 37
+        echo "        </div>
+    </div>
+
+
+
+
     <script>
 
         filterSelection(\"all\")
@@ -181,8 +183,9 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
             x = document.getElementsByClassName(\"img-portfolio\");
             if (c === 'all') {
                 for (i = 0; i < x.length; i++) {
-                        x[i].style.display = \"block\"
-                };
+                    x[i].style.display = \"block\"
+                }
+                ;
                 return
             }
             var x, i;
@@ -192,7 +195,8 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
                 else
                     x[i].style.display = \"none\"
 
-            };
+            }
+            ;
         }
 
 
@@ -221,7 +225,7 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
 
     public function getDebugInfo()
     {
-        return array (  173 => 39,  163 => 35,  159 => 34,  156 => 33,  152 => 32,  133 => 15,  123 => 14,  112 => 10,  102 => 9,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  171 => 37,  160 => 32,  156 => 31,  153 => 30,  149 => 29,  133 => 15,  123 => 14,  112 => 10,  102 => 9,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -240,32 +244,34 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
 
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
 
-    <div id=\"myBtnContainer\" >
+
+    <div id=\"myBtnContainer\">
         <button class=\"btn\" onclick=\"filterSelection('all')\"> Show all</button>
-        <button class=\"btn\"  onclick=\"filterSelection('tradicional')\"> Tradicional</button>
+        <button class=\"btn\" onclick=\"filterSelection('tradicional')\"> Tradicional</button>
         <button class=\"btn\" onclick=\"filterSelection('full-color')\"> Full Color</button>
         <button class=\"btn\" onclick=\"filterSelection('realismo')\"> Realismo</button>
         <button class=\"btn\" onclick=\"filterSelection('backwoorksoft')\"> BackWork Soft</button>
     </div>
 
-<div class=\"row\">
+    <div class=\"row\">
 
-    <div class=\"gallery\">
-        {% for img in imagesTradicional %}
+        <div class=\"gallery\">
+            {% for img in imagesTradicional %}
 
                 <figure class=\"content img-portfolio {{ img['cat'] }}\">
-                    <img class=\"gallery_img\" src=\"{{ asset(img['src']) }}\" alt=\"tradicional\" style=\"width:100%\" loading=\"lazy\" >
+                    <img class=\"gallery_img\" src=\"{{ asset(img['src']) }}\" alt=\"tradicional\" style=\"width:100%\"
+                         loading=\"lazy\">
                 </figure>
 
-        {% endfor %}
+            {% endfor %}
+        </div>
     </div>
-</div>
+
+
+
+
     <script>
 
         filterSelection(\"all\")
@@ -275,8 +281,9 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
             x = document.getElementsByClassName(\"img-portfolio\");
             if (c === 'all') {
                 for (i = 0; i < x.length; i++) {
-                        x[i].style.display = \"block\"
-                };
+                    x[i].style.display = \"block\"
+                }
+                ;
                 return
             }
             var x, i;
@@ -286,7 +293,8 @@ class __TwigTemplate_c2ba5b44acef658fae4f2ba7c0852f6435108ef4214f6d60aa4e29fc810
                 else
                     x[i].style.display = \"none\"
 
-            };
+            }
+            ;
         }
 
 

@@ -18,7 +18,7 @@ class PortfolioController extends AbstractController
             'backwoorksoft' => 'portfolio/backwoorksoft/',
             'realismo' => 'portfolio/realismo/'
         ];
-        
+
         $imagesTradicional = [];
 
         foreach ($directoryTradicional as $cat => $directorio) {
