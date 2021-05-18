@@ -24,6 +24,14 @@ class CalendariController extends AbstractController
         foreach($events as $event){
             $rdvs[] = [
                 'id' => $event->getId(),
+                'talla' => $event->getTalla(),
+                'imatge' => $event->getImagen(),
+                'cliente_nombre' => $event->getCliente()->getNombre(),
+                'cliente_apellido' => $event->getCliente()->getApellidos(),
+                'cliente_telefono' => $event->getCliente()->getTelefono(),
+                'cliente_email' => $event->getCliente()->getEmail(),
+                'des' => $event->getDescripcion(),
+                'title' => 'Cita',
                 'tamano' => $event->getTalla(),
                 'title' => $event->getDescripcion(),
                 'start' => $event->getFechaInicio()->format('Y-m-d H:i:s'),
