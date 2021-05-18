@@ -137,9 +137,18 @@ class __TwigTemplate_64c9f90fa9e5e24e7049c827c4fbe60081a5cb7569a469c51e28e39a10a
         echo twig_escape_filter($this->env, $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken("authenticate"), "html", null, true);
         echo "\"
     >
-";
-        // line 41
-        echo "
+<div class=\"row\">
+    <div class=\"col-md\">
+        <div class=\"checkbox mb-3\">
+            <label>
+                <input type=\"checkbox\" name=\"_remember_me\"> Remember me
+            </label>
+        </div>
+    </div>
+    <div class=\"col-md text-right\">
+        <a href=\"/reset-password\">Reset Password</a>
+    </div>
+</div>
     <button class=\"btn btn-lg btn-primary\" type=\"submit\">
         Sign in
     </button>
@@ -168,7 +177,7 @@ class __TwigTemplate_64c9f90fa9e5e24e7049c827c4fbe60081a5cb7569a469c51e28e39a10a
 
     public function getDebugInfo()
     {
-        return array (  142 => 41,  137 => 33,  126 => 25,  120 => 21,  112 => 18,  109 => 17,  107 => 16,  104 => 15,  98 => 13,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  137 => 33,  126 => 25,  120 => 21,  112 => 18,  109 => 17,  107 => 16,  104 => 15,  98 => 13,  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -207,13 +216,18 @@ class __TwigTemplate_64c9f90fa9e5e24e7049c827c4fbe60081a5cb7569a469c51e28e39a10a
     <input type=\"hidden\" name=\"_csrf_token\"
            value=\"{{ csrf_token('authenticate') }}\"
     >
-{#
+<div class=\"row\">
+    <div class=\"col-md\">
         <div class=\"checkbox mb-3\">
             <label>
                 <input type=\"checkbox\" name=\"_remember_me\"> Remember me
             </label>
-        </div>#}
-
+        </div>
+    </div>
+    <div class=\"col-md text-right\">
+        <a href=\"/reset-password\">Reset Password</a>
+    </div>
+</div>
     <button class=\"btn btn-lg btn-primary\" type=\"submit\">
         Sign in
     </button>
