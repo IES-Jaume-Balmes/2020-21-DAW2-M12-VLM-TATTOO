@@ -12,33 +12,38 @@
 
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
+<<<<<<< HEAD
+=======
     <!-- MAIN (Center website) -->
+>>>>>>> d977f10efccc0d854b79a22a4cb8fca0b6209db6
 
-    <div id="myBtnContainer" >
+
+    <div id="myBtnContainer">
         <button class="btn" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn"  onclick="filterSelection('tradicional')"> Tradicional</button>
+        <button class="btn" onclick="filterSelection('tradicional')"> Tradicional</button>
         <button class="btn" onclick="filterSelection('full-color')"> Full Color</button>
         <button class="btn" onclick="filterSelection('realismo')"> Realismo</button>
         <button class="btn" onclick="filterSelection('backwoorksoft')"> BackWork Soft</button>
     </div>
 
-<div class="row">
+    <div class="row">
 
-    <div class="gallery">
-        {% for img in imagesTradicional %}
+        <div class="gallery">
+            {% for img in imagesTradicional %}
 
                 <figure class="content img-portfolio {{ img['cat'] }}">
-                    <img class="gallery_img" src="{{ asset(img['src']) }}" alt="tradicional" style="width:100%" loading="lazy" >
+                    <img class="gallery_img" src="{{ asset(img['src']) }}" alt="tradicional" style="width:100%"
+                         loading="lazy">
                 </figure>
 
-        {% endfor %}
+            {% endfor %}
+        </div>
     </div>
-</div>
+
+
+
+
     <script>
 
         filterSelection("all")
@@ -48,8 +53,9 @@
             x = document.getElementsByClassName("img-portfolio");
             if (c === 'all') {
                 for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "block"
-                };
+                    x[i].style.display = "block"
+                }
+                ;
                 return
             }
             var x, i;
@@ -59,7 +65,8 @@
                 else
                     x[i].style.display = "none"
 
-            };
+            }
+            ;
         }
 
 
