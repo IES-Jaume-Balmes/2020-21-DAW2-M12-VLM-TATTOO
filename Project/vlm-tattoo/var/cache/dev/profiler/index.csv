@@ -1,4 +1,12 @@
 <<<<<<< HEAD
+cf50e6,::1,GET,http://localhost:8000/,1621346709,,200
+91bf31,::1,GET,http://localhost:8000/,1621346774,,200
+d4268a,::1,GET,http://localhost:8000/cliente,1621346779,,200
+e42f0b,::1,GET,http://localhost:8000/login,1621346802,,200
+bda9dd,::1,GET,http://localhost:8000/login,1621346921,,200
+d35224,::1,GET,http://localhost:8000/login,1621346943,,200
+=======
+<<<<<<< HEAD
 10a6f0,::1,GET,http://localhost:8000/portfolio,1621003135,,200
 e0fe6a,::1,GET,http://localhost:8000/,1621003136,,200
 b5ea77,::1,GET,http://localhost:8000/portfolio,1621003143,,200
@@ -1007,6 +1015,7 @@ b23181,::1,GET,http://localhost:8000/calendari,1621269862,,200
 da2981,::1,GET,http://localhost:8000/calendari,1621269889,,200
 d52d73,::1,GET,http://localhost:8000/calendari,1621269897,,200
 >>>>>>> b9758f1c1ea4c7bef1dccf059066a519f9c456df
+<<<<<<< HEAD
 a3e652,::1,GET,http://localhost:8000/,1621345501,,200
 5cb5ff,::1,GET,http://localhost:8000/,1621345503,,200
 b31787,::1,GET,http://localhost:8000/portfolio,1621345509,9f6c95,500
@@ -1034,3 +1043,6 @@ ff320e,::1,GET,http://localhost:8000/portfolio,1621346368,1e8da3,500
 6737d0,::1,GET,http://localhost:8000/portfolio,1621347667,,200
 5a65ab,::1,GET,http://localhost:8000/style/bootstrap.min.css.map,1621347858,8b24fb,404
 8b24fb,::1,GET,http://localhost:8000/style/bootstrap.min.css.map,1621347858,,404
+=======
+>>>>>>> 586789fc98509f524d916b90672fda6ec3c6e580
+>>>>>>> 530b90a55807a613df6cf3625a7ab7c37d276ffd

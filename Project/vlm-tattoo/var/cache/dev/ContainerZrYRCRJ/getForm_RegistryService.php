@@ -1,7 +1,11 @@
 <?php
 
+<<<<<<< HEAD:Project/vlm-tattoo/var/cache/dev/ContainerSZ0Dxyn/getForm_RegistryService.php
+namespace ContainerSZ0Dxyn;
+=======
 namespace ContainerZrYRCRJ;
 
+>>>>>>> 586789fc98509f524d916b90672fda6ec3c6e580:Project/vlm-tattoo/var/cache/dev/ContainerZrYRCRJ/getForm_RegistryService.php
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\Exception\RuntimeException;
@@ -27,10 +31,8 @@ class getForm_RegistryService extends App_KernelDevDebugContainer
         include_once \dirname(__DIR__, 4).''.\DIRECTORY_SEPARATOR.'vendor'.\DIRECTORY_SEPARATOR.'symfony'.\DIRECTORY_SEPARATOR.'form'.\DIRECTORY_SEPARATOR.'ResolvedFormTypeFactory.php';
 
         return $container->privates['form.registry'] = new \Symfony\Component\Form\FormRegistry([0 => new \Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension(new \Symfony\Component\DependencyInjection\Argument\ServiceLocator($container->getService, [
-            'App\\Form\\ChangePasswordFormType' => ['privates', 'App\\Form\\ChangePasswordFormType', 'getChangePasswordFormTypeService', true],
             'App\\Form\\ClienteType' => ['privates', 'App\\Form\\ClienteType', 'getClienteTypeService', true],
             'App\\Form\\ReservaType' => ['privates', 'App\\Form\\ReservaType', 'getReservaTypeService', true],
-            'App\\Form\\ResetPasswordRequestFormType' => ['privates', 'App\\Form\\ResetPasswordRequestFormType', 'getResetPasswordRequestFormTypeService', true],
             'App\\Form\\TatuadorType' => ['privates', 'App\\Form\\TatuadorType', 'getTatuadorTypeService', true],
             'Symfony\\Bridge\\Doctrine\\Form\\Type\\EntityType' => ['privates', 'form.type.entity', 'getForm_Type_EntityService', true],
             'Symfony\\Component\\Form\\Extension\\Core\\Type\\ChoiceType' => ['privates', 'form.type.choice', 'getForm_Type_ChoiceService', true],
@@ -38,10 +40,8 @@ class getForm_RegistryService extends App_KernelDevDebugContainer
             'Symfony\\Component\\Form\\Extension\\Core\\Type\\FileType' => ['services', '.container.private.form.type.file', 'get_Container_Private_Form_Type_FileService', true],
             'Symfony\\Component\\Form\\Extension\\Core\\Type\\FormType' => ['privates', 'form.type.form', 'getForm_Type_FormService', true],
         ], [
-            'App\\Form\\ChangePasswordFormType' => '?',
             'App\\Form\\ClienteType' => '?',
             'App\\Form\\ReservaType' => '?',
-            'App\\Form\\ResetPasswordRequestFormType' => '?',
             'App\\Form\\TatuadorType' => '?',
             'Symfony\\Bridge\\Doctrine\\Form\\Type\\EntityType' => '?',
             'Symfony\\Component\\Form\\Extension\\Core\\Type\\ChoiceType' => '?',

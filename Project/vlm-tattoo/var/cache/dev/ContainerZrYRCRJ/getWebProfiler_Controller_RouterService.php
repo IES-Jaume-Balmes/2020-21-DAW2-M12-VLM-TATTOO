@@ -1,7 +1,11 @@
 <?php
 
+<<<<<<< HEAD:Project/vlm-tattoo/var/cache/dev/ContainerSZ0Dxyn/getWebProfiler_Controller_RouterService.php
+namespace ContainerSZ0Dxyn;
+=======
 namespace ContainerZrYRCRJ;
 
+>>>>>>> 586789fc98509f524d916b90672fda6ec3c6e580:Project/vlm-tattoo/var/cache/dev/ContainerZrYRCRJ/getWebProfiler_Controller_RouterService.php
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\Exception\RuntimeException;

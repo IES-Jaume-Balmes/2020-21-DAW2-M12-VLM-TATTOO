@@ -1,7 +1,11 @@
 <?php
 
+<<<<<<< HEAD:Project/vlm-tattoo/var/cache/dev/ContainerSZ0Dxyn/getMaker_Renderer_FormTypeRendererService.php
+namespace ContainerSZ0Dxyn;
+=======
 namespace ContainerZrYRCRJ;
 
+>>>>>>> 586789fc98509f524d916b90672fda6ec3c6e580:Project/vlm-tattoo/var/cache/dev/ContainerZrYRCRJ/getMaker_Renderer_FormTypeRendererService.php
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\Exception\RuntimeException;

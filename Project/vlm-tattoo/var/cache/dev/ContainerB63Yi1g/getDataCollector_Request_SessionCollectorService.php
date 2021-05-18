@@ -1,7 +1,16 @@
 <?php
 
+<<<<<<< HEAD:Project/vlm-tattoo/var/cache/dev/ContainerB63Yi1g/getDataCollector_Request_SessionCollectorService.php
 namespace ContainerB63Yi1g;
 
+=======
+<<<<<<< HEAD:Project/vlm-tattoo/var/cache/dev/ContainerSZ0Dxyn/getDataCollector_Request_SessionCollectorService.php
+namespace ContainerSZ0Dxyn;
+=======
+namespace ContainerZrYRCRJ;
+
+>>>>>>> 586789fc98509f524d916b90672fda6ec3c6e580:Project/vlm-tattoo/var/cache/dev/ContainerZrYRCRJ/getDataCollector_Request_SessionCollectorService.php
+>>>>>>> 530b90a55807a613df6cf3625a7ab7c37d276ffd:Project/vlm-tattoo/var/cache/dev/ContainerSZ0Dxyn/getDataCollector_Request_SessionCollectorService.php
 
 use Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
 use Symfony\Component\DependencyInjection\Exception\RuntimeException;
