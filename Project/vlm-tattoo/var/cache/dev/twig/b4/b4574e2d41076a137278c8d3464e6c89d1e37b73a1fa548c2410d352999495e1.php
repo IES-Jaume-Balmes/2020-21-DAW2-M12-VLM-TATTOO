@@ -106,35 +106,61 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
         <div class=\"logo\">
             <a href=\"/\"><img src=\"img/logo_invers3.png\" alt=\"logo\" class=\"img-responsive\"></a>
         </div>
-        <div class=\"my-auto\">
-            <button type=\"button\" class=\"text-white bg-dark\" data-toggle=\"modal\" data-target=\"#myModal\">
-                <a href=\"/login\">
-                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
-                         fill=\"currentColor\" class=\"bi bi-person\" viewBox=\"0 0 16 16\">
-                        <path
-                                d=\"M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z\"/>
-                    </svg>
-                    Login </a>
-            </button>
-            <span>|</span>
-            <button type=\"button\" class=\"text-white bg-dark\" data-toggle=\"modal\" data-target=\"#myModal\">
-                <a href=\"/cliente\">
-                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
-                         fill=\"currentColor\" class=\"bi bi-person-plus\" viewBox=\"0 0 16 16\">
-                        <path
-                                d=\"M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z\"/>
-                        <path fill-rule=\"evenodd\"
-                              d=\"M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z\"/>
-                    </svg>
-                    Registrar</a>
-            </button>
-        </div>
-    </div>
+        ";
+        // line 56
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 56, $this->source); })()), "user", [], "any", false, false, false, 56)) {
+            // line 57
+            echo "            <div class=\"my-auto\" id=\"logout\">
+                <button type=\"button\" class=\"text-white bg-dark\" data-toggle=\"modal\" data-target=\"#myModal\">
+                    <a href=\"/logout\">
+                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\"
+                             class=\"bi bi-person-x\" viewBox=\"0 0 16 16\">
+                            <path d=\"M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z\"/>
+                            <path fill-rule=\"evenodd\"
+                                  d=\"M12.146 5.146a.5.5 0 0 1 .708 0L14 6.293l1.146-1.147a.5.5 0 0 1 .708.708L14.707 7l1.147 1.146a.5.5 0 0 1-.708.708L14 7.707l-1.146 1.147a.5.5 0 0 1-.708-.708L13.293 7l-1.147-1.146a.5.5 0 0 1 0-.708z\"/>
+                        </svg>
+                        Logout</a>
+                </button>
+            </div>
+        ";
+        } else {
+            // line 70
+            echo "            <div class=\"my-auto\" id=\"login-register\">
+                <button type=\"button\" class=\"text-white bg-dark\" data-toggle=\"modal\" data-target=\"#myModal\">
+                    <a href=\"/login\">
+                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
+                             fill=\"currentColor\" class=\"bi bi-person\" viewBox=\"0 0 16 16\">
+                            <path
+                                    d=\"M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z\"/>
+                        </svg>
+                        Login </a>
+                </button>
+                <span>|</span>
+                <button type=\"button\" class=\"text-white bg-dark\" data-toggle=\"modal\" data-target=\"#myModal\">
+                    <a href=\"/cliente\">
+                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
+                             fill=\"currentColor\" class=\"bi bi-person-plus\" viewBox=\"0 0 16 16\">
+                            <path
+                                    d=\"M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z\"/>
+                            <path fill-rule=\"evenodd\"
+                                  d=\"M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z\"/>
+                        </svg>
+                        Registrar</a>
+                </button>
+            </div>
+        ";
+        }
+        // line 94
+        echo "    </div>
 
     <!-- MENU LATERAL -->
     <nav>
         <ul>
-            <li><a href=\"./reserva\">
+            ";
+        // line 99
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 99, $this->source); })()), "user", [], "any", false, false, false, 99)) {
+            // line 100
+            echo "            <li><a href=\"/reserva\">
                     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
                          fill=\"currentColor\" class=\"bi bi-calendar-event\" viewBox=\"0 0 16 16\">
                         <path d=\"M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z\"/>
@@ -142,7 +168,10 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
                                 d=\"M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z\"/>
                     </svg>
                     Reservar cita</a></li>
-            <li><a href=\"./descripcion\">
+            ";
+        }
+        // line 109
+        echo "            <li><a href=\"./descripcion\">
                     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
                          fill=\"currentColor\" class=\"bi bi-pencil\" viewBox=\"0 0 16 16\">
                         <path
@@ -164,12 +193,26 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
                                 d=\"M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z\"/>
                     </svg>
                     Videos</a></li>
-        </ul>
+            ";
+        // line 131
+        if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
+            // line 132
+            echo "                <li><a href=\"/calendari\">
+                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\"
+                             class=\"bi bi-play\" viewBox=\"0 0 16 16\">
+                            <path
+                                    d=\"M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z\"/>
+                        </svg>
+                        Calendari</a></li>
+            ";
+        }
+        // line 140
+        echo "        </ul>
     </nav>
     ";
-        // line 116
+        // line 142
         $this->displayBlock('body', $context, $blocks);
-        // line 117
+        // line 143
         echo "</div>
 </body>
 </html>
@@ -264,7 +307,7 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
 
     }
 
-    // line 116
+    // line 142
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -287,9 +330,14 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
         return "base.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  268 => 116,  257 => 29,  247 => 28,  236 => 25,  226 => 24,  215 => 21,  205 => 20,  186 => 10,  173 => 117,  171 => 116,  84 => 31,  82 => 28,  79 => 27,  77 => 24,  74 => 23,  72 => 20,  59 => 10,  48 => 1,);
+        return array (  311 => 142,  300 => 29,  290 => 28,  279 => 25,  269 => 24,  258 => 21,  248 => 20,  229 => 10,  216 => 143,  214 => 142,  210 => 140,  200 => 132,  198 => 131,  174 => 109,  163 => 100,  161 => 99,  154 => 94,  128 => 70,  113 => 57,  111 => 56,  84 => 31,  82 => 28,  79 => 27,  77 => 24,  74 => 23,  72 => 20,  59 => 10,  48 => 1,);
     }
 
     public function getSourceContext()
@@ -349,35 +397,51 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
         <div class=\"logo\">
             <a href=\"/\"><img src=\"img/logo_invers3.png\" alt=\"logo\" class=\"img-responsive\"></a>
         </div>
-        <div class=\"my-auto\">
-            <button type=\"button\" class=\"text-white bg-dark\" data-toggle=\"modal\" data-target=\"#myModal\">
-                <a href=\"/login\">
-                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
-                         fill=\"currentColor\" class=\"bi bi-person\" viewBox=\"0 0 16 16\">
-                        <path
-                                d=\"M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z\"/>
-                    </svg>
-                    Login </a>
-            </button>
-            <span>|</span>
-            <button type=\"button\" class=\"text-white bg-dark\" data-toggle=\"modal\" data-target=\"#myModal\">
-                <a href=\"/cliente\">
-                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
-                         fill=\"currentColor\" class=\"bi bi-person-plus\" viewBox=\"0 0 16 16\">
-                        <path
-                                d=\"M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z\"/>
-                        <path fill-rule=\"evenodd\"
-                              d=\"M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z\"/>
-                    </svg>
-                    Registrar</a>
-            </button>
-        </div>
+        {% if app.user %}
+            <div class=\"my-auto\" id=\"logout\">
+                <button type=\"button\" class=\"text-white bg-dark\" data-toggle=\"modal\" data-target=\"#myModal\">
+                    <a href=\"/logout\">
+                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\"
+                             class=\"bi bi-person-x\" viewBox=\"0 0 16 16\">
+                            <path d=\"M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z\"/>
+                            <path fill-rule=\"evenodd\"
+                                  d=\"M12.146 5.146a.5.5 0 0 1 .708 0L14 6.293l1.146-1.147a.5.5 0 0 1 .708.708L14.707 7l1.147 1.146a.5.5 0 0 1-.708.708L14 7.707l-1.146 1.147a.5.5 0 0 1-.708-.708L13.293 7l-1.147-1.146a.5.5 0 0 1 0-.708z\"/>
+                        </svg>
+                        Logout</a>
+                </button>
+            </div>
+        {% else %}
+            <div class=\"my-auto\" id=\"login-register\">
+                <button type=\"button\" class=\"text-white bg-dark\" data-toggle=\"modal\" data-target=\"#myModal\">
+                    <a href=\"/login\">
+                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
+                             fill=\"currentColor\" class=\"bi bi-person\" viewBox=\"0 0 16 16\">
+                            <path
+                                    d=\"M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z\"/>
+                        </svg>
+                        Login </a>
+                </button>
+                <span>|</span>
+                <button type=\"button\" class=\"text-white bg-dark\" data-toggle=\"modal\" data-target=\"#myModal\">
+                    <a href=\"/cliente\">
+                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
+                             fill=\"currentColor\" class=\"bi bi-person-plus\" viewBox=\"0 0 16 16\">
+                            <path
+                                    d=\"M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z\"/>
+                            <path fill-rule=\"evenodd\"
+                                  d=\"M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z\"/>
+                        </svg>
+                        Registrar</a>
+                </button>
+            </div>
+        {% endif %}
     </div>
 
     <!-- MENU LATERAL -->
     <nav>
         <ul>
-            <li><a href=\"./reserva\">
+            {% if app.user %}
+            <li><a href=\"/reserva\">
                     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
                          fill=\"currentColor\" class=\"bi bi-calendar-event\" viewBox=\"0 0 16 16\">
                         <path d=\"M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z\"/>
@@ -385,6 +449,7 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
                                 d=\"M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z\"/>
                     </svg>
                     Reservar cita</a></li>
+            {% endif %}
             <li><a href=\"./descripcion\">
                     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
                          fill=\"currentColor\" class=\"bi bi-pencil\" viewBox=\"0 0 16 16\">
@@ -407,6 +472,15 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
                                 d=\"M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z\"/>
                     </svg>
                     Videos</a></li>
+            {% if is_granted('ROLE_ADMIN') %}
+                <li><a href=\"/calendari\">
+                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\"
+                             class=\"bi bi-play\" viewBox=\"0 0 16 16\">
+                            <path
+                                    d=\"M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z\"/>
+                        </svg>
+                        Calendari</a></li>
+            {% endif %}
         </ul>
     </nav>
     {% block body %}{% endblock %}
