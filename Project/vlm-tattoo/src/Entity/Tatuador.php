@@ -48,11 +48,6 @@ class Tatuador implements UserInterface
     private $password;
 
     /**
-     * @ORM\OneToMany(targetEntity="Reserva", mappedBy="tatuador")
-     */
-    private $reservas;
-
-    /**
      * @ORM\Column(type="json")
      */
     private $roles = [];
@@ -172,22 +167,6 @@ class Tatuador implements UserInterface
     public function setDni($dni): void
     {
         $this->dni = $dni;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getReservas()
-    {
-        return $this->reservas;
-    }
-
-    /**
-     * @param mixed $reservas
-     */
-    public function setReservas($reservas): void
-    {
-        $this->reservas = $reservas;
     }
 
     /**

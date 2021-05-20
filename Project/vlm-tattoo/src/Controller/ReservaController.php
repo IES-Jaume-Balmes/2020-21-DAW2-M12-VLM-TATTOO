@@ -22,13 +22,13 @@ class ReservaController extends AbstractController
         $form = $this->createForm(ReservaType::class, $reserva);
         $form->handleRequest($request);
 
-        if($form->isSubmitted() && $form->isValid()){
+        if ($form->isSubmitted() && $form->isValid()) {
             $file = $form->get('imagen')->getData();
 
             if ($file) {
                 $originalFilename = pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME);
                 $safeFilename = $slugger->slug($originalFilename);
-                $newFilename = $safeFilename.'-'.uniqid().'.'.$file->guessExtension();
+                $newFilename = $safeFilename . '-' . uniqid() . '.' . $file->guessExtension();
 
                 try {
                     $file->move(
@@ -58,4 +58,45 @@ class ReservaController extends AbstractController
             'reserva' => $form->createView(),
         ]);
     }
+
+    #[Route("/reserva/edit/{id}")]
+    public function update(int $id): Response
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+        $reserva = $entityManager->getRepository(Reserva::class)->find($id);
+
+        if (!$reserva) {
+            throw $this->createNotFoundException(
+                'No reserva found for id ' . $id
+            );
+        }
+
+        $reserva->setDescripcion('');
+        $entityManager->flush();
+
+        return $this->redirectToRoute('calendari', [
+            'id' => $reserva->getId()
+        ]);
+    }
+
+    #[Route("/reserva/delete/{id}")]
+    public function delete(int $id): Response
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+        $reserva = $entityManager->getRepository(Reserva::class)->find($id);
+
+        if (!$reserva) {
+            throw $this->createNotFoundException(
+                'No reserva found for id ' . $id
+            );
+        }
+
+        $entityManager->remove($reserva);
+        $entityManager->flush();
+
+        return $this->redirectToRoute('calendari', [
+            'id' => $reserva->getId()
+        ]);
+    }
+
 }
