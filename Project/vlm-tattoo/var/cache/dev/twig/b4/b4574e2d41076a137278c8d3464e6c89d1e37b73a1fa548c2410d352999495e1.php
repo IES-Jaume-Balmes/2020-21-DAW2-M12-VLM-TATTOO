@@ -87,6 +87,8 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
     <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js\"></script>
     <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
     <script type=\"text/javascript\" src=\"js/index.js\"></script>
+
+    <script src=\"https://js.stripe.com/v3/\"></script>
     <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\"
             integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\"
             crossorigin=\"anonymous\"></script>
@@ -107,9 +109,9 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
             <a href=\"/\"><img src=\"img/logo_invers3.png\" alt=\"logo\" class=\"img-responsive\"></a>
         </div>
         ";
-        // line 56
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 56, $this->source); })()), "user", [], "any", false, false, false, 56)) {
-            // line 57
+        // line 58
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 58, $this->source); })()), "user", [], "any", false, false, false, 58)) {
+            // line 59
             echo "            <div class=\"my-auto\" id=\"logout\">
                 <button type=\"button\" class=\"text-white bg-dark\" data-toggle=\"modal\" data-target=\"#myModal\">
                     <a href=\"/logout\">
@@ -124,7 +126,7 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
             </div>
         ";
         } else {
-            // line 70
+            // line 72
             echo "            <div class=\"my-auto\" id=\"login-register\">
                 <button type=\"button\" class=\"text-white bg-dark\" data-toggle=\"modal\" data-target=\"#myModal\">
                     <a href=\"/login\">
@@ -150,7 +152,7 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
             </div>
         ";
         }
-        // line 94
+        // line 96
         echo "    </div>
 
     <!-- MENU LATERAL -->
@@ -166,9 +168,9 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
                     </svg>
                     Inicio</a></li>
             ";
-        // line 108
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 108, $this->source); })()), "user", [], "any", false, false, false, 108)) {
-            // line 109
+        // line 110
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 110, $this->source); })()), "user", [], "any", false, false, false, 110)) {
+            // line 111
             echo "                <li><a href=\"/reserva\">
                         <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
                              fill=\"currentColor\" class=\"bi bi-calendar-event\" viewBox=\"0 0 16 16\">
@@ -179,7 +181,7 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
                         Reservar cita</a></li>
             ";
         }
-        // line 118
+        // line 120
         echo "            <li><a href=\"./descripcion\">
                     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
                          fill=\"currentColor\" class=\"bi bi-pencil\" viewBox=\"0 0 16 16\">
@@ -203,9 +205,9 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
                     </svg>
                     Videos</a></li>
             ";
-        // line 140
+        // line 142
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-            // line 141
+            // line 143
             echo "                <li><a href=\"/calendari\">
                         <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\"
                              class=\"bi bi-calendar\" viewBox=\"0 0 16 16\">
@@ -214,13 +216,13 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
                         Calendari</a></li>
             ";
         }
-        // line 148
+        // line 150
         echo "        </ul>
     </nav>
     ";
-        // line 150
+        // line 152
         $this->displayBlock('body', $context, $blocks);
-        // line 151
+        // line 153
         echo "</div>
 </body>
 </html>
@@ -315,7 +317,7 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
 
     }
 
-    // line 150
+    // line 152
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -345,7 +347,7 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
 
     public function getDebugInfo()
     {
-        return array (  319 => 150,  308 => 29,  298 => 28,  287 => 25,  277 => 24,  266 => 21,  256 => 20,  237 => 10,  224 => 151,  222 => 150,  218 => 148,  209 => 141,  207 => 140,  183 => 118,  172 => 109,  170 => 108,  154 => 94,  128 => 70,  113 => 57,  111 => 56,  84 => 31,  82 => 28,  79 => 27,  77 => 24,  74 => 23,  72 => 20,  59 => 10,  48 => 1,);
+        return array (  321 => 152,  310 => 29,  300 => 28,  289 => 25,  279 => 24,  268 => 21,  258 => 20,  239 => 10,  226 => 153,  224 => 152,  220 => 150,  211 => 143,  209 => 142,  185 => 120,  174 => 111,  172 => 110,  156 => 96,  130 => 72,  115 => 59,  113 => 58,  84 => 31,  82 => 28,  79 => 27,  77 => 24,  74 => 23,  72 => 20,  59 => 10,  48 => 1,);
     }
 
     public function getSourceContext()
@@ -386,6 +388,8 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
     <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js\"></script>
     <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
     <script type=\"text/javascript\" src=\"js/index.js\"></script>
+
+    <script src=\"https://js.stripe.com/v3/\"></script>
     <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\"
             integrity=\"sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj\"
             crossorigin=\"anonymous\"></script>

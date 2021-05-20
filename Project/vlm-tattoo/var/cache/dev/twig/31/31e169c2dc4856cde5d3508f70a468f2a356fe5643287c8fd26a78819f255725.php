@@ -66,7 +66,7 @@ class __TwigTemplate_dc2037ba3d96d8299e016906cdcad6f40f77357e2ba6794cbca9026beb6
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Hello PagamientoController!";
+        echo "Pago";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -179,7 +179,7 @@ class __TwigTemplate_dc2037ba3d96d8299e016906cdcad6f40f77357e2ba6794cbca9026beb6
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Hello PagamientoController!{% endblock %}
+{% block title %}Pago{% endblock %}
 
 {% block body %}
 <style>
