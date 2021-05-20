@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\Cliente;
 use App\Form\ClienteType;
 use App\Repository\ReservaRepository;
+use App\Controller\ReservaController;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -37,6 +38,8 @@ class CalendariController extends AbstractController
                 'start' => $event->getFechaInicio()->format('Y-m-d H:i:s'),
                 'end' => $event->getFechaFinal()->format('Y-m-d H:i:s'),
                 'backgroundColor' => '#ffffff',
+                'update' => '/reserva/edit/'. $event->getId(),
+                'delete' => '/reserva/delete/'. $event->getId(),
             ];
         }
         $data = json_encode($rdvs);
