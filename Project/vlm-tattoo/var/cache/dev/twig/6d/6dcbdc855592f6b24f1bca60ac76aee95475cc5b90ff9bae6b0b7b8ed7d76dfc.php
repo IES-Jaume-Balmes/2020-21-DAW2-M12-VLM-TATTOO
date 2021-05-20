@@ -65,7 +65,7 @@ class __TwigTemplate_a6b734c9fd4ba21e0f30b57d41a520da8877cabd2cfdc18365273d0b439
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Hello VideosController!";
+        echo "Tutoriales!";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -91,10 +91,7 @@ class __TwigTemplate_a6b734c9fd4ba21e0f30b57d41a520da8877cabd2cfdc18365273d0b439
 </style>
 
 <div class=\"example-wrapper\">
-    <h1>Hello ";
-        // line 12
-        echo twig_escape_filter($this->env, (isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 12, $this->source); })()), "html", null, true);
-        echo "! ✅</h1>
+    <h1>Comming Soon! ✅</h1>
 </div>
 ";
         
@@ -117,14 +114,14 @@ class __TwigTemplate_a6b734c9fd4ba21e0f30b57d41a520da8877cabd2cfdc18365273d0b439
 
     public function getDebugInfo()
     {
-        return array (  96 => 12,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Hello VideosController!{% endblock %}
+{% block title %}Tutoriales!{% endblock %}
 
 {% block body %}
 <style>
@@ -133,7 +130,7 @@ class __TwigTemplate_a6b734c9fd4ba21e0f30b57d41a520da8877cabd2cfdc18365273d0b439
 </style>
 
 <div class=\"example-wrapper\">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <h1>Comming Soon! ✅</h1>
 </div>
 {% endblock %}
 ", "videos/index.html.twig", "C:\\Users\\david\\Desktop\\DAW\\M12\\2020-21-DAW2-M12-VLM-TATTOO\\Project\\vlm-tattoo\\templates\\videos\\index.html.twig");

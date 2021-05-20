@@ -156,21 +156,30 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
     <!-- MENU LATERAL -->
     <nav>
         <ul>
-            ";
-        // line 99
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 99, $this->source); })()), "user", [], "any", false, false, false, 99)) {
-            // line 100
-            echo "            <li><a href=\"/reserva\">
-                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
-                         fill=\"currentColor\" class=\"bi bi-calendar-event\" viewBox=\"0 0 16 16\">
-                        <path d=\"M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z\"/>
-                        <path
-                                d=\"M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z\"/>
+            <li><a href=\"/\">
+                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\"
+                         class=\"bi bi-house\" viewBox=\"0 0 16 16\">
+                        <path fill-rule=\"evenodd\"
+                              d=\"M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z\"/>
+                        <path fill-rule=\"evenodd\"
+                              d=\"M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z\"/>
                     </svg>
-                    Reservar cita</a></li>
+                    Inicio</a></li>
+            ";
+        // line 108
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 108, $this->source); })()), "user", [], "any", false, false, false, 108)) {
+            // line 109
+            echo "                <li><a href=\"/reserva\">
+                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
+                             fill=\"currentColor\" class=\"bi bi-calendar-event\" viewBox=\"0 0 16 16\">
+                            <path d=\"M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z\"/>
+                            <path
+                                    d=\"M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z\"/>
+                        </svg>
+                        Reservar cita</a></li>
             ";
         }
-        // line 109
+        // line 118
         echo "            <li><a href=\"./descripcion\">
                     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
                          fill=\"currentColor\" class=\"bi bi-pencil\" viewBox=\"0 0 16 16\">
@@ -194,25 +203,24 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
                     </svg>
                     Videos</a></li>
             ";
-        // line 131
+        // line 140
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-            // line 132
+            // line 141
             echo "                <li><a href=\"/calendari\">
                         <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\"
-                             class=\"bi bi-play\" viewBox=\"0 0 16 16\">
-                            <path
-                                    d=\"M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z\"/>
+                             class=\"bi bi-calendar\" viewBox=\"0 0 16 16\">
+                            <path d=\"M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z\"/>
                         </svg>
                         Calendari</a></li>
             ";
         }
-        // line 140
+        // line 148
         echo "        </ul>
     </nav>
     ";
-        // line 142
+        // line 150
         $this->displayBlock('body', $context, $blocks);
-        // line 143
+        // line 151
         echo "</div>
 </body>
 </html>
@@ -307,7 +315,7 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
 
     }
 
-    // line 142
+    // line 150
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -337,7 +345,7 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
 
     public function getDebugInfo()
     {
-        return array (  311 => 142,  300 => 29,  290 => 28,  279 => 25,  269 => 24,  258 => 21,  248 => 20,  229 => 10,  216 => 143,  214 => 142,  210 => 140,  200 => 132,  198 => 131,  174 => 109,  163 => 100,  161 => 99,  154 => 94,  128 => 70,  113 => 57,  111 => 56,  84 => 31,  82 => 28,  79 => 27,  77 => 24,  74 => 23,  72 => 20,  59 => 10,  48 => 1,);
+        return array (  319 => 150,  308 => 29,  298 => 28,  287 => 25,  277 => 24,  266 => 21,  256 => 20,  237 => 10,  224 => 151,  222 => 150,  218 => 148,  209 => 141,  207 => 140,  183 => 118,  172 => 109,  170 => 108,  154 => 94,  128 => 70,  113 => 57,  111 => 56,  84 => 31,  82 => 28,  79 => 27,  77 => 24,  74 => 23,  72 => 20,  59 => 10,  48 => 1,);
     }
 
     public function getSourceContext()
@@ -440,15 +448,24 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
     <!-- MENU LATERAL -->
     <nav>
         <ul>
-            {% if app.user %}
-            <li><a href=\"/reserva\">
-                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
-                         fill=\"currentColor\" class=\"bi bi-calendar-event\" viewBox=\"0 0 16 16\">
-                        <path d=\"M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z\"/>
-                        <path
-                                d=\"M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z\"/>
+            <li><a href=\"/\">
+                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\"
+                         class=\"bi bi-house\" viewBox=\"0 0 16 16\">
+                        <path fill-rule=\"evenodd\"
+                              d=\"M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z\"/>
+                        <path fill-rule=\"evenodd\"
+                              d=\"M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z\"/>
                     </svg>
-                    Reservar cita</a></li>
+                    Inicio</a></li>
+            {% if app.user %}
+                <li><a href=\"/reserva\">
+                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
+                             fill=\"currentColor\" class=\"bi bi-calendar-event\" viewBox=\"0 0 16 16\">
+                            <path d=\"M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z\"/>
+                            <path
+                                    d=\"M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z\"/>
+                        </svg>
+                        Reservar cita</a></li>
             {% endif %}
             <li><a href=\"./descripcion\">
                     <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
@@ -475,9 +492,8 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
             {% if is_granted('ROLE_ADMIN') %}
                 <li><a href=\"/calendari\">
                         <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\"
-                             class=\"bi bi-play\" viewBox=\"0 0 16 16\">
-                            <path
-                                    d=\"M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z\"/>
+                             class=\"bi bi-calendar\" viewBox=\"0 0 16 16\">
+                            <path d=\"M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z\"/>
                         </svg>
                         Calendari</a></li>
             {% endif %}
