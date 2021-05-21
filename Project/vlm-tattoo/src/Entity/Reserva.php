@@ -40,11 +40,6 @@ class Reserva
     private $cliente;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Tatuador", inversedBy="reservas")
-     */
-    private $tatuador;
-
-    /**
      * @ORM\Column(type="string")
      */
     private $imagen;
@@ -126,22 +121,6 @@ class Reserva
     public function setCliente($cliente): void
     {
         $this->cliente = $cliente;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getTatuador()
-    {
-        return $this->tatuador;
-    }
-
-    /**
-     * @param mixed $tatuador
-     */
-    public function setTatuador($tatuador): void
-    {
-        $this->tatuador = $tatuador;
     }
 
     public function getDeposito(): ?string

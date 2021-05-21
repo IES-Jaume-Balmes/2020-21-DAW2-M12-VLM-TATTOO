@@ -32,7 +32,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'd977f10efccc0d854b79a22a4cb8fca0b6209db6',
+    'reference' => '5da79b2c867098e40e6e9ab48f3ffc42055a8697',
     'name' => '__root__',
   ),
   'versions' => 
@@ -44,7 +44,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'd977f10efccc0d854b79a22a4cb8fca0b6209db6',
+      'reference' => '5da79b2c867098e40e6e9ab48f3ffc42055a8697',
     ),
     'composer/package-versions-deprecated' => 
     array (
@@ -420,6 +420,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '430d14c01836b77c28092883d195a43ce413ee32',
+    ),
+    'stripe/stripe-php' => 
+    array (
+      'pretty_version' => 'v7.79.0',
+      'version' => '7.79.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e17e85bc13dfa531bdfb3d3719d3810431d104f9',
     ),
     'symfony/asset' => 
     array (

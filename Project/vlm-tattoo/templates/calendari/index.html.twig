@@ -4,39 +4,39 @@
 
 {% block stylesheets %}
 
-<style>
-    .contenidor{
-         padding: 1% 0 1% 0;
-    }
+    <style>
+        .contenidor {
+            padding: 1% 0 1% 0;
+        }
 
-    #calendari{
+        #calendari {
 
-    }
+        }
 
-    .calendari-container{
-        width: 50%;
-        padding: 1%;
-        background-color: white;
-        border-radius: 2%;
-    }
+        .calendari-container {
+            width: 50%;
+            padding: 1%;
+            background-color: white;
+            border-radius: 2%;
+        }
 
-    #EpicModal{
-        background-color: white;
-    }
+        #EpicModal {
+            background-color: white;
+        }
 
-    #img2{
-        max-height: 50%;
-        max-width: 50%;
-        margin: auto;
+        #img2 {
+            max-height: 50%;
+            max-width: 50%;
+            margin: auto;
 
-    }
+        }
 
-    .card-cos{
-        margin: 10%;
-    }
+        .card-cos {
+            margin: 10%;
+        }
 
 
-</style>
+    </style>
 
 {% endblock %}
 
@@ -76,23 +76,41 @@
                 </div>
             </div>
 
-            <div class="card-cos">
-                <h5 class="card-title" >Cita</h5>
+            <div class="card-body">
+                <h5 class="card-title">Cita</h5>
                 <p id="des" class="card-text">Descripción de la reserva</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" id="fecha_inicio">Fecha de inicio</li>
+                    <li class="list-group-item" id="fecha_fin">Fecha de finalización</li>
+                </ul>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>Información del cliente</strong></li>
+                </ul>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" id="cliente_nombre">Nombre del cliente</li>
+                    <li class="list-group-item" id="cliente_email">Email del cliente</li>
+                    <li class="list-group-item" id="cliente_telefono">Telefono del cliene</li>
+                </ul>
             </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item" id="fecha_inicio">Fecha de inicio</li>
-                <li class="list-group-item" id="fecha_fin">Fecha de finalización</li>
-            </ul>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item"><strong>Información del cliente</strong></li>
-            </ul>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item" id="cliente_nombre">Nombre del cliente</li>
-                <li class="list-group-item" id="cliente_email">Email del cliente</li>
-                <li class="list-group-item" id="cliente_telefono">Telefono del cliene</li>
-            </ul>
+            <div class="card-footer">
+                <div>
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a type="button" class="btn btn-warning w-100" id="update">
+                            Update
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a type="button" class="btn btn-danger w-100" id="delete">
+                            Delete
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
 
     <div id="calendari" class="bg-white"></div>
@@ -102,50 +120,52 @@
 
 {% block javascripts %}
 
-<script>
-    window.onload = () => {
-       let calendariElt = document.querySelector("#calendari")
-        let calendari = new FullCalendar.Calendar(calendariElt,{
-            initialView: 'dayGridMonth',
-            locale:'esp',
-            timeZone: 'Europe/Barcelona',
-            headerToolbar: {
-                start: 'prev,next today',
-                center: 'title',
-                end: 'dayGridMonth,timeGridWeek'
-            },
+    <script>
+        window.onload = () => {
+            let calendariElt = document.querySelector("#calendari")
+            let calendari = new FullCalendar.Calendar(calendariElt, {
+                initialView: 'dayGridMonth',
+                locale: 'esp',
+                timeZone: 'Europe/Barcelona',
+                headerToolbar: {
+                    start: 'prev,next today',
+                    center: 'title',
+                    end: 'dayGridMonth,timeGridWeek'
+                },
 
-            eventClick:function (info){
-                $('#des').html(info.event._def.extendedProps.des);
-                $('#tamano').html(info.event._def.extendedProps.talla);
-                var fecha=info.event.start;
-                var fecha_fin=info.event.end;
+                eventClick: function (info) {
+                    $('#des').html(info.event._def.extendedProps.des);
+                    $('#tamano').html(info.event._def.extendedProps.talla);
+                    var fecha = info.event.start;
+                    var fecha_fin = info.event.end;
 
-                console.log(fecha);
+                    console.log(fecha);
 
-                console.log(fecha.toLocaleDateString());
-                console.log(fecha.toLocaleDateString()+" a las "+fecha.getUTCHours()+":"+fecha.getUTCMinutes());
-                $('#fecha_inicio').html(fecha.toLocaleDateString()+" a las "+fecha.getUTCHours()+":"+fecha.getUTCMinutes());
-                $('#fecha_fin').html(fecha_fin.toLocaleDateString()+" a las "+fecha_fin.getUTCHours()+":"+fecha_fin.getUTCMinutes());
-                $('#cliente_nombre').html(info.event._def.extendedProps.cliente_apellido);
-                $('#cliente_email').html(info.event._def.extendedProps.cliente_email);
-                $('#cliente_telefono').html(info.event._def.extendedProps.cliente_telefono);
-                //$('#img').src("/img/icon.png");
-                //$("#img").attr("src", {{ asset('/img/icon.png') }});
-                document.getElementById("img2").src = "/uploads/imagenes/"+ info.event.extendedProps.imatge;
+                    console.log(fecha.toLocaleDateString());
+                    console.log(fecha.toLocaleDateString() + " a las " + fecha.getUTCHours() + ":" + fecha.getUTCMinutes());
+                    $('#fecha_inicio').html(fecha.toLocaleDateString() + " a las " + fecha.getUTCHours() + ":" + fecha.getUTCMinutes());
+                    $('#fecha_fin').html(fecha_fin.toLocaleDateString() + " a las " + fecha_fin.getUTCHours() + ":" + fecha_fin.getUTCMinutes());
+                    $('#cliente_nombre').html(info.event._def.extendedProps.cliente_apellido);
+                    $('#cliente_email').html(info.event._def.extendedProps.cliente_email);
+                    $('#cliente_telefono').html(info.event._def.extendedProps.cliente_telefono);
 
-                //console.log(_def.extendedProps.imatge);
-                //console.log(info.event._def.extendedProps.cliente);
+                    $('#update').attr('href', info.event._def.extendedProps.update);
+                    $('#delete').attr('href', info.event._def.extendedProps.delete);
+                    //$('#img').src("/img/icon.png");
+                    //$("#img").attr("src", {{ asset('/img/icon.png') }});
+                    document.getElementById("img2").src = "/uploads/imagenes/" + info.event.extendedProps.imatge;
 
-            },
+                    //console.log(_def.extendedProps.imatge);
+                    //console.log(info.event._def.extendedProps.cliente);
 
-            events: {{ data|raw  }}
-        })
-        calendari.render()
-    }
+                },
+
+                events: {{ data|raw }}
+            })
+            calendari.render()
+        }
 
 
-
-</script>
+    </script>
 
 {% endblock %}
