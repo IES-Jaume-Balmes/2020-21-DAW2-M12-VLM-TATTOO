@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Portfolio{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="style/portfolio2.css" type="text/css">
+{% endblock %}
+
+
+{% block body %}
+
+    <!-- MAIN (Center website) -->
+    <div class="container text-center my-5">
+        <div>
+            <button class="btn btn-primary" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn btn-primary" onclick="filterSelection('tradicional')"> Tradicional</button>
+            <button class="btn btn-primary" onclick="filterSelection('full-color')"> Full Color</button>
+            <button class="btn btn-primary" onclick="filterSelection('realismo')"> Realismo</button>
+            <button class="btn btn-primary" onclick="filterSelection('backwoorksoft')"> BackWork Soft</button>
+        </div>
+    </div>
+    <div class="isotope container">
+        {% for img in imagesTradicional %}
+            <div class="grid-item {{ img['cat'] }}">
+                <img class="gallery_img" src="{{ asset(img['src']) }}" alt="{{ img['cat'] }}" loading="lazy">
+            </div>
+        {% endfor %}
+    </div>
+    </div>
+    <script>
+
+        filterSelection("all")
+
+        function filterSelection(c) {
+            console.log(c)
+            x = document.getElementsByClassName("grid-item");
+            if (c === 'all') {
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "block"
+                }
+                ;
+                return
+            }
+            var x, i;
+            for (i = 0; i < x.length; i++) {
+                if (x[i].classList.contains(c))
+                    x[i].style.display = "block"
+                else
+                    x[i].style.display = "none"
+
+            }
+            ;
+        }
+
+
+    </script>
+
+
+
+{% endblock %}

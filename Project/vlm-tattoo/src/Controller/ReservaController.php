@@ -53,8 +53,6 @@ class ReservaController extends AbstractController
             return $this->redirectToRoute('dashboard');
         }
         return $this->render('reserva/index.html.twig', [
-            'controller_name' => 'ReservaController',
-            'MiVariable' => '[Hola esto es una prueba 🤔]',
             'reserva' => $form->createView(),
         ]);
     }

@@ -34,7 +34,7 @@ class PortfolioController extends AbstractController
             }
             $dirintTradicional->close();
         }
-        return $this->render('portfolio/index.html.twig', [
+        return $this->render('portfolio/portfolio.html.twig', [
             'imagesTradicional' => $imagesTradicional,
             'controller_name' => 'PortfolioController',
 
