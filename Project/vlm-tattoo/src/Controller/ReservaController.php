@@ -12,7 +12,6 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\String\Slugger\SluggerInterface;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\HttpFoundation\File\Exception\FileException;
-
 class ReservaController extends AbstractController
 {
     #[Route('/reserva', name: 'reserva')]
@@ -47,9 +46,14 @@ class ReservaController extends AbstractController
             $em = $this->getDoctrine()->getManager();
             $reserva->setDeposito(0);
             $reserva->setCliente($cliente);
-            $em->persist($reserva);
-            $em->flush();
+            $now = new \DateTime('now');
+
+            $reserva->setFechaInicio($now);
+            $reserva->setFechaFinal($now);
+
+
             $this->addFlash('exito', Reserva::RESERVA);
+
             return $this->redirectToRoute('dashboard');
         }
         return $this->render('reserva/index.html.twig', [

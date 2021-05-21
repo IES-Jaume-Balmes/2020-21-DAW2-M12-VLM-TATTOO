@@ -26,8 +26,8 @@ class ReservaType extends AbstractType
             ])
             ->add('imagen', FileType::class, ['label' => 'Inserta una imagen del tatuaje deseado', 'mapped' => false, 'required' => false])
             ->add('descripcion', TextareaType::class)
-            ->add('fechaInicio', DateTimeType::class)
-            ->add('fechaFinal', DateTimeType::class)
+            //->add('fechaInicio', DateTimeType::class)
+            //->add('fechaFinal', DateTimeType::class)
             ->add('Reserva', SubmitType::class)
         ;
     }
