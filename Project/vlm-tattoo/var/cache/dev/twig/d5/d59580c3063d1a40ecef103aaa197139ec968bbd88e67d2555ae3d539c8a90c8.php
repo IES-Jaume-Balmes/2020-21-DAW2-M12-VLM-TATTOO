@@ -125,24 +125,44 @@ class __TwigTemplate_af171c90ba6bac2874bf6d65c89b6b08260182cf12ed61f94b1da2caea0
 
     <script>
         jQuery(document).ready(function() {
+            const yearDate = \"#reserva_fechaInicio_date_year\";
+            const monthDate = \"#reserva_fechaInicio_date_month\";
+            const dayDate = \"#reserva_fechaInicio_date_day\";
+            getTimes();
+
+            \$(yearDate).change(function() {
+                console.log(\"change\");
+                getTimes();
+            });
+            \$(monthDate).change(function() {
+                console.log(\"change\");
+                getTimes();
+            });
+            \$(dayDate).change(function() {
+                console.log(\"change\");
+                getTimes();
+            });
+        function getTimes() {
             \$.ajax({
                 type: \"GET\",
                 url: \"/reserva-times\",
-                data: {
-                    \$year : \$( \"#reserva_fechaInicio_date_year option:selected\" ).text(),
-                    \$month : \$( \"#reserva_fechaInicio_date_month option:selected\" ).text(),
-                    \$day : \$( \"#reserva_fechaInicio_time_hour option:selected\" ).text(),
-                },
-                dataType: \"json\",
-                success: function(response) {
-                    var len = response.length;
-                    var options = '';
-                    for(var i=0; i<len; i++){
-                       options += '<option value=\"'+response[i]+'\">'+response[i]+'</option>';
+                    data: {
+                        year : \$( \"#reserva_fechaInicio_date_year option:selected\" ).text(),
+                        month : \$( \"#reserva_fechaInicio_date_month option:selected\" ).text(),
+                        day : \$( \"#reserva_fechaInicio_date_day option:selected\" ).text(),
+                    },
+                    dataType: \"json\",
+                    success: function(response) {
+                        var len = response.length;
+                        var options = '';
+                        for(var i=0; i<len; i++){
+                            var available = response[i][1] ? '' : \"disabled\";
+                            options += '<option '+available+' value=\"'+response[i][0]+'\">'+response[i][0]+'</option>';
+                        }
+                        \$('#reserva_fechaInicio_time_hour').html(options);
                     }
-                    \$('#reserva_fechaInicio_time_hour').html(options);
-                }
-            });
+                });
+            }
         });
     </script>
 ";
@@ -197,24 +217,44 @@ class __TwigTemplate_af171c90ba6bac2874bf6d65c89b6b08260182cf12ed61f94b1da2caea0
 
     <script>
         jQuery(document).ready(function() {
+            const yearDate = \"#reserva_fechaInicio_date_year\";
+            const monthDate = \"#reserva_fechaInicio_date_month\";
+            const dayDate = \"#reserva_fechaInicio_date_day\";
+            getTimes();
+
+            \$(yearDate).change(function() {
+                console.log(\"change\");
+                getTimes();
+            });
+            \$(monthDate).change(function() {
+                console.log(\"change\");
+                getTimes();
+            });
+            \$(dayDate).change(function() {
+                console.log(\"change\");
+                getTimes();
+            });
+        function getTimes() {
             \$.ajax({
                 type: \"GET\",
                 url: \"/reserva-times\",
-                data: {
-                    \$year : \$( \"#reserva_fechaInicio_date_year option:selected\" ).text(),
-                    \$month : \$( \"#reserva_fechaInicio_date_month option:selected\" ).text(),
-                    \$day : \$( \"#reserva_fechaInicio_time_hour option:selected\" ).text(),
-                },
-                dataType: \"json\",
-                success: function(response) {
-                    var len = response.length;
-                    var options = '';
-                    for(var i=0; i<len; i++){
-                       options += '<option value=\"'+response[i]+'\">'+response[i]+'</option>';
+                    data: {
+                        year : \$( \"#reserva_fechaInicio_date_year option:selected\" ).text(),
+                        month : \$( \"#reserva_fechaInicio_date_month option:selected\" ).text(),
+                        day : \$( \"#reserva_fechaInicio_date_day option:selected\" ).text(),
+                    },
+                    dataType: \"json\",
+                    success: function(response) {
+                        var len = response.length;
+                        var options = '';
+                        for(var i=0; i<len; i++){
+                            var available = response[i][1] ? '' : \"disabled\";
+                            options += '<option '+available+' value=\"'+response[i][0]+'\">'+response[i][0]+'</option>';
+                        }
+                        \$('#reserva_fechaInicio_time_hour').html(options);
                     }
-                    \$('#reserva_fechaInicio_time_hour').html(options);
-                }
-            });
+                });
+            }
         });
     </script>
 {% endblock %}

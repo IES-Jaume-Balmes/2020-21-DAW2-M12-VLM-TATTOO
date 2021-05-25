@@ -22,19 +22,18 @@ class ReservaRepository extends ServiceEntityRepository
     // /**
     //  * @return Reserva[] Returns an array of Reserva objects
     //  */
-    /*
-    public function findByExampleField($value)
+
+    public function findByDateField($from, $to)
     {
         return $this->createQueryBuilder('r')
-            ->andWhere('r.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('r.id', 'ASC')
-            ->setMaxResults(10)
+            ->Where('r.fechaInicio BETWEEN :from AND :to')
+            ->setParameter('from', $from )
+            ->setParameter('to', $to)
             ->getQuery()
             ->getResult()
         ;
     }
-    */
+
 
     /*
     public function findOneBySomeField($value): ?Reserva

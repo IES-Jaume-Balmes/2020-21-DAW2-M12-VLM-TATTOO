@@ -80,8 +80,19 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
     ";
         // line 28
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 42
-        echo "
+        // line 31
+        echo "    <script src=\"https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/main.min.js\"
+            integrity=\"sha256-ekrJn2FeZaiUFq99QswpQCUTME/HxaDfX7R8INzKJGE=\" crossorigin=\"anonymous\"></script>
+    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
+    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js\"></script>
+    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
+    <script type=\"text/javascript\" src=\"js/index.js\"></script>
+    <script src=\"https://code.jquery.com/jquery-3.1.1.min.js\">
+        <script src=\"https://js.stripe.com/v3/\"></script>
+
+    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js\"
+            integrity=\"sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx\"
+            crossorigin=\"anonymous\"></script>
 </head>
 <body>
 <div class=\"img_background\">
@@ -293,18 +304,7 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
         // line 29
-        echo "        <script src=\"https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/main.min.js\"
-                integrity=\"sha256-ekrJn2FeZaiUFq99QswpQCUTME/HxaDfX7R8INzKJGE=\" crossorigin=\"anonymous\"></script>
-        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
-        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js\"></script>
-        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
-        <script type=\"text/javascript\" src=\"js/index.js\"></script>
-        <script src=\"https://code.jquery.com/jquery-3.1.1.min.js\">
-        <script src=\"https://js.stripe.com/v3/\"></script>
-
-        <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js\"
-                integrity=\"sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx\"
-                crossorigin=\"anonymous\"></script>
+        echo "
     ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -344,7 +344,7 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
 
     public function getDebugInfo()
     {
-        return array (  318 => 149,  296 => 29,  286 => 28,  275 => 25,  265 => 24,  254 => 21,  244 => 20,  225 => 10,  212 => 150,  210 => 149,  206 => 147,  197 => 140,  195 => 139,  171 => 117,  160 => 108,  158 => 107,  142 => 93,  117 => 70,  102 => 57,  100 => 56,  84 => 42,  82 => 28,  79 => 27,  77 => 24,  74 => 23,  72 => 20,  59 => 10,  48 => 1,);
+        return array (  318 => 149,  307 => 29,  297 => 28,  286 => 25,  276 => 24,  265 => 21,  255 => 20,  236 => 10,  223 => 150,  221 => 149,  217 => 147,  208 => 140,  206 => 139,  182 => 117,  171 => 108,  169 => 107,  153 => 93,  128 => 70,  113 => 57,  111 => 56,  84 => 31,  82 => 28,  79 => 27,  77 => 24,  74 => 23,  72 => 20,  59 => 10,  48 => 1,);
     }
 
     public function getSourceContext()
@@ -377,20 +377,20 @@ class __TwigTemplate_94cc010eaa8465df33225433addad489c37b32b567fb7285f86fdb02379
     {% endblock %}
 
     {% block javascripts %}
-        <script src=\"https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/main.min.js\"
-                integrity=\"sha256-ekrJn2FeZaiUFq99QswpQCUTME/HxaDfX7R8INzKJGE=\" crossorigin=\"anonymous\"></script>
-        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
-        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js\"></script>
-        <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
-        <script type=\"text/javascript\" src=\"js/index.js\"></script>
-        <script src=\"https://code.jquery.com/jquery-3.1.1.min.js\">
+
+    {% endblock %}
+    <script src=\"https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/main.min.js\"
+            integrity=\"sha256-ekrJn2FeZaiUFq99QswpQCUTME/HxaDfX7R8INzKJGE=\" crossorigin=\"anonymous\"></script>
+    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
+    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js\"></script>
+    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js\"></script>
+    <script type=\"text/javascript\" src=\"js/index.js\"></script>
+    <script src=\"https://code.jquery.com/jquery-3.1.1.min.js\">
         <script src=\"https://js.stripe.com/v3/\"></script>
 
-        <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js\"
-                integrity=\"sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx\"
-                crossorigin=\"anonymous\"></script>
-    {% endblock %}
-
+    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js\"
+            integrity=\"sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx\"
+            crossorigin=\"anonymous\"></script>
 </head>
 <body>
 <div class=\"img_background\">

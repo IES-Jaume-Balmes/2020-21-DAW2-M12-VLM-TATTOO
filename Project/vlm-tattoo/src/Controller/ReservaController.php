@@ -6,6 +6,7 @@ use App\Entity\Reserva;
 use App\Form\ReservaType;
 use Doctrine\DBAL\Exception;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -82,42 +83,36 @@ class ReservaController extends AbstractController
         ]);
     }
     #[Route("/reserva-times")]
-    public function reservaTimes(Request $request ): Response
+    public function reservaTimes(Request $request ): JsonResponse
     {
-
         $year = $request->query->get('year');
         $month = $request->query->get('month');
         $day = $request->query->get('day');
-        //lol
-        $entityManager = $this->getDoctrine()->getManager();
-        $reserves = $entityManager->getRepository(Reserva::class)->findAll();
-        //Es carreguen totes ses reserves :S
-        $response = "[";
+
+        $dateFilter = strtotime($month." ". $day." ". $year);
+
+        $from = new \DateTime(date('Y-m-d' ,$dateFilter)." 00:00:00");
+        $to   = new \DateTime(date('Y-m-d', $dateFilter)." 23:59:59");
+
+        $reserves = $this->getDoctrine()->getManager()->getRepository(Reserva::class)->findByDateField($from, $to);
+        $response = [['09', true], ['10', true], ['11', true], ['12', true], ['13', true], ['14', true],[ '15', true], ['16', true], ['17', true], ['18', true], ['19', true], ['20', true]];
         foreach ($reserves as $valor){
-            $date1 = $valor->getFechaInicio()->format('Y-m-d H:i:s');
-            $date = explode(" ",$date1 )[0];
-            $date = explode("-",$date );
-            $dia = $date[2];
-            $mes = $date[1];
-            $any = $date[0];
-            $hour = explode(" ",$date1)[1];
-            $hour = explode(":",$hour );
-
-            if ($dia == $day && $month == $mes && $year == $any){
-                $response .= $hour[0];
+            $start = $valor->getFechaInicio()->format('H');
+            $talla = $valor->getTalla();
+            $hoursBusy = 1;
+            if ($talla == 'Grande') $hoursBusy = 3;
+            else if ($talla == 'Mediano') $hoursBusy = 2;
+            $found = false;
+            foreach ($response as $key => $hour){
+                if ($hour[0] == $start || ($found && $hoursBusy > 0)) {
+                    $found = true;
+                    $response[$key][1] = false;
+                    $hoursBusy--;
+                }
             }
-
         }
-        return new Response($response, 200);
 
-
-
-
-
-    // select de reserves per dia que arriba amb ayax,
-        //eliminar de s'array per defecte amb totes ses hores des dia que estan ocupades per select
-        //return new Response('[9,10,11,12,13,14, 15, 16, 17, 18, 19, 20]', 200);
-
+        return new JsonResponse($response, 200);
     }
 
     #[Route("/reserva/delete/{id}")]
