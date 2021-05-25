@@ -13,10 +13,21 @@ class DashboardController extends AbstractController
     #[Route('/', name: 'dashboard')]
     public function index(Request $request): Response
     {
+<<<<<<< HEAD
 
         return $this->render('dashboard/index.html.twig', [
             'controller_name' => 'Bienvenido a Dashboard',
         ]);
 
+=======
+        //var_dump($request->request->get('form'));
+        //$var = $request->query->get('')
+        //var_dump($request->query->get('descripcion'));
+        //$var = $request->query->get('reserva');
+        //var_dump($request);
+        return $this->render('dashboard/index.html.twig', [
+            'controller_name' => 'Bienvenido a Dashboard',
+        ]);
+>>>>>>> e3b79e60bac077830fc4990a9024b26178c22e89
     }
 }

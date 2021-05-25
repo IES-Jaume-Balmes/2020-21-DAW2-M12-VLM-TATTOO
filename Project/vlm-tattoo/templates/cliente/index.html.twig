@@ -10,15 +10,47 @@
         </div>
     {% endfor %}
 
-<div class="container h-100">
-    <div class="row h-100 justify-content-center align-items-center">
-        <div class="col-6 bg-white rounded my-3 p-5">
-            <h1>Registro</h1>
-
-            {{ form(registro) }}
-
-            {{ form_end(registro) }}
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card card-outline-secodary">
+                            <div class="card-header">
+                                <h3 class="mb-0">Registro</h3>
+                            </div>
+                            <div class="card-body">
+                                <form method="post" class="form" autocomplete="off" role="form">
+                                    {{ form_start(registro) }}
+                                    <div class="form-group">
+                                        {{ form_label(registro.nombre) }}
+                                        {{ form_widget(registro.nombre) }}
+                                    </div>
+                                    <div class="form-group">
+                                        {{ form_label(registro.apellidos) }}
+                                        {{ form_widget(registro.apellidos) }}
+                                    </div>
+                                    <div class="form-group">
+                                        {{ form_label(registro.email) }}
+                                        {{ form_widget(registro.email) }}
+                                    </div>
+                                    <div class="form-group">
+                                        {{ form_label(registro.telefono) }}
+                                        {{ form_widget(registro.telefono) }}
+                                    </div>
+                                    <div class="form-group">
+                                        {{ form_widget(registro.password) }}
+                                    </div>
+                                    <button class="btn btn-primary btn-lg float-left mt-3" type="submit">
+                                        Sign up
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 {% endblock %}
+
