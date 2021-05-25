@@ -16,8 +16,8 @@ class DashboardController extends AbstractController
         //var_dump($request->request->get('form'));
         //$var = $request->query->get('')
         //var_dump($request->query->get('descripcion'));
-        $var = $request->query->get('reserva');
-        var_dump($request);
+        //$var = $request->query->get('reserva');
+        //var_dump($request);
         return $this->render('dashboard/index.html.twig', [
             'controller_name' => 'Bienvenido a Dashboard',
         ]);
