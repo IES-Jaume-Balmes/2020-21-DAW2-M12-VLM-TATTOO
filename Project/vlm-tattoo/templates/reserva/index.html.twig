@@ -21,4 +21,27 @@
         </div>
     </div>
 </div>
+
+    <script>
+        jQuery(document).ready(function() {
+            $.ajax({
+                type: "GET",
+                url: "/reserva-times",
+                data: {
+                    $year : $( "#reserva_fechaInicio_date_year option:selected" ).text(),
+                    $month : $( "#reserva_fechaInicio_date_month option:selected" ).text(),
+                    $day : $( "#reserva_fechaInicio_date_day option:selected" ).text(),
+                },
+                dataType: "json",
+                success: function(response) {
+                    var len = response.length;
+                    var options = '';
+                    for(var i=0; i<len; i++){
+                       options += '<option value="'+response[i]+'">'+response[i]+'</option>';
+                    }
+                    $('#reserva_fechaInicio_time_hour').html(options);
+                }
+            });
+        });
+    </script>
 {% endblock %}
