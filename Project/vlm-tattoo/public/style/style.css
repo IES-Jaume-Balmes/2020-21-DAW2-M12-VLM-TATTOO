@@ -128,11 +128,22 @@ nav ul li a {
     color: #fff;
 }
 
+#carouselExampleIndicators {
+    display: none;
+}
+
 @media only screen
 and (max-width : 650px) {
     #login-register {
         display: flex;
         flex-direction: column;
+    }
 
+    #columnas {
+        display: none;
+    }
+
+    #carouselExampleIndicators {
+        display: block;
     }
 }

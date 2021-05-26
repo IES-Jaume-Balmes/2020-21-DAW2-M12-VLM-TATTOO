@@ -22,7 +22,8 @@ class ReservaType extends AbstractType
                     'Grande' => 'Grande',
                     'Mediano' => 'Mediano',
                     'Pequeño' => 'Pequeño',
-                ]
+                ],
+                'placeholder' => '-- Choose One --',
             ])
             ->add('imagen', FileType::class, ['label' => 'Inserta una imagen del tatuaje deseado', 'mapped' => false, 'required' => false])
             ->add('descripcion', TextareaType::class)
@@ -30,11 +31,7 @@ class ReservaType extends AbstractType
                 'data' => new \DateTime("now"),
                 'widget' => 'choice',
                 'html5' => false,
-
-
-
             ])
-            //->add('fechaFinal', DateTimeType::class)
             ->add('Reserva', SubmitType::class)
 
         ;
