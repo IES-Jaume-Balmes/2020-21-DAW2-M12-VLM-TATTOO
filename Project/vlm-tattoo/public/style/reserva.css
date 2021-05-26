@@ -5,3 +5,6 @@
 #reserva_fechaInicio_time_minute{
    display:none !important;
 }
+.col-form-label required #text{
+   display:none !important;
+}
