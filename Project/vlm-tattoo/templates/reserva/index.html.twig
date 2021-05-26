@@ -6,6 +6,30 @@
     {% endblock %}
 
 {% block body %}
+<<<<<<< HEAD
+<div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-6 bg-white rounded my-3 p-5">
+
+    <h1>Reserva</h1>
+
+
+    {{ form(reserva) }}
+
+
+    {{ form_end(reserva) }}
+            <script src="https://js.stripe.com/v3/"></script>
+            <p>Pagament</p>
+            <button id="checkout-button">Pagar</button>
+
+
+
+    {% for message in app.flashes('exito') %}
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+    {% endfor %}
+=======
     <div class="container py-3">
         <div class="row">
             <div class="col-md-12">
@@ -45,6 +69,7 @@
                     </div>
                 </div>
             </div>
+>>>>>>> cab4893bd455b81049e6c07b9e6ae2580821459d
         </div>
     </div>
 
@@ -95,4 +120,37 @@
             nextSibling.innerText = fileName
         });
     </script>
+    {% block javascripts %}
+        <script src="https://js.stripe.com/v3/"></script>
+        <script type="text/javascript">
+            // Create an instance of the Stripe object with your publishable API key
+            var stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+            var checkoutButton = document.getElementById('checkout-button');
+
+            checkoutButton.addEventListener('click', function() {
+                // Create a new Checkout Session using the server-side endpoint you
+                // created in step 3.
+                fetch('/create-checkout-session', {
+                    method: 'POST',
+                })
+                    .then(function(response) {
+                        return response.json();
+                    })
+                    .then(function(session) {
+                        return stripe.redirectToCheckout({ sessionId: session.id });
+                    })
+                    .then(function(result) {
+                        // If `redirectToCheckout` fails due to a browser or network
+                        // error, you should display the localized error message to your
+                        // customer using `error.message`.
+                        if (result.error) {
+                            alert(result.error.message);
+                        }
+                    })
+                    .catch(function(error) {
+                        console.error('Error:', error);
+                    });
+            });
+        </script>
+    {% endblock %}
 {% endblock %}
