@@ -19,11 +19,10 @@ class ReservaType extends AbstractType
         $builder
             ->add('talla', ChoiceType::class, [
                 'choices'  => [
-                    'Grande' => 'Grande',
-                    'Mediano' => 'Mediano',
-                    'Pequeño' => 'Pequeño',
-                ],
-                'placeholder' => '-- Choose One --',
+                    'Pequeño - 1h' => 'Pequeño',
+                    'Mediano - 2h' => 'Mediano',
+                    'Grande - 3h' => 'Grande',
+                ]
             ])
             ->add('imagen', FileType::class, ['label' => 'Inserta una imagen del tatuaje deseado', 'mapped' => false, 'required' => false])
             ->add('descripcion', TextareaType::class)
