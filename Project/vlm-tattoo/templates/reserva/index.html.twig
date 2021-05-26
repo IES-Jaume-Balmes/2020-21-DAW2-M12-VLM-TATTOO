@@ -21,7 +21,6 @@
                                         {{ message }}
                                     </div>
                                 {% endfor %}
-                                <form method="post" class="form" autocomplete="off" role="form">
                                     {{ form_start(reserva) }}
                                     <div class="form-group">
                                         {{ form_label(reserva.talla) }}
@@ -29,7 +28,7 @@
                                     </div>
                                     <div class="form-group">
                                         {{ form_label(reserva.imagen) }}
-                                        {{ form_widget(reserva.imagen, {'attr': {'class': 'custom-file-input'}}) }}
+                                        {{ form_widget(reserva.imagen) }}
                                     </div>
                                     <div class="form-group">
                                         {{ form_label(reserva.descripcion) }}
@@ -40,8 +39,7 @@
                                         {{ form_widget(reserva.fechaInicio) }}
                                     </div>
                                     {{ form_widget(reserva.Reserva) }}
-                                    {{ form_end(reserva) }}
-                                </form>
+                                {{ form_end(reserva) }}
                             </div>
                         </div>
                     </div>
@@ -91,7 +89,6 @@
                 });
             }
         });
-
         document.querySelector('.custom-file-input').addEventListener('change',function(e){
             var fileName = document.getElementById("reserva_imagen").files[0].name;
             var nextSibling = e.target.nextElementSibling
