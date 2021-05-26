@@ -91,9 +91,9 @@ class __TwigTemplate_057d9ab29b34f8f15f1f43ce24514f95db2360a94524630d564cd17bbbc
 </style>
 
 <div class=\"example-wrapper\">
-    <h1>Hello pagamiento</h1>
+    <h1>Pagament y cita correcte</h1>
 
-    <h1>Pagament correcte</h1>
+    <h1>GRACIES</h1>
 </div>
 ";
         
@@ -132,9 +132,9 @@ class __TwigTemplate_057d9ab29b34f8f15f1f43ce24514f95db2360a94524630d564cd17bbbc
 </style>
 
 <div class=\"example-wrapper\">
-    <h1>Hello pagamiento</h1>
+    <h1>Pagament y cita correcte</h1>
 
-    <h1>Pagament correcte</h1>
+    <h1>GRACIES</h1>
 </div>
 {% endblock %}
 ", "pagamiento/success.html.twig", "C:\\Users\\david\\Desktop\\DAW\\M12\\2020-21-DAW2-M12-VLM-TATTOO\\Project\\vlm-tattoo\\templates\\pagamiento\\success.html.twig");
