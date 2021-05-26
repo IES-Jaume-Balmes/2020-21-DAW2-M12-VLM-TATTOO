@@ -24,11 +24,9 @@ class ClienteController extends AbstractController
             $user->setPassword($passwordEncoder->encodePassword($user, $form['password']->getData()));
             $em->flush();
             $this->addFlash('exito', Cliente::CLIENTE_REGISTRADO);
-            return $this->redirectToRoute('login');
+            return $this->redirectToRoute('app_login');
         }
         return $this->render('cliente/index.html.twig', [
-            'controller_name' => 'ClienteController',
-            'MiVariable' => '[Hola esto es una prueba 🤔]',
             'registro' => $form->createView(),
         ]);
     }

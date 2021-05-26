@@ -3,24 +3,49 @@
 {% block title %}Reserva una cita{% endblock %}
 
 {% block body %}
-<div class="container h-100">
-    <div class="row h-100 justify-content-center align-items-center">
-        <div class="col-6 bg-white rounded my-3 p-5">
-
-    <h1>Reserva</h1>
-
-    {{ form(reserva) }}
-
-    {{ form_end(reserva) }}
-
-    {% for message in app.flashes('exito') %}
-        <div class="alert alert-success">
-            {{ message }}
-        </div>
-    {% endfor %}
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="card card-outline-secodary">
+                            <div class="card-header">
+                                <h3 class="mb-0">Reserva</h3>
+                            </div>
+                            <div class="card-body">
+                                {% for message in app.flashes('exito') %}
+                                    <div class="alert alert-success">
+                                        {{ message }}
+                                    </div>
+                                {% endfor %}
+                                <form method="post" class="form" autocomplete="off" role="form">
+                                    {{ form_start(reserva) }}
+                                    <div class="form-group">
+                                        {{ form_label(reserva.talla) }}
+                                        {{ form_widget(reserva.talla) }}
+                                    </div>
+                                    <div class="form-group">
+                                        {{ form_label(reserva.imagen) }}
+                                        {{ form_widget(reserva.imagen, {'attr': {'class': 'custom-file-input'}}) }}
+                                    </div>
+                                    <div class="form-group">
+                                        {{ form_label(reserva.descripcion) }}
+                                        {{ form_widget(reserva.descripcion) }}
+                                    </div>
+                                    <div class="form-group">
+                                        {{ form_label(reserva.fechaInicio, 'Fecha') }}
+                                        {{ form_widget(reserva.fechaInicio) }}
+                                    </div>
+                                    {{ form_widget(reserva.Reserva) }}
+                                    {{ form_end(reserva) }}
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
     <script>
         jQuery(document).ready(function() {
@@ -62,6 +87,12 @@
                     }
                 });
             }
+        });
+
+        document.querySelector('.custom-file-input').addEventListener('change',function(e){
+            var fileName = document.getElementById("reserva_imagen").files[0].name;
+            var nextSibling = e.target.nextElementSibling
+            nextSibling.innerText = fileName
         });
     </script>
 {% endblock %}

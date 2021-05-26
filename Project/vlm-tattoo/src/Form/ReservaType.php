@@ -24,7 +24,7 @@ class ReservaType extends AbstractType
                     'Pequeño' => 'Pequeño',
                 ]
             ])
-            ->add('imagen', FileType::class, ['label' => 'Inserta una imagen del tatuaje deseado', 'mapped' => false, 'required' => false])
+            ->add('imagen', FileType::class, ['label' => 'Inserta una imagen del tatuaje deseado', 'mapped' => false, 'required' => true])
             ->add('descripcion', TextareaType::class)
             ->add('fechaInicio', DateTimeType::class, [
                 'data' => new \DateTime("now"),
