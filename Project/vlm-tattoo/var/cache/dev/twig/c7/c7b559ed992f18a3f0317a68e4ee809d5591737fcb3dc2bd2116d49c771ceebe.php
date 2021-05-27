@@ -166,9 +166,14 @@ class __TwigTemplate_c03b00a07ad9221f11cd57d4d92ad4c7b0e1b730b5f587d6b3e7a5a1690
         echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registro"]) || array_key_exists("registro", $context) ? $context["registro"] : (function () { throw new RuntimeError('Variable "registro" does not exist.', 42, $this->source); })()), "password", [], "any", false, false, false, 42), 'widget');
         echo "
                                     </div>
-                                    <button class=\"btn btn-primary btn-lg float-left mt-3\" type=\"submit\">
-                                        Sign up
-                                    </button>
+                                    ";
+        // line 44
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registro"]) || array_key_exists("registro", $context) ? $context["registro"] : (function () { throw new RuntimeError('Variable "registro" does not exist.', 44, $this->source); })()), "Registrar", [], "any", false, false, false, 44), 'widget');
+        echo "
+                                    ";
+        // line 45
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["registro"]) || array_key_exists("registro", $context) ? $context["registro"] : (function () { throw new RuntimeError('Variable "registro" does not exist.', 45, $this->source); })()), 'form_end');
+        echo "
                                 </form>
                             </div>
                         </div>
@@ -198,7 +203,7 @@ class __TwigTemplate_c03b00a07ad9221f11cd57d4d92ad4c7b0e1b730b5f587d6b3e7a5a1690
 
     public function getDebugInfo()
     {
-        return array (  166 => 42,  160 => 39,  156 => 38,  150 => 35,  146 => 34,  140 => 31,  136 => 30,  130 => 27,  126 => 26,  121 => 24,  107 => 12,  98 => 9,  95 => 8,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  175 => 45,  171 => 44,  166 => 42,  160 => 39,  156 => 38,  150 => 35,  146 => 34,  140 => 31,  136 => 30,  130 => 27,  126 => 26,  121 => 24,  107 => 12,  98 => 9,  95 => 8,  91 => 7,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -246,9 +251,8 @@ class __TwigTemplate_c03b00a07ad9221f11cd57d4d92ad4c7b0e1b730b5f587d6b3e7a5a1690
                                     <div class=\"form-group\">
                                         {{ form_widget(registro.password) }}
                                     </div>
-                                    <button class=\"btn btn-primary btn-lg float-left mt-3\" type=\"submit\">
-                                        Sign up
-                                    </button>
+                                    {{ form_widget(registro.Registrar) }}
+                                    {{ form_end(registro) }}
                                 </form>
                             </div>
                         </div>
