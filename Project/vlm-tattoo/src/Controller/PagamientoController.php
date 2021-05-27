@@ -22,6 +22,7 @@ class PagamientoController extends AbstractController
     #[Route('/success', name: 'success')]
     public function success(): Response
     {
+
         return $this->render('pagamiento/success.html.twig', [
 
         ]);
