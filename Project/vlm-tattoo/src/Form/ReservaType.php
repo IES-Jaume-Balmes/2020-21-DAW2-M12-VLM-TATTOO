@@ -31,7 +31,7 @@ class ReservaType extends AbstractType
                 'widget' => 'choice',
                 'html5' => false,
             ],)
-            ->add('Reserva', SubmitType::class)
+            ->add('Pagar', SubmitType::class)
 
         ;
     }

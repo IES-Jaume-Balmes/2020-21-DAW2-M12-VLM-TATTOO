@@ -93,10 +93,7 @@ class __TwigTemplate_dc2037ba3d96d8299e016906cdcad6f40f77357e2ba6794cbca9026beb6
 </style>
 
 <div class=\"example-wrapper\">
-    <h1>Hello pagamiento ";
-        // line 13
-        echo twig_escape_filter($this->env, (isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 13, $this->source); })()), "html", null, true);
-        echo "! ✅</h1>
+
 
     Paga Paga Paga!!!
     <button id=\"checkout-button\">Pagar</button>
@@ -174,7 +171,7 @@ class __TwigTemplate_dc2037ba3d96d8299e016906cdcad6f40f77357e2ba6794cbca9026beb6
 
     public function getDebugInfo()
     {
-        return array (  125 => 19,  106 => 18,  98 => 13,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
+        return array (  122 => 19,  103 => 18,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -191,7 +188,7 @@ class __TwigTemplate_dc2037ba3d96d8299e016906cdcad6f40f77357e2ba6794cbca9026beb6
 </style>
 
 <div class=\"example-wrapper\">
-    <h1>Hello pagamiento {{ controller_name }}! ✅</h1>
+
 
     Paga Paga Paga!!!
     <button id=\"checkout-button\">Pagar</button>

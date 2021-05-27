@@ -92,7 +92,10 @@ class __TwigTemplate_057d9ab29b34f8f15f1f43ce24514f95db2360a94524630d564cd17bbbc
 
 <div class=\"example-wrapper\">
     <h1>Pagament y cita correcte</h1>
-
+        ";
+        // line 13
+        echo twig_escape_filter($this->env, (isset($context["id"]) || array_key_exists("id", $context) ? $context["id"] : (function () { throw new RuntimeError('Variable "id" does not exist.', 13, $this->source); })()), "html", null, true);
+        echo "
     <h1>GRACIES</h1>
 </div>
 ";
@@ -116,7 +119,7 @@ class __TwigTemplate_057d9ab29b34f8f15f1f43ce24514f95db2360a94524630d564cd17bbbc
 
     public function getDebugInfo()
     {
-        return array (  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  97 => 13,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -133,7 +136,7 @@ class __TwigTemplate_057d9ab29b34f8f15f1f43ce24514f95db2360a94524630d564cd17bbbc
 
 <div class=\"example-wrapper\">
     <h1>Pagament y cita correcte</h1>
-
+        {{ id }}
     <h1>GRACIES</h1>
 </div>
 {% endblock %}

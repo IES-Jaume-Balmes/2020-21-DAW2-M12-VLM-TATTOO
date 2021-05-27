@@ -156,56 +156,90 @@ class __TwigTemplate_af171c90ba6bac2874bf6d65c89b6b08260182cf12ed61f94b1da2caea0
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 32
-        echo "                                    ";
+        echo "                                ";
         echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 32, $this->source); })()), 'form_start');
         echo "
-                                    <div class=\"form-group\">
-                                        ";
+                                <div class=\"form-group\">
+                                    ";
         // line 34
         echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 34, $this->source); })()), "talla", [], "any", false, false, false, 34), 'label');
         echo "
-                                        ";
+                                    ";
         // line 35
         echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 35, $this->source); })()), "talla", [], "any", false, false, false, 35), 'widget');
         echo "
-                                    </div>
-                                    <div class=\"form-group\">
-                                        ";
+                                </div>
+                                <div class=\"form-group\">
+                                    ";
         // line 38
         echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 38, $this->source); })()), "imagen", [], "any", false, false, false, 38), 'label');
         echo "
-                                        ";
+                                    ";
         // line 39
         echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 39, $this->source); })()), "imagen", [], "any", false, false, false, 39), 'widget');
         echo "
-                                    </div>
-                                    <div class=\"form-group\">
-                                        ";
-        // line 42
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 42, $this->source); })()), "descripcion", [], "any", false, false, false, 42), 'label');
-        echo "
-                                        ";
-        // line 43
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 43, $this->source); })()), "descripcion", [], "any", false, false, false, 43), 'widget');
-        echo "
-                                    </div>
-                                    <div class=\"form-group\">
-                                        ";
-        // line 46
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 46, $this->source); })()), "fechaInicio", [], "any", false, false, false, 46), 'label', ["label" => "Fecha"]);
-        echo "
-                                        ";
-        // line 47
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 47, $this->source); })()), "fechaInicio", [], "any", false, false, false, 47), 'widget');
-        echo "
-                                    </div>
+                                </div>
+                                <div class=\"form-group\">
                                     ";
-        // line 49
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 49, $this->source); })()), "Reserva", [], "any", false, false, false, 49), 'widget');
+        // line 42
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 42, $this->source); })()), "descripcion", [], "any", false, false, false, 42), 'label', ["label_attr" => ["id" => "foo"], "label" => "Descripción"]);
         echo "
+                                    <div class=\"popup\" onclick=\"myFunction()\">
+                                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
+                                             fill=\"currentColor\" class=\"bi bi-info-circle\" viewBox=\"0 0 16 16\">
+                                            <path d=\"M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z\"/>
+                                            <path d=\"m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z\"/>
+                                        </svg>
+                                        <span class=\"popuptext\" id=\"myPopup\">Explica cómo te gustaría que fuera tu tatuaje</span>
+                                    </div>
+
+                                    <script>
+                                        // When the user clicks on div, open the popup
+                                        function myFunction() {
+                                            var popup = document.getElementById(\"myPopup\");
+                                            popup.classList.toggle(\"show\");
+                                        }
+                                    </script>
+                                    ";
+        // line 59
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 59, $this->source); })()), "descripcion", [], "any", false, false, false, 59), 'widget');
+        echo "
+                                </div>
+                                <div class=\"form-group\">
+                                    ";
+        // line 62
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 62, $this->source); })()), "fechaInicio", [], "any", false, false, false, 62), 'label', ["label" => "Fecha"]);
+        echo "
+                                    ";
+        // line 63
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 63, $this->source); })()), "fechaInicio", [], "any", false, false, false, 63), 'widget');
+        echo "
+                                </div>
+
+
+                                <div class=\"popup\" onclick=\"myFunctiond()\">Deposito
+                                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
+                                         fill=\"currentColor\" class=\"bi bi-info-circle\" viewBox=\"0 0 16 16\">
+                                        <path d=\"M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z\"/>
+                                        <path d=\"m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z\"/>
+                                    </svg>
+                                    <span class=\"popuptext\" id=\"myPopupd\">Para realizar la reserva es necesario un Desposito de 20€</span>
+                                </div>
+                                <script>
+                                    // When the user clicks on div, open the popup
+                                    function myFunctiond() {
+                                        var popup = document.getElementById(\"myPopupd\");
+                                        popup.classList.toggle(\"show\");
+                                    }
+                                </script>
+                                <div class=\"mt-3\">
+                                    ";
+        // line 83
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 83, $this->source); })()), "Pagar", [], "any", false, false, false, 83), 'label', ["label_attr" => ["id" => "foo"], "label" => "Pagar"]);
+        echo " </div>
                                 ";
-        // line 50
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 50, $this->source); })()), 'form_end');
+        // line 84
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 84, $this->source); })()), 'form_end');
         echo "
                             </div>
                         </div>
@@ -216,48 +250,50 @@ class __TwigTemplate_af171c90ba6bac2874bf6d65c89b6b08260182cf12ed61f94b1da2caea0
         </div>
     </div>
 
+
     <script>
-        jQuery(document).ready(function() {
+        jQuery(document).ready(function () {
             const yearDate = \"#reserva_fechaInicio_date_year\";
             const monthDate = \"#reserva_fechaInicio_date_month\";
             const dayDate = \"#reserva_fechaInicio_date_day\";
             getTimes();
 
-            \$(yearDate).change(function() {
+            \$(yearDate).change(function () {
                 console.log(\"change\");
                 getTimes();
             });
-            \$(monthDate).change(function() {
+            \$(monthDate).change(function () {
                 console.log(\"change\");
                 getTimes();
             });
-            \$(dayDate).change(function() {
+            \$(dayDate).change(function () {
                 console.log(\"change\");
                 getTimes();
             });
-        function getTimes() {
-            \$.ajax({
-                type: \"GET\",
-                url: \"/reserva-times\",
+
+            function getTimes() {
+                \$.ajax({
+                    type: \"GET\",
+                    url: \"/reserva-times\",
                     data: {
-                        year : \$( \"#reserva_fechaInicio_date_year option:selected\" ).text(),
-                        month : \$( \"#reserva_fechaInicio_date_month option:selected\" ).text(),
-                        day : \$( \"#reserva_fechaInicio_date_day option:selected\" ).text(),
+                        year: \$(\"#reserva_fechaInicio_date_year option:selected\").text(),
+                        month: \$(\"#reserva_fechaInicio_date_month option:selected\").text(),
+                        day: \$(\"#reserva_fechaInicio_date_day option:selected\").text(),
                     },
                     dataType: \"json\",
-                    success: function(response) {
+                    success: function (response) {
                         var len = response.length;
                         var options = '<option selected disabled> Hora </option>';
-                        for(var i=0; i<len; i++){
+                        for (var i = 0; i < len; i++) {
                             var available = response[i][1] ? '' : \"disabled\";
-                            options += '<option '+available+' value=\"'+response[i][0]+'\">'+response[i][0]+'</option>';
+                            options += '<option ' + available + ' value=\"' + response[i][0] + '\">' + response[i][0] + '</option>';
                         }
                         \$('#reserva_fechaInicio_time_hour').html(options);
                     }
                 });
             }
         });
-        document.querySelector('.custom-file-input').addEventListener('change',function(e){
+        document.querySelector('.custom-file-input').addEventListener('change', function (e) {
             var fileName = document.getElementById(\"reserva_imagen\").files[0].name;
             var nextSibling = e.target.nextElementSibling
             nextSibling.innerText = fileName
@@ -285,7 +321,7 @@ class __TwigTemplate_af171c90ba6bac2874bf6d65c89b6b08260182cf12ed61f94b1da2caea0
 
     public function getDebugInfo()
     {
-        return array (  208 => 50,  204 => 49,  199 => 47,  195 => 46,  189 => 43,  185 => 42,  179 => 39,  175 => 38,  169 => 35,  165 => 34,  159 => 32,  150 => 29,  147 => 28,  143 => 27,  130 => 16,  121 => 13,  118 => 12,  114 => 11,  110 => 9,  100 => 8,  89 => 5,  79 => 4,  60 => 3,  37 => 1,);
+        return array (  242 => 84,  238 => 83,  215 => 63,  211 => 62,  205 => 59,  185 => 42,  179 => 39,  175 => 38,  169 => 35,  165 => 34,  159 => 32,  150 => 29,  147 => 28,  143 => 27,  130 => 16,  121 => 13,  118 => 12,  114 => 11,  110 => 9,  100 => 8,  89 => 5,  79 => 4,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -321,24 +357,58 @@ class __TwigTemplate_af171c90ba6bac2874bf6d65c89b6b08260182cf12ed61f94b1da2caea0
                                         {{ message }}
                                     </div>
                                 {% endfor %}
-                                    {{ form_start(reserva) }}
-                                    <div class=\"form-group\">
-                                        {{ form_label(reserva.talla) }}
-                                        {{ form_widget(reserva.talla) }}
+                                {{ form_start(reserva) }}
+                                <div class=\"form-group\">
+                                    {{ form_label(reserva.talla) }}
+                                    {{ form_widget(reserva.talla) }}
+                                </div>
+                                <div class=\"form-group\">
+                                    {{ form_label(reserva.imagen) }}
+                                    {{ form_widget(reserva.imagen) }}
+                                </div>
+                                <div class=\"form-group\">
+                                    {{ form_label(reserva.descripcion,'Descripción', {'label_attr': {'id': 'foo'}}) }}
+                                    <div class=\"popup\" onclick=\"myFunction()\">
+                                        <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
+                                             fill=\"currentColor\" class=\"bi bi-info-circle\" viewBox=\"0 0 16 16\">
+                                            <path d=\"M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z\"/>
+                                            <path d=\"m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z\"/>
+                                        </svg>
+                                        <span class=\"popuptext\" id=\"myPopup\">Explica cómo te gustaría que fuera tu tatuaje</span>
                                     </div>
-                                    <div class=\"form-group\">
-                                        {{ form_label(reserva.imagen) }}
-                                        {{ form_widget(reserva.imagen) }}
-                                    </div>
-                                    <div class=\"form-group\">
-                                        {{ form_label(reserva.descripcion) }}
-                                        {{ form_widget(reserva.descripcion) }}
-                                    </div>
-                                    <div class=\"form-group\">
-                                        {{ form_label(reserva.fechaInicio, 'Fecha') }}
-                                        {{ form_widget(reserva.fechaInicio) }}
-                                    </div>
-                                    {{ form_widget(reserva.Reserva) }}
+
+                                    <script>
+                                        // When the user clicks on div, open the popup
+                                        function myFunction() {
+                                            var popup = document.getElementById(\"myPopup\");
+                                            popup.classList.toggle(\"show\");
+                                        }
+                                    </script>
+                                    {{ form_widget(reserva.descripcion) }}
+                                </div>
+                                <div class=\"form-group\">
+                                    {{ form_label(reserva.fechaInicio, 'Fecha') }}
+                                    {{ form_widget(reserva.fechaInicio) }}
+                                </div>
+
+
+                                <div class=\"popup\" onclick=\"myFunctiond()\">Deposito
+                                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"
+                                         fill=\"currentColor\" class=\"bi bi-info-circle\" viewBox=\"0 0 16 16\">
+                                        <path d=\"M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z\"/>
+                                        <path d=\"m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z\"/>
+                                    </svg>
+                                    <span class=\"popuptext\" id=\"myPopupd\">Para realizar la reserva es necesario un Desposito de 20€</span>
+                                </div>
+                                <script>
+                                    // When the user clicks on div, open the popup
+                                    function myFunctiond() {
+                                        var popup = document.getElementById(\"myPopupd\");
+                                        popup.classList.toggle(\"show\");
+                                    }
+                                </script>
+                                <div class=\"mt-3\">
+                                    {{ form_label(reserva.Pagar,'Pagar', {'label_attr': {'id': 'foo'}}) }} </div>
                                 {{ form_end(reserva) }}
                             </div>
                         </div>
@@ -349,48 +419,50 @@ class __TwigTemplate_af171c90ba6bac2874bf6d65c89b6b08260182cf12ed61f94b1da2caea0
         </div>
     </div>
 
+
     <script>
-        jQuery(document).ready(function() {
+        jQuery(document).ready(function () {
             const yearDate = \"#reserva_fechaInicio_date_year\";
             const monthDate = \"#reserva_fechaInicio_date_month\";
             const dayDate = \"#reserva_fechaInicio_date_day\";
             getTimes();
 
-            \$(yearDate).change(function() {
+            \$(yearDate).change(function () {
                 console.log(\"change\");
                 getTimes();
             });
-            \$(monthDate).change(function() {
+            \$(monthDate).change(function () {
                 console.log(\"change\");
                 getTimes();
             });
-            \$(dayDate).change(function() {
+            \$(dayDate).change(function () {
                 console.log(\"change\");
                 getTimes();
             });
-        function getTimes() {
-            \$.ajax({
-                type: \"GET\",
-                url: \"/reserva-times\",
+
+            function getTimes() {
+                \$.ajax({
+                    type: \"GET\",
+                    url: \"/reserva-times\",
                     data: {
-                        year : \$( \"#reserva_fechaInicio_date_year option:selected\" ).text(),
-                        month : \$( \"#reserva_fechaInicio_date_month option:selected\" ).text(),
-                        day : \$( \"#reserva_fechaInicio_date_day option:selected\" ).text(),
+                        year: \$(\"#reserva_fechaInicio_date_year option:selected\").text(),
+                        month: \$(\"#reserva_fechaInicio_date_month option:selected\").text(),
+                        day: \$(\"#reserva_fechaInicio_date_day option:selected\").text(),
                     },
                     dataType: \"json\",
-                    success: function(response) {
+                    success: function (response) {
                         var len = response.length;
                         var options = '<option selected disabled> Hora </option>';
-                        for(var i=0; i<len; i++){
+                        for (var i = 0; i < len; i++) {
                             var available = response[i][1] ? '' : \"disabled\";
-                            options += '<option '+available+' value=\"'+response[i][0]+'\">'+response[i][0]+'</option>';
+                            options += '<option ' + available + ' value=\"' + response[i][0] + '\">' + response[i][0] + '</option>';
                         }
                         \$('#reserva_fechaInicio_time_hour').html(options);
                     }
                 });
             }
         });
-        document.querySelector('.custom-file-input').addEventListener('change',function(e){
+        document.querySelector('.custom-file-input').addEventListener('change', function (e) {
             var fileName = document.getElementById(\"reserva_imagen\").files[0].name;
             var nextSibling = e.target.nextElementSibling
             nextSibling.innerText = fileName
