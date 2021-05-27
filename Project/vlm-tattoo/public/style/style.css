@@ -6,10 +6,8 @@ body, html {
 .img_background {
     background-image: url("../img/wallpaper.jpg");
     min-height: 100%;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center top;
-    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 .logo {
