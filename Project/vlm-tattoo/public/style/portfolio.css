@@ -1,11 +1,6 @@
 * {
     box-sizing: border-box;
   }
-.img_background{
-    background-image: url("../img/pexels-abdullah-ghatasheh-1631677.jpg");
-    min-height: 100%;
-
-}
 
 /* Center website */
 .main {

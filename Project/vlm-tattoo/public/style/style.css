@@ -4,7 +4,7 @@ body, html {
 }
 
 .img_background {
-    background-image: url("../img/IMG_3077.jpg");
+    background-image: url("../img/wallpaper.jpg");
     min-height: 100%;
     background-position: center;
     background-size: cover;
@@ -130,6 +130,11 @@ nav ul li a {
 
 #carouselExampleIndicators {
     display: none;
+}
+
+.card-img-top {
+    max-width: 18rem;
+    max-height: 190px;
 }
 
 @media only screen
