@@ -6,7 +6,6 @@ body, html {
 .img_background {
     background-image: url("../img/wallpaper.jpg");
     min-height: 100%;
-
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center top;
@@ -153,5 +152,10 @@ and (max-width : 650px) {
 
     #carouselExampleIndicators {
         display: block;
+    }
+
+    .img_background {
+        background-position: center;
+        background-size: cover;
     }
 }
