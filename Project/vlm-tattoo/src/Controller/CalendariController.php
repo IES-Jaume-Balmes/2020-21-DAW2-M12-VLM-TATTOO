@@ -32,9 +32,9 @@ class CalendariController extends AbstractController
                 'cliente_telefono' => $event->getCliente()->getTelefono(),
                 'cliente_email' => $event->getCliente()->getEmail(),
                 'des' => $event->getDescripcion(),
-                'title' => 'Cita',
+                'title' => $event->getCliente()->getNombre(),
                 'tamano' => $event->getTalla(),
-                'title' => $event->getDescripcion(),
+
                 'start' => $event->getFechaInicio()->format('Y-m-d H:i:s'),
                 'end' => $event->getFechaFinal()->format('Y-m-d H:i:s'),
                 'backgroundColor' => '#ffffff',

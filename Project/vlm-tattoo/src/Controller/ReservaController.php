@@ -50,13 +50,26 @@ class ReservaController extends AbstractController
             $reserva->setCliente($cliente);
             $now = new \DateTime('now');
 
-            $reserva->setFechaFinal($now); //arriba de fecha incial mes 1h o 2h depen de mida
+            $fecha_final = new \DateTime($reserva->getFechaInicio()->format('d-m-Y H:i:s'));
+
+            if($reserva->getTalla() == "Pequeño"){
+                $fecha_final->modify('+1 hours');
+                $fecha_final->format('d-m-Y H:i:s');
+            }elseif ($reserva->getTalla() == "Mediano"){
+                $fecha_final->modify('+2 hours');
+                $fecha_final->format('d-m-Y H:i:s');
+            }elseif ($reserva->getTalla() == "Grande"){
+                $fecha_final->modify('+3 hours');
+                $fecha_final->format('d-m-Y H:i:s');
+            }
+
+            $reserva->setFechaFinal($fecha_final);
             $em->persist($reserva);
             $em->flush();
 
             $this->addFlash('exito', Reserva::RESERVA);
 
-            return $this->redirectToRoute('reserva');
+            return $this->redirectToRoute('pagamiento');
         }
         return $this->render('reserva/index.html.twig', [
             'reserva' => $form->createView(),

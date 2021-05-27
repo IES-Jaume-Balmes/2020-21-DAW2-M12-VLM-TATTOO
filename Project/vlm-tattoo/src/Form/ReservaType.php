@@ -30,7 +30,7 @@ class ReservaType extends AbstractType
                 'data' => new \DateTime("now"),
                 'widget' => 'choice',
                 'html5' => false,
-            ])
+            ],)
             ->add('Reserva', SubmitType::class)
 
         ;
