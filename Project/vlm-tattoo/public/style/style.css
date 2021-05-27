@@ -143,17 +143,4 @@ and (max-width : 650px) {
         display: flex;
         flex-direction: column;
     }
-
-    #columnas {
-        display: none;
-    }
-
-    #carouselExampleIndicators {
-        display: block;
-    }
-
-    .img_background {
-        background-position: center;
-        background-size: cover;
-    }
 }
