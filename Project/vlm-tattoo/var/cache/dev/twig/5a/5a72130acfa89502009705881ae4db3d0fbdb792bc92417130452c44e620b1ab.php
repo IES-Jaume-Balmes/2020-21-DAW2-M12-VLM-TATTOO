@@ -109,9 +109,7 @@ class __TwigTemplate_5a29d61cdab485e292cfdc596f0dcecf50d94eafa478b0c9f6edac376d2
         // line 9
         echo "    <div class=\"container\">
         <div class=\"row align-items-md-center cardContainer inactive\" style=\"height: 85vh;\">
-            ";
-        // line 54
-        echo "  
+
             <div class=\"card text-center mx-auto my-4\" style=\"width: 18rem;\">
                 <img class=\"card-img-top\" src=\"img/reservaTattoo.jpg\" alt=\"Registro para realizar reserva\">
                 <div class=\"card-body\">
@@ -177,7 +175,7 @@ class __TwigTemplate_5a29d61cdab485e292cfdc596f0dcecf50d94eafa478b0c9f6edac376d2
 
     public function getDebugInfo()
     {
-        return array (  114 => 54,  110 => 9,  100 => 8,  89 => 5,  79 => 4,  60 => 3,  37 => 1,);
+        return array (  110 => 9,  100 => 8,  89 => 5,  79 => 4,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -192,50 +190,7 @@ class __TwigTemplate_5a29d61cdab485e292cfdc596f0dcecf50d94eafa478b0c9f6edac376d2
 {% block body %}
     <div class=\"container\">
         <div class=\"row align-items-md-center cardContainer inactive\" style=\"height: 85vh;\">
-            {# <div class=\"row\" id=\"columnas\">
-            <div class=\"col-md\">
-                <div class=\"container\">
-                    <img src=\"img/JoseLuis.jpg\" class=\"img-fluid\">
-                </div>
-            </div>
-            <div class=\"col-md\">
-                <div class=\"container\">
-                    <img src=\"img/JoseLuis.jpg\" class=\"img-fluid\">
-                </div>
-            </div>
-            <div class=\"col-md\">
-                <div class=\"container\">
-                    <img src=\"img/JoseLuis.jpg\" class=\"img-fluid\">
-                </div>
-            </div>
-        </div>
-        <div id=\"carouselExampleIndicators\" class=\"carousel slide\" data-ride=\"carousel\">
-            <ol class=\"carousel-indicators\">
-                <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"0\" class=\"active\"></li>
-                <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"1\"></li>
-                <li data-target=\"#carouselExampleIndicators\" data-slide-to=\"2\"></li>
-            </ol>
-            <div class=\"carousel-inner\">
-                <div class=\"carousel-item active\">
-                    <img class=\"d-block w-100\" src=\"img/JoseLuis.jpg\" alt=\"First slide\">
-                </div>
-                <div class=\"carousel-item\">
-                    <img class=\"d-block w-100\" src=\"img/JoseLuis.jpg\" alt=\"Second slide\">
-                </div>
-                <div class=\"carousel-item\">
-                    <img class=\"d-block w-100\" src=\"img/JoseLuis.jpg\" alt=\"Third slide\">
-                </div>
-            </div>
-            <a class=\"carousel-control-prev\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"prev\">
-                <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>
-                <span class=\"sr-only\">Previous</span>
-            </a>
-            <a class=\"carousel-control-next\" href=\"#carouselExampleIndicators\" role=\"button\" data-slide=\"next\">
-                <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>
-                <span class=\"sr-only\">Next</span>
-            </a>
-        </div> #}
-  
+
             <div class=\"card text-center mx-auto my-4\" style=\"width: 18rem;\">
                 <img class=\"card-img-top\" src=\"img/reservaTattoo.jpg\" alt=\"Registro para realizar reserva\">
                 <div class=\"card-body\">
