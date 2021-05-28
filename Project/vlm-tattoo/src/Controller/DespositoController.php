@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
@@ -20,8 +21,10 @@ class DespositoController extends AbstractController
 
 
     #[Route('/success', name: 'success')]
-    public function success(): Response
+    public function success(Request $request): Response
     {
+            $datos = $request->request->get('array');
+            var_dump($datos);
 
         return $this->render('pagamiento/success.html.twig', [
 
