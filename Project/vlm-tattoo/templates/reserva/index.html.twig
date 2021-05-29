@@ -155,9 +155,6 @@
             reserva(datos)
         }))
 
-
-
-
         function reserva(datos) {
             $.ajax({
                 type: 'POST',
@@ -172,4 +169,9 @@
         }
     </script>
 
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
+    <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
 {% endblock %}

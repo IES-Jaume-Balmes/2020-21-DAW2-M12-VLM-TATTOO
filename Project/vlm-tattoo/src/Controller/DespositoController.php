@@ -23,8 +23,13 @@ class DespositoController extends AbstractController
     #[Route('/success', name: 'success')]
     public function success(Request $request): Response
     {
+        if($request->isXmlHttpRequest()) {
             $datos = $request->request->get('array');
             var_dump($datos);
+        } else {
+            throw new \Exception('Intent de Hack');
+        }
+
 
         return $this->render('pagamiento/success.html.twig', [
 
