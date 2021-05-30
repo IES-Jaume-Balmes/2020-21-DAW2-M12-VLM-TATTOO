@@ -9,13 +9,13 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
-class DespositoController extends AbstractController
+class PagamientoController extends AbstractController
 {
     #[Route('/pagamiento', name: 'pagamiento')]
     public function index(): Response
     {
         return $this->render('pagamiento/index.html.twig', [
-            'controller_name' => 'DespositoController',
+            'controller_name' => 'PagamientoController',
         ]);
     }
 
