@@ -80,8 +80,7 @@
                                     }
                                 </script>
                                 <div class="mt-3">
-                                    {{ form_widget(reserva.Pagar, { 'class': 'click' }) }}
-                                </div>
+                                    {{ form_label(reserva.Pagar,'Pagar', {'label_attr': {'id': 'foo'}}) }} </div>
                                 {{ form_end(reserva) }}
                             </div>
                         </div>
@@ -140,38 +139,6 @@
             var nextSibling = e.target.nextElementSibling
             nextSibling.innerText = fileName
         });
-
-        let fecha = document.getElementById('reserva_fechaInicio_date_day').value + " / " + document.getElementById('reserva_fechaInicio_date_month').value + " / " + document.getElementById('reserva_fechaInicio_date_year').value
-        let hora = document.getElementById('reserva_fechaInicio_time_hour').value + ":00"
-
-        let datos = [document.getElementById('reserva_talla').value,
-            document.getElementById('reserva_imagen').value,
-            document.getElementById('reserva_descripcion').value,
-            fecha,
-            hora
-        ];
-
-        document.getElementById('reserva_Pagar').addEventListener('click', (event => {
-            reserva(datos)
-        }))
-
-        function reserva(datos) {
-            $.ajax({
-                type: 'POST',
-                url: '/success',
-                data: ({array: JSON.stringify(datos)}),
-                async: true,
-                dataType: "json",
-                success: function (data) {
-
-                }
-            })
-        }
     </script>
 
-{% endblock %}
-{% block javascripts %}
-    {{ parent() }}
-    <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
-    <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
 {% endblock %}

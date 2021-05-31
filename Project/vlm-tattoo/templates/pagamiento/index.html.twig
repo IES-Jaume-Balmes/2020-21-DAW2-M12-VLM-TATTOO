@@ -4,25 +4,17 @@
 
 {% block body %}
 
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <div class="img_container">
+        <img class="img" src="/img/loading.gif">
+    </div>
 
-<div class="example-wrapper">
-
-
-    Paga Paga Paga!!!
-    <button id="checkout-button">Pagar</button>
-</div>
     {% block javascripts %}
         <script src="https://js.stripe.com/v3/"></script>
         <script type="text/javascript">
             // Create an instance of the Stripe object with your publishable API key
             var stripe = Stripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
-            var checkoutButton = document.getElementById('checkout-button');
 
-            checkoutButton.addEventListener('click', function() {
+            $(document).ready(function() {
                 // Create a new Checkout Session using the server-side endpoint you
                 // created in step 3.
                 fetch('/create-checkout-session', {

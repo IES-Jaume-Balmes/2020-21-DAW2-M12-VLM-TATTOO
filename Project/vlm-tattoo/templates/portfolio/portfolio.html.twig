@@ -22,7 +22,7 @@
     <div class="isotope container">
         {% for img in imagesTradicional %}
             <div class="grid-item {{ img['cat'] }}">
-                <img class="gallery_img" src="{{ asset(img['src']) }}" alt="{{ img['cat'] }}">
+                <img class="gallery_img" src="{{ asset(img['src']) }}" alt="{{ img['cat'] }}" loading="lazy">
             </div>
         {% endfor %}
     </div>

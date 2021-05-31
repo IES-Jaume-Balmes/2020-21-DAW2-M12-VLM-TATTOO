@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
@@ -21,15 +20,8 @@ class PagamientoController extends AbstractController
 
 
     #[Route('/success', name: 'success')]
-    public function success(Request $request): Response
+    public function success(): Response
     {
-        if($request->isXmlHttpRequest()) {
-            $datos = $request->request->get('array');
-            var_dump($datos);
-        } else {
-            throw new \Exception('Intent de Hack');
-        }
-
 
         return $this->render('pagamiento/success.html.twig', [
 
