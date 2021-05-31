@@ -98,11 +98,6 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <a type="button" class="btn btn-warning w-100" id="update">
-                            Update
-                        </a>
-                    </div>
-                    <div class="col">
                         <a type="button" class="btn btn-danger w-100" id="delete">
                             Delete
                         </a>
@@ -149,7 +144,6 @@
                     $('#cliente_email').html(info.event._def.extendedProps.cliente_email);
                     $('#cliente_telefono').html(info.event._def.extendedProps.cliente_telefono);
 
-                    $('#update').attr('href', info.event._def.extendedProps.update);
                     $('#delete').attr('href', info.event._def.extendedProps.delete);
                     //$('#img').src("/img/icon.png");
                     //$("#img").attr("src", {{ asset('/img/icon.png') }});

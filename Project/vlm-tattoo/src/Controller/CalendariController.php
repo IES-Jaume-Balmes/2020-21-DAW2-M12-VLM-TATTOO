@@ -37,7 +37,7 @@ class CalendariController extends AbstractController
 
                 'start' => $event->getFechaInicio()->format('Y-m-d H:i:s'),
                 'end' => $event->getFechaFinal()->format('Y-m-d H:i:s'),
-                'backgroundColor' => '#ffffff',
+                'backgroundColor' => '#007bff',
                 'update' => '/reserva/edit/'. $event->getId(),
                 'delete' => '/reserva/delete/'. $event->getId(),
             ];
