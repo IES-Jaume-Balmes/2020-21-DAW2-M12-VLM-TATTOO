@@ -6,10 +6,77 @@
     <description>Recent content on VLM TATTOO</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 May 2021 16:37:48 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 17 May 2021 16:37:48 +0200</lastBuildDate>
     
 	<atom:link href="https://ies-jaume-balmes.github.io/2020-21-DAW2-M12-VLM-TATTOO/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Disseny</title>
+      <link>https://ies-jaume-balmes.github.io/2020-21-DAW2-M12-VLM-TATTOO/posts/disenyentrega2/</link>
+      <pubDate>Mon, 17 May 2021 16:37:48 +0200</pubDate>
+      
+      <guid>https://ies-jaume-balmes.github.io/2020-21-DAW2-M12-VLM-TATTOO/posts/disenyentrega2/</guid>
+      <description>&lt;p&gt;Durant la setmana 2 vam decidir principalment com hauria de ser la passarel·la de reserva, Pagament i el portfolio.
+Començant per l&amp;rsquo;últim, voliem un portfoli dinàmic i que el Tatuador (admin) li fos molt comode canviar d&amp;rsquo;aspecte ja 
+que és un dels requisits que ens va proposar.De tal manera que amb només arrossegar imatges dins de les seves respectives carpetes ja es van implementant dinàmicament.
+El tema de la reserva des d&amp;rsquo;un principi sabíem que era la &amp;ldquo;pedra angular&amp;rdquo; de 
+el projecte, per tant haviem de pensar molt bé com fer-ho. La manera més còmoda que vam trobar
+va ser mitjançant amb una passarel·la, on l&amp;rsquo;usuari va omplint tots els camps, un cop fet tot això,
+finalment sortirà el Pagament, que el redireccionara a una pàgina web a través d&amp;rsquo;una API. Finalment
+si el pagament és correcte, torna a la apgina web amb un SUCCESS.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Disseny</title>
+      <link>https://ies-jaume-balmes.github.io/2020-21-DAW2-M12-VLM-TATTOO/posts/disenyentrega3/</link>
+      <pubDate>Mon, 17 May 2021 16:37:48 +0200</pubDate>
+      
+      <guid>https://ies-jaume-balmes.github.io/2020-21-DAW2-M12-VLM-TATTOO/posts/disenyentrega3/</guid>
+      <description>&lt;p&gt;En la setmana 3 de l&amp;rsquo;apartat del disseny no vare tocar res, per tant quedaria igual que a la 2.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Arquitectura</title>
+      <link>https://ies-jaume-balmes.github.io/2020-21-DAW2-M12-VLM-TATTOO/posts/arquitectura_entrega2/</link>
+      <pubDate>Mon, 17 May 2021 16:27:48 +0200</pubDate>
+      
+      <guid>https://ies-jaume-balmes.github.io/2020-21-DAW2-M12-VLM-TATTOO/posts/arquitectura_entrega2/</guid>
+      <description>&lt;p&gt;La setmana passada ens vam centrar principalment en el disseny i
+estructura de la part del Calendari com la del Portfolio. 
+A l&amp;rsquo;apartat del Calendari vam fer finalment que ocupés una
+pagina sencera ja que és molt més visible per a l&amp;rsquo;usuari i 
+d&amp;rsquo;aquesta manera visualitzar millor les dates. El funcionament
+del Calendari consistiria en una pasarela on vas omplint un formulari
+i que cada pàgina seguent et va ensenyat i recopilant la informació seleccioanda.
+En l&amp;rsquo;apartat del Portfolio, vam tenir bastentes problemes ja que el que 
+voliem implementar sembla que finalment no podrà ser i
+serà menys dinàmic, aquesta setmana segurament estaràn acabats els apartats
+comentats.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Arquitectura</title>
+      <link>https://ies-jaume-balmes.github.io/2020-21-DAW2-M12-VLM-TATTOO/posts/arquitectura_entrega3/</link>
+      <pubDate>Mon, 17 May 2021 16:27:48 +0200</pubDate>
+      
+      <guid>https://ies-jaume-balmes.github.io/2020-21-DAW2-M12-VLM-TATTOO/posts/arquitectura_entrega3/</guid>
+      <description>&lt;p&gt;En la setmana 3, mentre estem treballant en l&amp;rsquo;arquitectura web van sortint 
+problemes i dubtes de com fer el tema de poder gestionar les Reserves.
+A principis de setmana vam decidir crear una taula nova amb ID, FechaInicio, 
+FechaFin i un boolean. Pensem que d&amp;rsquo;aquesta manera al registrar una hora es
+pot ficar tota la infromació en aquesta nova taula i marcar ocupat amb el boolean.
+Al intentar d&amp;rsquo;implementar veiem que no és molt factible i no tenim com fer-ho.
+Al pensar-ho de nou intentem que tot succeeixi a la mateixa taula de Reserves i
+amb ajuda d&amp;rsquo;Ajax fem selects d&amp;rsquo;Any, Mes, Dia i Hora de la cita que es vol triar,
+si tot coincideix, el traiem del desplegable, d&amp;rsquo;aquesta manera l&amp;rsquo;usuari mai
+pot seleccionar hores ja ocupades. Aquest sistema el vam començar a desenvolupar
+el Dimecres, pel que avui diumenge segueix desenvolupant-se.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Descripcion</title>
@@ -19,7 +86,7 @@
       <guid>https://ies-jaume-balmes.github.io/2020-21-DAW2-M12-VLM-TATTOO/posts/descripcion/</guid>
       <description>&lt;p&gt;Desenvoluparem una aplicació web per a VLM TATTOO que amb l&amp;rsquo;ajuda d’una base
 de dades podrem optimitzar el seu sistema de cites. Aixì doncs, els usuaris han de
-poder solicitar una cita que posteriorment serà confirmada per el tatuador. També ha
+poder solicitar una cita. També ha
 de permetre al tatuador poder veure quines cites té aquella setmana.&lt;/p&gt;
 </description>
     </item>
