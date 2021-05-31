@@ -92,27 +92,48 @@ class __TwigTemplate_057d9ab29b34f8f15f1f43ce24514f95db2360a94524630d564cd17bbbc
 
 <div class=\"example-wrapper\">
     <h1>Pagament y cita correcte</h1>
-        ";
-        // line 13
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 13, $this->source); })()), "talla", [], "any", false, false, false, 13), "html", null, true);
-        echo "
-        ";
-        // line 14
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 14, $this->source); })()), "descripcion", [], "any", false, false, false, 14), "html", null, true);
-        echo "
-        ";
-        // line 15
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 15, $this->source); })()), "deposito", [], "any", false, false, false, 15), "html", null, true);
-        echo "
-    ";
-        // line 16
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 16, $this->source); })()), "cliente", [], "any", false, false, false, 16), "nombre", [], "any", false, false, false, 16), "html", null, true);
-        echo "
-    ";
+    <div class=\"card-body\">
+        <form method=\"post\" class=\"form\" autocomplete=\"off\" role=\"form\">
+
+            <div class=\"form-group\">
+                ";
         // line 17
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 17, $this->source); })()), "imagen", [], "any", false, false, false, 17), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 17, $this->source); })()), "talla", [], "any", false, false, false, 17), "html", null, true);
         echo "
-  
+            </div>
+            <div class=\"form-group\">
+                ";
+        // line 20
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 20, $this->source); })()), "descripcion", [], "any", false, false, false, 20), "html", null, true);
+        echo "
+            </div>
+            <div class=\"form-group\">
+                ";
+        // line 23
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 23, $this->source); })()), "deposito", [], "any", false, false, false, 23), "html", null, true);
+        echo "
+            </div>
+            <div class=\"form-group\">
+                ";
+        // line 26
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 26, $this->source); })()), "cliente", [], "any", false, false, false, 26), "nombre", [], "any", false, false, false, 26), "html", null, true);
+        echo "
+            </div>
+            <div class=\"form-group\">
+                ";
+        // line 29
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 29, $this->source); })()), "imagen", [], "any", false, false, false, 29), "html", null, true);
+        echo "
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+
+
     <h1>GRACIES</h1>
 </div>
 ";
@@ -136,7 +157,7 @@ class __TwigTemplate_057d9ab29b34f8f15f1f43ce24514f95db2360a94524630d564cd17bbbc
 
     public function getDebugInfo()
     {
-        return array (  113 => 17,  109 => 16,  105 => 15,  101 => 14,  97 => 13,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  125 => 29,  119 => 26,  113 => 23,  107 => 20,  101 => 17,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -153,12 +174,33 @@ class __TwigTemplate_057d9ab29b34f8f15f1f43ce24514f95db2360a94524630d564cd17bbbc
 
 <div class=\"example-wrapper\">
     <h1>Pagament y cita correcte</h1>
-        {{ reserva.talla }}
-        {{ reserva.descripcion }}
-        {{ reserva.deposito }}
-    {{ reserva.cliente.nombre }}
-    {{ reserva.imagen }}
-  
+    <div class=\"card-body\">
+        <form method=\"post\" class=\"form\" autocomplete=\"off\" role=\"form\">
+
+            <div class=\"form-group\">
+                {{ reserva.talla }}
+            </div>
+            <div class=\"form-group\">
+                {{ reserva.descripcion }}
+            </div>
+            <div class=\"form-group\">
+                {{ reserva.deposito }}
+            </div>
+            <div class=\"form-group\">
+                {{ reserva.cliente.nombre }}
+            </div>
+            <div class=\"form-group\">
+                {{ reserva.imagen }}
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+
+
     <h1>GRACIES</h1>
 </div>
 {% endblock %}

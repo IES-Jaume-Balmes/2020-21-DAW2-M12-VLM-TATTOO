@@ -10,11 +10,32 @@
 
 <div class="example-wrapper">
     <h1>Pagament y cita correcte</h1>
-        {{ reserva.talla }}
-        {{ reserva.descripcion }}
-        {{ reserva.deposito }}
-    {{ reserva.cliente.nombre }}
-    {{ reserva.imagen }}
+    <div class="card-body">
+        <form method="post" class="form" autocomplete="off" role="form">
+
+            <div class="form-group">
+                {{ reserva.talla }}
+            </div>
+            <div class="form-group">
+                {{ reserva.descripcion }}
+            </div>
+            <div class="form-group">
+                {{ reserva.deposito }}
+            </div>
+            <div class="form-group">
+                {{ reserva.cliente.nombre }}
+            </div>
+            <div class="form-group">
+                {{ reserva.imagen }}
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+
 
     <h1>GRACIES</h1>
 </div>
