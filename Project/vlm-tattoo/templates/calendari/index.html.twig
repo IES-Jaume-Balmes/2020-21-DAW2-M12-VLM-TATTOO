@@ -137,9 +137,9 @@
                     console.log(fecha);
 
                     console.log(fecha.toLocaleDateString());
-                    console.log(fecha.toLocaleDateString() + " a las " + fecha.getUTCHours() + ":" + fecha.getUTCMinutes());
-                    $('#fecha_inicio').html(fecha.toLocaleDateString() + " a las " + fecha.getUTCHours() + ":" + fecha.getUTCMinutes());
-                    $('#fecha_fin').html(fecha_fin.toLocaleDateString() + " a las " + fecha_fin.getUTCHours() + ":" + fecha_fin.getUTCMinutes());
+                    console.log(fecha.toLocaleDateString() + " a las " + fecha.getUTCHours() + "h");
+                    $('#fecha_inicio').html(fecha.toLocaleDateString() + " a las " + fecha.getUTCHours() + "h");
+                    $('#fecha_fin').html(fecha_fin.toLocaleDateString() + " a las " + fecha_fin.getUTCHours() + "h");
                     $('#cliente_nombre').html(info.event._def.extendedProps.cliente_apellido);
                     $('#cliente_email').html(info.event._def.extendedProps.cliente_email);
                     $('#cliente_telefono').html(info.event._def.extendedProps.cliente_telefono);
