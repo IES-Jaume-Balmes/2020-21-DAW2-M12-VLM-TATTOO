@@ -47,7 +47,7 @@ class PagamientoController extends AbstractController
                 'price_data' => [
                     'currency' => 'eur',
                     'product_data' => [
-                        'name' => 'T-shirt',
+                        'name' => 'Tattoo',
                     ],
                     'unit_amount' => 2000,
                 ],
