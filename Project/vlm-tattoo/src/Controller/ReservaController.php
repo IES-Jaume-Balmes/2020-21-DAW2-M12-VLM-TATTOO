@@ -124,7 +124,7 @@ class ReservaController extends AbstractController
         $entityManager->remove($reserva);
         $entityManager->flush();
 
-        return $this->redirectToRoute('reserva', [
+        return $this->redirectToRoute('calendari', [
             'id' => $reserva->getId()
         ]);
     }
