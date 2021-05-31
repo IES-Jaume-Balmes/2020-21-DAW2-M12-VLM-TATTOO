@@ -76,6 +76,25 @@ class ReservaController extends AbstractController
         ]);
     }
 
+    #[Route("/reserva/edit/{id}")]
+    public function update(int $id): Response
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+        $reserva = $entityManager->getRepository(Reserva::class)->find($id);
+
+        if (!$reserva) {
+            throw $this->createNotFoundException(
+                'No reserva found for id ' . $id
+            );
+        }
+
+        $reserva->setDescripcion('');
+        $entityManager->flush();
+
+        return $this->redirectToRoute('calendari', [
+            'id' => $reserva->getId()
+        ]);
+    }
     #[Route("/reserva-times")]
     public function reservaTimes(Request $request ): JsonResponse
     {

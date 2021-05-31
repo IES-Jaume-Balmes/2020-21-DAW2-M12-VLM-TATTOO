@@ -1,13 +1,13 @@
 body, html {
+    height: 100vh;
     font-family: 'Raleway', sans-serif;
+}
 
+.img_background {
     background-image: url("../img/wallpaper.jpg");
-    height: 100%;
-    width: 100%;
+    min-height: 100%;
+    background-position: center;
     background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
 }
 
 .logo {
@@ -142,5 +142,13 @@ and (max-width : 650px) {
     #login-register {
         display: flex;
         flex-direction: column;
+    }
+
+    #columnas {
+        display: none;
+    }
+
+    #carouselExampleIndicators {
+        display: block;
     }
 }
