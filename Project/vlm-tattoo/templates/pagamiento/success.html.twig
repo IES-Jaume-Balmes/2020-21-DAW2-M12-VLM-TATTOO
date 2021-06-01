@@ -3,14 +3,37 @@
 {% block title %}Pago{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <style>
+        .example-wrapper {
+            margin: 1em auto;
+            max-width: 800px;
+            width: 95%;
+            font: 18px/1.5 sans-serif;
+        }
+        .example-wrapper code {
+            background: #F5F5F5;
+            padding: 2px 6px;
+        }
+    </style>
 
-<div class="example-wrapper">
-    <h1>Pagament y cita correcte</h1>
-
-    <h1>GRACIES</h1>
-</div>
+    <div class="container py-3">
+    <div class="row">
+    <div class="col-md-12">
+    <div class="row justify-content-center">
+    <div class="col-md-6">
+    <div class="card card-outline-secodary">
+        <div class="card-header">
+            <h3 class="mb-0">Pago y cita correctos</h3>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Talla: </strong><br>{{ reserva.talla }}</li>
+                <li class="list-group-item"><strong>Descripción: </strong><br>{{ reserva.descripcion }}</li>
+                <li class="list-group-item"><strong>Depósito: </strong><br>{{ reserva.deposito }}</li>
+                <li class="list-group-item"><strong>Nombre: </strong><br>{{ reserva.cliente.apellidos }}, {{ reserva.cliente.nombre }}</li>
+                <li class="list-group-item"><strong>Nombre de la Imagen: </strong><br>{{ reserva.imagen }}</li>
+            </ul>
+            <a href="/" role="button" class="btn btn-primary mt-3">Volver</a>
+        </div>
+    </div>
 {% endblock %}

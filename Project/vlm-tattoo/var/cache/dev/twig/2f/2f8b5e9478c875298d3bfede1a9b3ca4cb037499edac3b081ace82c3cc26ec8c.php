@@ -202,11 +202,6 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
                 </div>
                 <div class=\"row\">
                     <div class=\"col\">
-                        <a type=\"button\" class=\"btn btn-warning w-100\" id=\"update\">
-                            Update
-                        </a>
-                    </div>
-                    <div class=\"col\">
                         <a type=\"button\" class=\"btn btn-danger w-100\" id=\"delete\">
                             Delete
                         </a>
@@ -229,7 +224,7 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
 
     }
 
-    // line 121
+    // line 116
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -239,7 +234,7 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 122
+        // line 117
         echo "
     <script>
         window.onload = () => {
@@ -263,30 +258,26 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
                     console.log(fecha);
 
                     console.log(fecha.toLocaleDateString());
-                    console.log(fecha.toLocaleDateString() + \" a las \" + fecha.getUTCHours() + \":\" + fecha.getUTCMinutes());
-                    \$('#fecha_inicio').html(fecha.toLocaleDateString() + \" a las \" + fecha.getUTCHours() + \":\" + fecha.getUTCMinutes());
-                    \$('#fecha_fin').html(fecha_fin.toLocaleDateString() + \" a las \" + fecha_fin.getUTCHours() + \":\" + fecha_fin.getUTCMinutes());
+                    console.log(fecha.toLocaleDateString() + \" a las \" + fecha.getUTCHours() + \"h\");
+                    \$('#fecha_inicio').html(fecha.toLocaleDateString() + \" a las \" + fecha.getUTCHours() + \"h\");
+                    \$('#fecha_fin').html(fecha_fin.toLocaleDateString() + \" a las \" + fecha_fin.getUTCHours() + \"h\");
                     \$('#cliente_nombre').html(info.event._def.extendedProps.cliente_apellido);
                     \$('#cliente_email').html(info.event._def.extendedProps.cliente_email);
                     \$('#cliente_telefono').html(info.event._def.extendedProps.cliente_telefono);
 
-                    \$('#update').attr('href', info.event._def.extendedProps.update);
                     \$('#delete').attr('href', info.event._def.extendedProps.delete);
-                    //\$('#img').src(\"/img/icon.png\");
                     //\$(\"#img\").attr(\"src\", ";
-        // line 155
+        // line 148
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/img/icon.png"), "html", null, true);
         echo ");
                     document.getElementById(\"img2\").src = \"/uploads/imagenes/\" + info.event.extendedProps.imatge;
 
-                    //console.log(_def.extendedProps.imatge);
-                    //console.log(info.event._def.extendedProps.cliente);
 
                 },
 
                 events: ";
-        // line 163
-        echo (isset($context["data"]) || array_key_exists("data", $context) ? $context["data"] : (function () { throw new RuntimeError('Variable "data" does not exist.', 163, $this->source); })());
+        // line 154
+        echo (isset($context["data"]) || array_key_exists("data", $context) ? $context["data"] : (function () { throw new RuntimeError('Variable "data" does not exist.', 154, $this->source); })());
         echo "
             })
             calendari.render()
@@ -316,7 +307,7 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
 
     public function getDebugInfo()
     {
-        return array (  289 => 163,  278 => 155,  243 => 122,  233 => 121,  171 => 68,  145 => 44,  135 => 43,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  280 => 154,  271 => 148,  238 => 117,  228 => 116,  171 => 68,  145 => 44,  135 => 43,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -421,11 +412,6 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
                 </div>
                 <div class=\"row\">
                     <div class=\"col\">
-                        <a type=\"button\" class=\"btn btn-warning w-100\" id=\"update\">
-                            Update
-                        </a>
-                    </div>
-                    <div class=\"col\">
                         <a type=\"button\" class=\"btn btn-danger w-100\" id=\"delete\">
                             Delete
                         </a>
@@ -465,21 +451,17 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
                     console.log(fecha);
 
                     console.log(fecha.toLocaleDateString());
-                    console.log(fecha.toLocaleDateString() + \" a las \" + fecha.getUTCHours() + \":\" + fecha.getUTCMinutes());
-                    \$('#fecha_inicio').html(fecha.toLocaleDateString() + \" a las \" + fecha.getUTCHours() + \":\" + fecha.getUTCMinutes());
-                    \$('#fecha_fin').html(fecha_fin.toLocaleDateString() + \" a las \" + fecha_fin.getUTCHours() + \":\" + fecha_fin.getUTCMinutes());
+                    console.log(fecha.toLocaleDateString() + \" a las \" + fecha.getUTCHours() + \"h\");
+                    \$('#fecha_inicio').html(fecha.toLocaleDateString() + \" a las \" + fecha.getUTCHours() + \"h\");
+                    \$('#fecha_fin').html(fecha_fin.toLocaleDateString() + \" a las \" + fecha_fin.getUTCHours() + \"h\");
                     \$('#cliente_nombre').html(info.event._def.extendedProps.cliente_apellido);
                     \$('#cliente_email').html(info.event._def.extendedProps.cliente_email);
                     \$('#cliente_telefono').html(info.event._def.extendedProps.cliente_telefono);
 
-                    \$('#update').attr('href', info.event._def.extendedProps.update);
                     \$('#delete').attr('href', info.event._def.extendedProps.delete);
-                    //\$('#img').src(\"/img/icon.png\");
                     //\$(\"#img\").attr(\"src\", {{ asset('/img/icon.png') }});
                     document.getElementById(\"img2\").src = \"/uploads/imagenes/\" + info.event.extendedProps.imatge;
 
-                    //console.log(_def.extendedProps.imatge);
-                    //console.log(info.event._def.extendedProps.cliente);
 
                 },
 

@@ -79,34 +79,34 @@ class ReservaController extends AbstractController
     #[Route("/reserva-times")]
     public function reservaTimes(Request $request ): JsonResponse
     {
-        $year = $request->query->get('year');
+        $year = $request->query->get('year'); //crida per ayax
         $month = $request->query->get('month');
         $day = $request->query->get('day');
 
-        $dateFilter = strtotime($month." ". $day." ". $year);
+        $dateFilter = strtotime($month." ". $day." ". $year); // converteix un String en un tipu de Data
 
-        $from = new \DateTime(date('Y-m-d' ,$dateFilter)." 00:00:00");
-        $to   = new \DateTime(date('Y-m-d', $dateFilter)." 23:59:59");
+        $from = new \DateTime(date('Y-m-d' ,$dateFilter)." 00:00:00"); //dateTime inici Query
+        $to   = new \DateTime(date('Y-m-d', $dateFilter)." 23:59:59");//dateTime final Query
 
         $reserves = $this->getDoctrine()->getManager()->getRepository(Reserva::class)->findByDateField($from, $to);
-        $response = [['09', true], ['10', true], ['11', true], ['12', true], ['13', true], ['14', true],[ '15', true], ['16', true], ['17', true], ['18', true], ['19', true], ['20', true]];
-        foreach ($reserves as $valor){
+        $response = [['9', true], ['10', true], ['11', true], ['12', true], ['13', true], ['14', true],[ '15', true], ['16', true], ['17', true], ['18', true], ['19', true], ['20', true]];
+        foreach ($reserves as $valor){ //recorr reserves del dia
             $start = $valor->getFechaInicio()->format('H');
             $talla = $valor->getTalla();
             $hoursBusy = 1;
             if ($talla == 'Grande') $hoursBusy = 3;
             else if ($talla == 'Mediano') $hoursBusy = 2;
-            $found = false;
+            $found = false; // per defecte esta false
             foreach ($response as $key => $hour){
-                if ($hour[0] == $start || ($found && $hoursBusy > 0)) {
+                if ($hour[0] == $start || ($found && $hoursBusy > 0)) { //si START coinsideix RESPONSE el posa FALSE
                     $found = true;
-                    $response[$key][1] = false;
+                    $response[$key][1] = false; // si es START coinsideix o es mes d'una hora, false
                     $hoursBusy--;
                 }
             }
         }
 
-        return new JsonResponse($response, 200);
+        return new JsonResponse($response, 200); //te hores ocupades posades False per reserves d'aquell dia
     }
 
     #[Route("/reserva/delete/{id}")]
@@ -124,7 +124,7 @@ class ReservaController extends AbstractController
         $entityManager->remove($reserva);
         $entityManager->flush();
 
-        return $this->redirectToRoute('reserva', [
+        return $this->redirectToRoute('calendari', [
             'id' => $reserva->getId()
         ]);
     }

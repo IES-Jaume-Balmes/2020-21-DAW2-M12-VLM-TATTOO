@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Reserva;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
@@ -22,9 +23,12 @@ class PagamientoController extends AbstractController
     #[Route('/success', name: 'success')]
     public function success(): Response
     {
+        $cliente = $this->getUser();
+
+        $reserva = $this->getDoctrine()->getManager()->getRepository(Reserva::class)->findOneByUser($cliente->getId());
 
         return $this->render('pagamiento/success.html.twig', [
-
+            'reserva' => $reserva,
         ]);
     }
 
@@ -54,7 +58,7 @@ class PagamientoController extends AbstractController
                 'quantity' => 1,
             ]],
             'mode' => 'payment',
-            'success_url' => $this->generateUrl('success',[], UrlGeneratorInterface::ABSOLUTE_URL),
+            'success_url' => $this->generateUrl('success',['id' => ''], UrlGeneratorInterface::ABSOLUTE_URL),
             'cancel_url' => $this->generateUrl('error',[], UrlGeneratorInterface::ABSOLUTE_URL),
         ]);
         return new JsonResponse(([ 'id' => $session->id ]));

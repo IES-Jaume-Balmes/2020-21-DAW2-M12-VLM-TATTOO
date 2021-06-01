@@ -36,17 +36,16 @@ class ReservaRepository extends ServiceEntityRepository
         ;
     }
 
-
-
-    /*
-    public function findOneBySomeField($value): ?Reserva
+    public function findOneByUser($user_id): ?Reserva
     {
         return $this->createQueryBuilder('r')
-            ->andWhere('r.exampleField = :val')
-            ->setParameter('val', $value)
+            ->andWhere('r.cliente = :user_id')
+            ->setParameter('user_id', $user_id)
+            ->orderBy('r.id','desc')
+            ->setMaxResults(1)
             ->getQuery()
-            ->getOneOrNullResult()
+            ->getOneOrNullResult();
         ;
     }
-    */
+
 }
