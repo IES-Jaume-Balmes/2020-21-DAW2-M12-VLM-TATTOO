@@ -122,8 +122,8 @@ class __TwigTemplate_057d9ab29b34f8f15f1f43ce24514f95db2360a94524630d564cd17bbbc
             <div class=\"form-group\">
                 ";
         // line 29
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 29, $this->source); })()), "imagen", [], "any", false, false, false, 29), "html", null, true);
-        echo "
+        echo twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["reserva"]) || array_key_exists("reserva", $context) ? $context["reserva"] : (function () { throw new RuntimeError('Variable "reserva" does not exist.', 29, $this->source); })()), "fechaInicio", [], "any", false, false, false, 29), "d/m/Y H"), "html", null, true);
+        echo "h
             </div>
 
         </form>
@@ -190,7 +190,7 @@ class __TwigTemplate_057d9ab29b34f8f15f1f43ce24514f95db2360a94524630d564cd17bbbc
                 {{ reserva.cliente.nombre }}
             </div>
             <div class=\"form-group\">
-                {{ reserva.imagen }}
+                {{ reserva.fechaInicio |date(\"d/m/Y H\") }}h
             </div>
 
         </form>

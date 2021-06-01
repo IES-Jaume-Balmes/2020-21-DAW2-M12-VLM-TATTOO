@@ -258,29 +258,26 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
                     console.log(fecha);
 
                     console.log(fecha.toLocaleDateString());
-                    console.log(fecha.toLocaleDateString() + \" a las \" + fecha.getUTCHours() + \":\" + fecha.getUTCMinutes());
-                    \$('#fecha_inicio').html(fecha.toLocaleDateString() + \" a las \" + fecha.getUTCHours() + \":\" + fecha.getUTCMinutes());
-                    \$('#fecha_fin').html(fecha_fin.toLocaleDateString() + \" a las \" + fecha_fin.getUTCHours() + \":\" + fecha_fin.getUTCMinutes());
+                    console.log(fecha.toLocaleDateString() + \" a las \" + fecha.getUTCHours() + \"h\");
+                    \$('#fecha_inicio').html(fecha.toLocaleDateString() + \" a las \" + fecha.getUTCHours() + \"h\");
+                    \$('#fecha_fin').html(fecha_fin.toLocaleDateString() + \" a las \" + fecha_fin.getUTCHours() + \"h\");
                     \$('#cliente_nombre').html(info.event._def.extendedProps.cliente_apellido);
                     \$('#cliente_email').html(info.event._def.extendedProps.cliente_email);
                     \$('#cliente_telefono').html(info.event._def.extendedProps.cliente_telefono);
 
                     \$('#delete').attr('href', info.event._def.extendedProps.delete);
-                    //\$('#img').src(\"/img/icon.png\");
                     //\$(\"#img\").attr(\"src\", ";
-        // line 149
+        // line 148
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/img/icon.png"), "html", null, true);
         echo ");
                     document.getElementById(\"img2\").src = \"/uploads/imagenes/\" + info.event.extendedProps.imatge;
 
-                    //console.log(_def.extendedProps.imatge);
-                    //console.log(info.event._def.extendedProps.cliente);
 
                 },
 
                 events: ";
-        // line 157
-        echo (isset($context["data"]) || array_key_exists("data", $context) ? $context["data"] : (function () { throw new RuntimeError('Variable "data" does not exist.', 157, $this->source); })());
+        // line 154
+        echo (isset($context["data"]) || array_key_exists("data", $context) ? $context["data"] : (function () { throw new RuntimeError('Variable "data" does not exist.', 154, $this->source); })());
         echo "
             })
             calendari.render()
@@ -310,7 +307,7 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
 
     public function getDebugInfo()
     {
-        return array (  283 => 157,  272 => 149,  238 => 117,  228 => 116,  171 => 68,  145 => 44,  135 => 43,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
+        return array (  280 => 154,  271 => 148,  238 => 117,  228 => 116,  171 => 68,  145 => 44,  135 => 43,  90 => 6,  80 => 5,  61 => 3,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -454,20 +451,17 @@ class __TwigTemplate_d12f2f1dc395e02c433a7fde51dd23554813c30acd32e57c148d628c19c
                     console.log(fecha);
 
                     console.log(fecha.toLocaleDateString());
-                    console.log(fecha.toLocaleDateString() + \" a las \" + fecha.getUTCHours() + \":\" + fecha.getUTCMinutes());
-                    \$('#fecha_inicio').html(fecha.toLocaleDateString() + \" a las \" + fecha.getUTCHours() + \":\" + fecha.getUTCMinutes());
-                    \$('#fecha_fin').html(fecha_fin.toLocaleDateString() + \" a las \" + fecha_fin.getUTCHours() + \":\" + fecha_fin.getUTCMinutes());
+                    console.log(fecha.toLocaleDateString() + \" a las \" + fecha.getUTCHours() + \"h\");
+                    \$('#fecha_inicio').html(fecha.toLocaleDateString() + \" a las \" + fecha.getUTCHours() + \"h\");
+                    \$('#fecha_fin').html(fecha_fin.toLocaleDateString() + \" a las \" + fecha_fin.getUTCHours() + \"h\");
                     \$('#cliente_nombre').html(info.event._def.extendedProps.cliente_apellido);
                     \$('#cliente_email').html(info.event._def.extendedProps.cliente_email);
                     \$('#cliente_telefono').html(info.event._def.extendedProps.cliente_telefono);
 
                     \$('#delete').attr('href', info.event._def.extendedProps.delete);
-                    //\$('#img').src(\"/img/icon.png\");
                     //\$(\"#img\").attr(\"src\", {{ asset('/img/icon.png') }});
                     document.getElementById(\"img2\").src = \"/uploads/imagenes/\" + info.event.extendedProps.imatge;
 
-                    //console.log(_def.extendedProps.imatge);
-                    //console.log(info.event._def.extendedProps.cliente);
 
                 },
 
